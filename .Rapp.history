@@ -1,0 +1,826 @@
+tests$age
+tests$age <- unlist(lapply((tests$age>=0)+(tests$age>1)+(tests$age>6),function(i){c("puppy","adult","senior")[i]}))
+tests <- read.csv("test_complete.csv",header=T)
+tests <- tests[!is.na(tests$neutered),]
+tests$age <- c("puppy","adult","senior")[(tests$age>=0)+(tests$age>1)+(tests$age>6)]
+tests$age
+tests <- read.csv("test_complete.csv",header=T)#
+#
+#Preprocessing#
+tests <- tests[!is.na(tests$neutered),]#
+#
+tests$age <- c("puppy","adult","senior")[(tests$age>=0)+(tests$age>1)+(tests$age>6)]#
+#
+tests$weight <- c("small","medium","large","giant")[(tests$weight>=0)+(tests$weight>19)+(tests$weight>49)+(tests$weight>89)]#
+#
+tests <- data.frame(time=as.factor(time_slot(0,0,tests$month,day_sect=2)),tests[,c(6:13)])
+rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=dog_tests,ntree=100,importance=T)
+tests$weight
+unique(tests$weight)
+rf
+round(importance(rf,type=1,scale=T),2)
+dogs <- read.csv("dog_list.csv",header=T)#
+dogs <- dogs[!is.na(dogs$neutered),]#
+dogs$age <- c("puppy","adult","senior")[(dogs$age>=0)+(dogs$age>1)+(dogs$age>6)]#
+dogs$weight <- c("small","medium","large","giant")[(dogs$weight>=0)+(dogs$weight>19)+(dogs$weight>49)+(dogs$weight>89)]#
+dogs <- data.frame(time=as.factor(time_slot(0,0,dogs$month,day_sect=2)),dogs[,c(6:13)])#
+#
+rfinit <- randomForest(time~gender+weight+personality+age+weight+btype+bgroup,data=dogs,ntree=100,importance=T)
+dogs$age
+dogs$weight
+rfinit <- randomForest(time~gender+neutered+personality+age+weight+btype+bgroup,data=dogs,ntree=100,importance=T)
+sum(is.na(dogs))
+dogs$time
+dogs <- read.csv("dog_list.csv",header=T)#
+dogs <- dogs[!is.na(dogs$neutered),]#
+dogs$age <- c("puppy","adult","senior")[(dogs$age>=0)+(dogs$age>1)+(dogs$age>6)]#
+dogs$weight <- c("small","medium","large","giant")[(dogs$weight>=0)+(dogs$weight>19)+(dogs$weight>49)+(dogs$weight>89)]#
+dogs <- data.frame(time=as.factor(time_slot(0,0,dogs$month,day_sect=2)),dogs[,c(6:13)])
+head(dogs)
+rfinit <- randomForest(time~gender+neutered+personality+age+weight+btype+bgroup,data=dogs,ntree=100,importance=T)
+dogs <- read.csv("dog_list.csv",header=T)
+dogs <- dogs[!is.na(dogs$neutered),]
+rfinit <- randomForest(time~gender+neutered+personality+age+weight+btype+bgroup,data=dogs,ntree=100,importance=T)
+dogs <- read.csv("dog_list.csv",header=T)#
+dogs <- dogs[!is.na(dogs$neutered),]#
+dogs$age <- c("puppy","adult","senior")[(dogs$age>=0)+(dogs$age>1)+(dogs$age>6)]#
+dogs$weight <- c("small","medium","large","giant")[(dogs$weight>=0)+(dogs$weight>19)+(dogs$weight>49)+(dogs$weight>89)]#
+dogs <- data.frame(time=as.factor(time_slot(0,0,dogs$month,day_sect=2)),dogs[,c(6:13)])
+rfinit <- randomForest(time~gender+neutered+personality+age+weight+btype+bgroup,data=dogs,ntree=100,importance=T)
+time_slot <- function(hour,day,month,day_sect=2){#make a distinct code for each month-day of the week-hour of the day combination#
+	time <- month*10 + day #
+	for(i in 1:(day_sect-1)){#
+		time <- time + 1/day_sect*(hour > 24/day_sect*i)#
+	}#
+	time#
+}#
+#
+feature_time_table <- function(feature, time){#
+	values <- sort(unique(feature))#
+	result <- t(matrix(unlist(lapply(values,time_profile,feature=feature,time=time)),ncol=length(values)))#
+	colnames(result) <- sort(unique(time))#
+	rownames(result) <- values#
+	result#
+}#
+#
+time_profile <- function(v,feature,time){#
+	nt <- sort(unique(time))#
+	profile <- numeric(length(nt))#
+	for(i in 1:length(nt)){#
+		profile[i] <- sum((feature==v)*(time==nt[i]))#
+	}#
+	profile#
+}
+dogs <- read.csv("dog_list.csv",header=T)#
+dogs <- dogs[!is.na(dogs$neutered),]#
+dogs$age <- c("puppy","adult","senior")[(dogs$age>=0)+(dogs$age>1)+(dogs$age>6)]#
+dogs$weight <- c("small","medium","large","giant")[(dogs$weight>=0)+(dogs$weight>19)+(dogs$weight>49)+(dogs$weight>89)]#
+dogs <- data.frame(time=as.factor(time_slot(0,0,dogs$month,day_sect=2)),dogs[,c(6:13)])
+rfinit <- randomForest(time~gender+neutered+personality+age+weight+btype+bgroup,data=dogs,ntree=100,importance=T)
+dogs <- read.csv("dog_list.csv",header=T)#
+dogs <- dogs[!is.na(dogs$neutered),]
+rfinit <- randomForest(time~gender+neutered+personality+age+weight+btype+bgroup,data=dogs,ntree=100,importance=T)
+class(dogs)
+names(dogs)
+dogs$age <- c("puppy","adult","senior")[(dogs$age>=0)+(dogs$age>1)+(dogs$age>6)]#
+dogs$weight <- c("small","medium","large","giant")[(dogs$weight>=0)+(dogs$weight>19)+(dogs$weight>49)+(dogs$weight>89)]#
+dogs <- data.frame(time=as.factor(time_slot(0,0,dogs$month,day_sect=2)),dogs[,c(6:13)])
+names(dogs)
+class(dogs)
+library(randomForest)
+tests <- read.csv("test_complete.csv",header=T)
+tests <- tests[!is.na(tests$neutered),]#
+#
+tests$age <- c("puppy","adult","senior")[(tests$age>=0)+(tests$age>1)+(tests$age>6)]#
+#
+tests$weight <- c("small","medium","large","giant")[(tests$weight>=0)+(tests$weight>19)+(tests$weight>49)+(tests$weight>89)]#
+#
+tests <- data.frame(time=as.factor(time_slot(0,0,tests$month,day_sect=2)),tests[,c(6:13)])
+rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=dog_tests,ntree=100,importance=T)
+rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=tests,ntree=100,importance=T)
+dog_tests <- data.frame(time=as.factor(time_slot(0,0,tests$month,day_sect=2)),tests[,c(6:13)])
+tests <- read.csv("test_complete.csv",header=T)
+tests <- tests[!is.na(tests$neutered),]
+dog_tests <- data.frame(time=as.factor(time_slot(0,0,tests$month,day_sect=2)),tests[,c(6:13)])
+rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=dog_tests,ntree=100,importance=T)
+rf
+tests$age <- c("puppy","adult","senior")[(tests$age>=0)+(tests$age>1)+(tests$age>6)]
+tests$weight <- c("small","medium","large","giant")[(tests$weight>=0)+(tests$weight>19)+(tests$weight>49)+(tests$weight>89)]
+dog_tests <- data.frame(time=as.factor(time_slot(0,0,tests$month,day_sect=2)),tests[,c(6:13)])
+rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=dog_tests,ntree=100,importance=T)
+tests <- read.csv("test_complete.csv",header=T)#
+#
+#Preprocessing#
+tests <- tests[!is.na(tests$neutered),]#
+#
+tests$age <- c("puppy","adult","senior")[(tests$age>=0)+(tests$age>1)+(tests$age>6)]#
+#
+tests$weight <- c("small","medium","large","giant")[(tests$weight>=0)+(tests$weight>19)+(tests$weight>49)+(tests$weight>89)]
+head(tests)
+dog_tests <- data.frame(time=as.factor(time_slot(0,0,tests$month,day_sect=2)),tests[,c(6:13)])
+head(dog_test)
+head(dog_tests)
+rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=dog_tests,ntree=100,importance=T)
+class(tests$age)
+class(tests$btype)
+tests$age <- factor(c("puppy","adult","senior")[(tests$age>=0)+(tests$age>1)+(tests$age>6)])
+tests$age
+tests <- read.csv("test_complete.csv",header=T)
+tests <- tests[!is.na(tests$neutered),]
+tests$age <- as.factor(c("puppy","adult","senior"))[(tests$age>=0)+(tests$age>1)+(tests$age>6)]
+tests$age
+tests$weight <- as.factor(c("small","medium","large","giant"))[(tests$weight>=0)+(tests$weight>19)+(tests$weight>49)+(tests$weight>89)]
+dog_tests <- data.frame(time=as.factor(time_slot(0,0,tests$month,day_sect=2)),tests[,c(6:13)])
+rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=dog_tests,ntree=100,importance=T)
+rf
+unique(tests$age)
+tests <- read.csv("test_complete.csv",header=T)
+tests <- tests[!is.na(tests$neutered),]
+tests <- data.frame(time=as.factor(time_slot(0,0,tests$month,day_sect=2)),tests[,c(6:13)])
+unique(tests$age)
+round(importance(rf,type=1,scale=T),2)
+rf
+unique(tests$weight)
+tests$age <- as.factor(c("0-1","2-4","5-7",">7"))[(tests$age>=0)+(tests$age>1)+(tests$age>4)+(tests$age>7)]#
+#
+tests$weight <- as.factor(c("0-19","20-49","50-89","90-139",">139"))[(tests$weight>=0)+(tests$weight>19)+(tests$weight>49)+(tests$weight>89)+(tests$weight>129)]#
+#
+#random forest classification#
+rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=tests,ntree=100,importance=T)
+rf
+round(importance(rf,type=1,scale=T),2)
+tests <- read.csv("test_complete.csv",header=T)
+unique(tests$age)
+tests <- tests[!is.na(tests$neutered),]#
+#
+tests <- data.frame(time=as.factor(time_slot(0,0,tests$month,day_sect=2)),tests[,c(6:13)])#
+#
+tests$age <- as.factor(c("0-1","2-4","5-7","7-10",">10"))[(tests$age>=0)+(tests$age>1)+(tests$age>4)+(tests$age>7)+(tests$age>10)]#
+#
+tests$weight <- as.factor(c("0-19","20-49","50-89","90-139",">139"))[(tests$weight>=0)+(tests$weight>19)+(tests$weight>49)+(tests$weight>89)+(tests$weight>129)]#
+#
+#random forest classification#
+rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=tests,ntree=100,importance=T)
+rf
+tests <- read.csv("test_complete.csv",header=T)#
+#
+#Preprocessing#
+tests <- tests[!is.na(tests$neutered),]#
+#
+tests <- data.frame(time=as.factor(time_slot(0,0,tests$month,day_sect=2)),tests[,c(6:13)])#
+#
+#random forest classification#
+rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=tests,ntree=100,importance=T)
+rf
+round(importance(rf,type=1,scale=T),2)
+dogs <- read.csv("dog_list.csv",header=T)#
+dogs <- dogs[!is.na(dogs$neutered),]#
+dogs <- data.frame(time=as.factor(time_slot(0,0,dogs$month,day_sect=2)),dogs[,c(6:13)])#
+#
+rfinit <- randomForest(time~gender+neutered+personality+age+weight+btype+bgroup,data=dogs,ntree=100,importance=T)
+rfinit
+rfncomp <- randomForest(ntests~gender+neutered+weight+personality+age+btype+bgroup,data=dogs,ntree=100,importance=T)
+dogs <- read.csv("dog_list.csv",header=T)
+names(dogs)
+dogs <- read.csv("dog_list.csv",header=T)#
+dogs <- dogs[!is.na(dogs$neutered),]#
+dogs <- data.frame(time=as.factor(time_slot(0,0,dogs$month,day_sect=2)),dogs[,c(6:15)])#
+#
+rfinit <- randomForest(time~gender+neutered+personality+age+weight+btype+bgroup,data=dogs,ntree=100,importance=T)#
+mean(rfinit$err.rate)#
+#
+rfncomp <- randomForest(ntests~gender+neutered+weight+personality+age+btype+bgroup,data=dogs,ntree=100,importance=T)#
+rfncomp#
+#
+rfmid <- randomForest(mid~gender+neutered+weight+personality+age+btype+bgroup,data=dogs,ntree=100,importance=T)#
+rfmid
+lmncomp <- lm(ntests~gender+neutered+weight+personality+age+btype+bgroup,data=dogs)
+summary(lmncomp)
+lmncomp <- glm(ntests~gender+neutered+weight+personality+age+btype+bgroup,data=dogs)
+summary(lmncomp)
+head(tests)
+#Make frequency tables for each feature (rows: feature levels; columns: month)#
+tests$age <- as.factor(c("0-1","2-4","5-7","7-10",">10"))[(tests$age>=0)+(tests$age>1)+(tests$age>4)+(tests$age>7)+(tests$age>10)]#
+#
+tests$weight <- as.factor(c("0-19","20-49","50-89","90-139",">139"))[(tests$weight>=0)+(tests$weight>19)+(tests$weight>49)+(tests$weight>89)+(tests$weight>129)]#
+#
+ftables <- list()#
+features <- c("gender","neutered","weight","personality","age","btype","bgroup")#
+for(i in 1:length(features)){#
+	ftables[[i]] <- feature_time_table(tests[,names(tests)==features[i]], tests$month)#
+}#
+names(ftables) <- features
+warnings()
+ftables$age
+head(tests)
+tests <- read.csv("test_complete.csv",header=T)#
+#
+#Preprocessing#
+tests <- tests[!is.na(tests$neutered),]#
+#
+tests$time <- as.factor(time_slot(0,0,tests$month,day_sect=2))
+tests$age <- as.factor(c("0-1","2-4","5-7","7-10",">10"))[(tests$age>=0)+(tests$age>1)+(tests$age>4)+(tests$age>7)+(tests$age>10)]#
+#
+tests$weight <- as.factor(c("0-19","20-49","50-89","90-139",">139"))[(tests$weight>=0)+(tests$weight>19)+(tests$weight>49)+(tests$weight>89)+(tests$weight>129)]
+head(tests)
+tests$time <- as.factor(time_slot(tests$hour,tests$day,tests$month,day_sect=2))
+head(tests)
+ftables <- list()#
+features <- c("gender","neutered","weight","personality","age","btype","bgroup")#
+for(i in 1:length(features)){#
+	ftables[[i]] <- feature_time_table(tests[,names(tests)==features[i]], tests$month)#
+}#
+names(ftables) <- features
+ftables$age
+rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=tests,ntree=100,importance=T)
+rf <- randomForest(month~gender+neutered+personality+weight+age+btype+bgroup,data=tests,ntree=100,importance=T)
+rf
+rf <- randomForest(as.factor(month)~gender+neutered+personality+weight+age+btype+bgroup,data=tests,ntree=100,importance=T)
+rf
+feature_wts <- round(importance(rf,type=1,scale=T),2)
+feature_wts
+ftables$weight
+ftables <- list()#
+features <- c("gender","neutered","weight","personality","age","btype","bgroup")#
+for(i in 1:length(features)){#
+	ftables[[i]] <- feature_time_table(tests[,names(tests)==features[i]], tests$month)#
+	ftables[[i]] <- ftables[[i]]/rowSums(ftables[[i]])#
+}#
+names(ftables) <- features
+ftables$weight
+ftables$age
+match(1,c(2,1,3))
+x=numeric(3)
+x
+?cor
+match(4,c(2,1,3))
+colSums(ftables[[i]])/dim(ftables[[i]])[1]
+i
+i=2
+colSums(ftables[[i]])/dim(ftables[[i]])[1]
+i=3
+colSums(ftables[[i]])/dim(ftables[[i]])[1]
+tests$btype
+unique(tests$bgroup)
+unique(tests$personality)
+vs1 <- c("female","0","0-19",NA,"5-7","Cross Breed","Working")
+trend1 <- get_trend(vs1,ftables,feature_wts)
+get_trend <- function(vs,ftables,wts){#
+	wts <- wts/sum(wts)#
+	trend <- numeric(dim(ftables[[1]])[2])#
+	for(i in 1:length(vs)){#
+		index <- match(vs[i],rownames(ftables[[i]]))#
+		if(!is.na(index)){#
+			trend <- trend+wts[i]*ftables[[i]][index]#
+		}else{#
+			trend <- trend+wts[i]*colSums(ftables[[i]])/dim(ftables[[i]])[1]#
+		}#
+	}#
+	trend#
+}
+#make a distinct code for each month-day of the week-hour of the day combination#
+time_slot <- function(hour,day,month,day_sect=2){#
+	time <- month*10 + day #
+	for(i in 1:(day_sect-1)){#
+		time <- time + 1/day_sect*(hour > 24/day_sect*i)#
+	}#
+	time#
+}#
+#
+#for a given feature, generate a table each row of which is the frequency distribution among time slots at the corresponding level of the feature#
+feature_time_table <- function(feature, time){#
+	values <- sort(unique(feature))#
+	result <- t(matrix(unlist(lapply(values,time_profile,feature=feature,time=time)),ncol=length(values)))#
+	result <- result/rowSums(result)#
+	colnames(result) <- sort(unique(time))#
+	rownames(result) <- values#
+	result#
+}#
+#
+#for a given level of a feature, returns the frequency distribution among time slots#
+time_profile <- function(v,feature,time){#
+	nt <- sort(unique(time))#
+	profile <- numeric(length(nt))#
+	for(i in 1:length(nt)){#
+		profile[i] <- sum((feature==v)*(time==nt[i]))#
+	}#
+	profile#
+}#
+#
+#for given values of all features, returns the frequency distribution among time slots (weight-averaged over all features)#
+get_trend <- function(vs,ftables,wts){#
+	wts <- wts/sum(wts)#
+	trend <- numeric(dim(ftables[[1]])[2])#
+	for(i in 1:length(vs)){#
+		index <- match(vs[i],rownames(ftables[[i]]))#
+		if(!is.na(index)){#
+			trend <- trend+wts[i]*ftables[[i]][index]#
+		}else{#
+			trend <- trend+wts[i]*colSums(ftables[[i]])/dim(ftables[[i]])[1]#
+		}#
+	}#
+	trend#
+}#
+#
+#calculate similarity between two time distributions#
+trend_similarity <- function(trend1,trend2){#
+	cor(trend1,trend2)#
+}
+trend1 <- get_trend(vs1,ftables,feature_wts)
+trend1
+sum(trend1)
+vs2 <- c("female","0","20-49","maverick",">10","Cross Breed","Toy")
+trend2 <- get_trend(vs2,ftables,feature_wts)
+trend2
+sum(trend2)
+wts=feature_wts
+wts <- wts/sum(wts)
+wts
+sum(wts)
+trend <- numeric(dim(ftables[[1]])[2])
+trend
+i=1
+vs=vs1
+length(vs1)
+index <- match(vs[i],rownames(ftables[[i]]))
+index
+ftables[[1]]
+trend <- trend+wts[i]*ftables[[i]][index]
+trend
+wts[i]
+trend <- numeric(dim(ftables[[1]])[2])
+trend <- trend+wts[i]*ftables[[i]][index,]
+trend
+trend/ftables[[1]][1,]
+wts
+get_trend <- function(vs,ftables,wts){#
+	wts <- wts/sum(wts)#
+	trend <- numeric(dim(ftables[[1]])[2])#
+	for(i in 1:length(vs)){#
+		index <- match(vs[i],rownames(ftables[[i]]))#
+		if(!is.na(index)){#
+			trend <- trend+wts[i]*ftables[[i]][index,]#
+		}else{#
+			trend <- trend+wts[i]*colSums(ftables[[i]])/dim(ftables[[i]])[1]#
+		}#
+	}#
+	trend#
+}
+trend2 <- get_trend(vs2,ftables,feature_wts)
+trend2
+sum(trend2)
+trend1 <- get_trend(vs1,ftables,feature_wts)
+trend1
+sum(trend1)
+#make a distinct code for each month-day of the week-hour of the day combination#
+time_slot <- function(hour,day,month,day_sect=2){#
+	time <- month*10 + day #
+	for(i in 1:(day_sect-1)){#
+		time <- time + 1/day_sect*(hour > 24/day_sect*i)#
+	}#
+	time#
+}#
+#
+#for a given feature, generate a table each row of which is the frequency distribution among time slots at the corresponding level of the feature#
+feature_time_table <- function(feature, time){#
+	values <- sort(unique(feature))#
+	result <- t(matrix(unlist(lapply(values,time_profile,feature=feature,time=time)),ncol=length(values)))#
+	result <- result/rowSums(result)#
+	colnames(result) <- sort(unique(time))#
+	rownames(result) <- values#
+	result#
+}#
+#
+#for a given level of a feature, returns the frequency distribution among time slots#
+time_profile <- function(v,feature,time){#
+	nt <- sort(unique(time))#
+	profile <- numeric(length(nt))#
+	for(i in 1:length(nt)){#
+		profile[i] <- sum((feature==v)*(time==nt[i]))#
+	}#
+	profile#
+}#
+#
+#for given values of all features, returns the frequency distribution among time slots (weight-averaged over all features)#
+get_trend <- function(vs,ftables,wts){#
+	wts <- wts/sum(wts)#
+	trend <- numeric(dim(ftables[[1]])[2])#
+	for(i in 1:length(vs)){#
+		index <- match(vs[i],rownames(ftables[[i]]))#
+		if(!is.na(index)){#
+			trend <- trend+wts[i]*ftables[[i]][index,]#
+		}else{#
+			trend <- trend+wts[i]*colSums(ftables[[i]])/dim(ftables[[i]])[1]#
+		}#
+	}#
+	trend#
+}#
+#
+#plot the time distribution#
+plot_trend <- function(trend,graph,index){#
+	time <- 1:12#
+	if(graph){#
+		plot(trend~time,xlab="month",ylab="activity",col=0)#
+	}#
+	lines(time,trend,lty=1,col=index)#
+}#
+#
+#calculate similarity between two time distributions#
+trend_similarity <- function(trend1,trend2){#
+	cor(trend1,trend2)#
+}
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=T,index=2)#
+legend("topright",paste("dog",1:2),lty=1,col=1:2)
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+legend("topright",paste("dog",1:2),lty=1,col=1:2)
+plot_trend <- function(trend,graph,index){#
+	time <- 1:12#
+	if(graph){#
+		plot(trend~time,xlab="month",ylab="activity",xaxt='n',col=0)#
+	}#
+	lines(time,trend,lty=1,col=index)#
+}
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+legend("topright",paste("dog",1:2),lty=1,col=1:2)
+plot_trend <- function(trend,graph,index){#
+	time <- 1:12#
+	if(graph){#
+		plot(trend~time,xlab="month",ylab="activity",yaxt='n',col=0)#
+	}#
+	lines(time,trend,lty=1,col=index)#
+}
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+legend("topright",paste("dog",1:2),lty=1,col=1:2)
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+legend("topright",paste("dog",1:2),lty=1,col=1:2)
+legend("topleft",paste("dog",1:2),lty=1,col=1:2)
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+legend("topleft",paste("dog",1:2),lty=1,col=1:2)
+vs2 <- c("male","0","20-49","maverick",">10","Cross Breed","Toy")
+trend2 <- get_trend(vs2,ftables,feature_wts)
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+legend("topleft",paste("dog",1:2),lty=1,col=1:2)
+unique(tests$personality)
+vs1 <- c("female","0","0-19","ace","5-7","Cross Breed","Working")#
+trend1 <- get_trend(vs1,ftables,feature_wts)#
+#
+vs2 <- c("male","0","20-49","maverick",">10","Cross Breed","Toy")#
+trend2 <- get_trend(vs2,ftables,feature_wts)#
+#
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+legend("topleft",paste("dog",1:2),lty=1,col=1:2)
+vs1 <- c("female","0","0-19","ace","5-7","Pure Breed","Working")#
+trend1 <- get_trend(vs1,ftables,feature_wts)#
+#
+vs2 <- c("male","0","20-49","maverick",">10","Cross Breed","Toy")#
+trend2 <- get_trend(vs2,ftables,feature_wts)#
+#
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+legend("topleft",paste("dog",1:2),lty=1,col=1:2)
+vs1 <- c("female","1","0-19","ace","5-7","Pure Breed","Working")#
+trend1 <- get_trend(vs1,ftables,feature_wts)#
+#
+vs2 <- c("male","0","20-49","maverick",">10","Cross Breed","Toy")#
+trend2 <- get_trend(vs2,ftables,feature_wts)#
+#
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+legend("topleft",paste("dog",1:2),lty=1,col=1:2)
+vs2 <- c("male","0",">139","maverick",">10","Cross Breed","Toy")#
+trend2 <- get_trend(vs2,ftables,feature_wts)#
+#
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+legend("topleft",paste("dog",1:2),lty=1,col=1:2)
+vs1 <- c("female","1","0-19","ace","0-1","Pure Breed","Working")#
+trend1 <- get_trend(vs1,ftables,feature_wts)#
+#
+vs2 <- c("male","0",">139","maverick",">10","Cross Breed","Toy")#
+trend2 <- get_trend(vs2,ftables,feature_wts)#
+#
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+legend("topleft",paste("dog",1:2),lty=1,col=1:2)
+plot_trend <- function(trend,graph,index){#
+	time <- 1:12#
+	if(graph){#
+		plot(trend~time,xlab="month",ylab="activity",ylim=c(0,0.5),yaxt='n',col=0)#
+	}#
+	lines(time,trend,lty=1,col=index)#
+}
+vs1 <- c("female","1","0-19","ace","0-1","Pure Breed","Working")#
+trend1 <- get_trend(vs1,ftables,feature_wts)#
+#
+vs2 <- c("male","0",">139","maverick",">10","Cross Breed","Toy")#
+trend2 <- get_trend(vs2,ftables,feature_wts)#
+#
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+legend("topleft",paste("dog",1:2),lty=1,col=1:2)
+unique(tests$personality)
+vs1 <- c("female","1","0-19","ace","0-1","Pure Breed","Working")#
+trend1 <- get_trend(vs1,ftables,feature_wts)#
+#
+vs2 <- c("male","0",">139","stargazer",">10","Cross Breed","Toy")#
+trend2 <- get_trend(vs2,ftables,feature_wts)#
+#
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+legend("topleft",paste("dog",1:2),lty=1,col=1:2)
+trend_similarity(trend1,trend2)
+unique(tests$btype)
+unique(tests$bgrouop)
+unique(tests$bgroup)
+vs3 <- c("male","1","50-89","expert","2-4","Popular Hybrid","Terrier")#
+trend3 <- get_trend(vs3,ftables,feature_wts)
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+plot_trend(trend3,graph=F,index=3)#
+legend("topright",paste("dog",1:3),lty=1,col=1:3)
+trend_similarity(trend1,trend3)
+trend_similarity(trend3,trend2)
+trend_similarity <- function(trend1,trend2){#
+	cor(trend1,trend2)^2#
+}
+trend_similarity(trend1,trend2)#
+trend_similarity(trend3,trend2)#
+trend_similarity(trend1,trend3)
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+plot_trend(trend3,graph=F,index=3)#
+legend("topright",paste("dog",1:3),lty=1,col=1:3)
+vs3 <- c("male","1","20-49","expert","2-4","Popular Hybrid","Terrier")#
+trend3 <- get_trend(vs3,ftables,feature_wts)#
+#
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+plot_trend(trend3,graph=F,index=3)#
+legend("topright",paste("dog",1:3),lty=1,col=1:3)#
+#
+trend_similarity(trend1,trend2)#
+trend_similarity(trend3,trend2)#
+trend_similarity(trend1,trend3)
+vs1 <- c("female","1","0-19","ace","0-1","Pure Breed","Working")#
+trend1 <- get_trend(vs1,ftables,feature_wts)#
+#
+vs2 <- c("male","0","89-139","stargazer","7-10","Cross Breed","Toy")#
+trend2 <- get_trend(vs2,ftables,feature_wts)#
+#
+vs3 <- c("male","1","20-49","expert","2-4","Popular Hybrid","Terrier")#
+trend3 <- get_trend(vs3,ftables,feature_wts)#
+#
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+plot_trend(trend3,graph=F,index=3)#
+legend("topright",paste("dog",1:3),lty=1,col=1:3)
+trend_similarity(trend1,trend2)#
+trend_similarity(trend3,trend2)#
+trend_similarity(trend1,trend3)
+?average
+ftables[[1]]
+#make a distinct code for each month-day of the week-hour of the day combination#
+time_slot <- function(hour,day,month,day_sect=2){#
+	time <- month*10 + day #
+	for(i in 1:(day_sect-1)){#
+		time <- time + 1/day_sect*(hour > 24/day_sect*i)#
+	}#
+	time#
+}#
+#
+#for a given feature, generate a table each row of which is the frequency distribution among time slots at the corresponding level of the feature#
+feature_time_table <- function(feature, time){#
+	values <- sort(unique(feature))#
+	result <- t(matrix(unlist(lapply(values,time_profile,feature=feature,time=time)),ncol=length(values)))#
+	colnames(result) <- sort(unique(time))#
+	rownames(result) <- values#
+	result#
+}#
+#
+#for a given level of a feature, returns the frequency distribution among time slots#
+time_profile <- function(v,feature,time){#
+	nt <- sort(unique(time))#
+	profile <- numeric(length(nt))#
+	for(i in 1:length(nt)){#
+		profile[i] <- sum((feature==v)*(time==nt[i]))#
+	}#
+	profile#
+}#
+#
+#for given values of all features, returns the frequency distribution among time slots (weight-averaged over all features)#
+get_trend <- function(vs,ftables,wts,average){#
+	wts <- wts/sum(wts)#
+	trend <- numeric(dim(ftables[[1]])[2])#
+	for(i in 1:length(vs)){#
+		rftable <- ftables[[i]]/rowSums(ftables[[i]])#
+		index <- match(vs[i],rownames(rftable))#
+		if(!is.na(index)){#
+			trend <- trend+wts[i]*rftable[index,]#
+		}else{#
+			trend <- trend+wts[i]*average#
+		}#
+	}#
+	trend#
+}#
+#
+#plot the time distribution#
+plot_trend <- function(trend,graph,index){#
+	time <- 1:12#
+	if(graph){#
+		plot(trend~time,xlab="month",ylab="activity",ylim=c(0,0.5),yaxt='n',col=0)#
+	}#
+	lines(time,trend,lty=1,col=index)#
+}#
+#
+#calculate similarity between two time distributions#
+trend_similarity <- function(trend1,trend2,average){#
+	simi <- cor(trend1,trend2)#
+	#compare to average; similarity should be 0.5 when compared to average#
+	contra <- cor(trend1,average)#
+	0.5*(simi-contra)/(1-contra)+0.5#
+}
+ftables <- list()#
+features <- c("gender","neutered","weight","personality","age","btype","bgroup")#
+for(i in 1:length(features)){#
+	ftables[[i]] <- feature_time_table(tests[,names(tests)==features[i]], tests$month)#
+}#
+names(ftables) <- features
+ftables[[1]]
+average <- colSums(ftables[[1]])/dim(ftables[[1]])[1]#
+average <- average/sum(average)
+average
+average <- colSums(ftables[[4]])/dim(ftables[[4]])[1]#
+average <- average/sum(average)
+average
+vs1 <- c("female","1","0-19","ace","0-1","Pure Breed","Working")#
+trend1 <- get_trend(vs1,ftables,feature_wts,average)#
+#
+vs2 <- c("male","0",">139","stargazer","7-10","Cross Breed","Toy")#
+trend2 <- get_trend(vs2,ftables,feature_wts,average)#
+#
+vs3 <- c("male","1","20-49","expert","2-4","Popular Hybrid","Terrier")#
+trend3 <- get_trend(vs3,ftables,feature_wts,average)
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+plot_trend(trend3,graph=F,index=3)#
+legend("topright",paste("dog",1:3),lty=1,col=1:3)#
+#
+trend_similarity(trend1,trend2,avereage)#
+trend_similarity(trend3,trend2,avereage)#
+trend_similarity(trend1,trend3,avereage)
+trend_similarity(trend1,trend2,average)#
+trend_similarity(trend3,trend2,average)#
+trend_similarity(trend1,trend3,average)
+cor(trend1,average)
+cor(trend2,average)
+trend_similarity <- function(trend1,trend2,average){#
+	simi <- cor(trend1,trend2)#
+	#compare to average; similarity should be 0.5 when compared to average#
+	contra <- cor(trend2,average)#
+	0.5*(simi-contra)/(1-contra)+0.5#
+}
+trend_similarity <- function(trend1,trend2,average){#
+	simi <- cor(trend1,trend2)#
+	#compare to average; similarity should be 0.5 when compared to average#
+	contra <- min(cor(trend2,average),cor(trend1,average))#
+	0.5*(simi-contra)/(1-contra)+0.5#
+}
+trend_similarity(trend1,trend2,average)#
+trend_similarity(trend3,trend2,average)#
+trend_similarity(trend1,trend3,average)
+cor(trend2,average)
+cor(trend1,trend2)
+trend_similarity(trend1,trend3,average)
+cor(trend1,trend3)
+cor(trend1,average)
+cor(trend3,average)
+trend_similarity(trend1,trend2,average)#
+trend_similarity(trend3,trend2,average)#
+trend_similarity(trend1,trend3,average)
+vs3 <- c("female","1","20-49","ace","2-4","Popular Hybrid","Toy")#
+trend3 <- get_trend(vs3,ftables,feature_wts,average)#
+#
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+plot_trend(trend3,graph=F,index=3)#
+legend("topright",paste("dog",1:3),lty=1,col=1:3)#
+#
+trend_similarity(trend1,trend2,average)#
+trend_similarity(trend3,trend2,average)#
+trend_similarity(trend1,trend3,average)
+trend_similarity <- function(trend1,trend2,average){#
+	simi <- cor(trend1,trend2)#
+	#compare to average; similarity should be 0.5 when compared to average#
+	contra <- min(cor(trend2,average),cor(trend1,average))#
+	0.25*(simi-contra)/(1-contra)+0.75#
+}
+vs3 <- c("female","1","20-49","ace","2-4","Popular Hybrid","Toy")#
+trend3 <- get_trend(vs3,ftables,feature_wts,average)#
+#
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+plot_trend(trend3,graph=F,index=3)#
+legend("topright",paste("dog",1:3),lty=1,col=1:3)#
+#
+trend_similarity(trend1,trend2,average)#
+trend_similarity(trend3,trend2,average)#
+trend_similarity(trend1,trend3,average)
+vs3=vs2
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+plot_trend(trend3,graph=F,index=3)#
+legend("topright",paste("dog",1:3),lty=1,col=1:3)#
+#
+trend_similarity(trend1,trend2,average)#
+trend_similarity(trend3,trend2,average)#
+trend_similarity(trend1,trend3,average)
+trend3 <- get_trend(vs3,ftables,feature_wts,average)
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+plot_trend(trend3,graph=F,index=3)#
+legend("topright",paste("dog",1:3),lty=1,col=1:3)#
+#
+trend_similarity(trend1,trend2,average)#
+trend_similarity(trend3,trend2,average)#
+trend_similarity(trend1,trend3,average)
+vs3 <- c("female","1",">139","stargazer","7-10","Cross Breed","Toy")
+trend3 <- get_trend(vs3,ftables,feature_wts,average)
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+plot_trend(trend3,graph=F,index=3)#
+legend("topright",paste("dog",1:3),lty=1,col=1:3)#
+#
+trend_similarity(trend1,trend2,average)#
+trend_similarity(trend3,trend2,average)#
+trend_similarity(trend1,trend3,average)
+vs3 <- c("female","1",">139",NA,"7-10","Cross Breed","Toy")#
+trend3 <- get_trend(vs3,ftables,feature_wts,average)#
+#
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+plot_trend(trend3,graph=F,index=3)#
+legend("topright",paste("dog",1:3),lty=1,col=1:3)#
+#
+trend_similarity(trend1,trend2,average)#
+trend_similarity(trend3,trend2,average)#
+trend_similarity(trend1,trend3,average)
+vs3 <- c("female","1",">139",NA,"7-10","Pure Breed","Toy")#
+trend3 <- get_trend(vs3,ftables,feature_wts,average)#
+#
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+plot_trend(trend3,graph=F,index=3)#
+legend("topright",paste("dog",1:3),lty=1,col=1:3)#
+#
+trend_similarity(trend1,trend2,average)#
+trend_similarity(trend3,trend2,average)#
+trend_similarity(trend1,trend3,average)
+vs3 <- c("female","1",">139",NA,"7-10","Pure Breed","Working")#
+trend3 <- get_trend(vs3,ftables,feature_wts,average)#
+#
+plot_trend(trend1,graph=T,index=1)#
+plot_trend(trend2,graph=F,index=2)#
+plot_trend(trend3,graph=F,index=3)#
+legend("topright",paste("dog",1:3),lty=1,col=1:3)#
+#
+trend_similarity(trend1,trend2,average)#
+trend_similarity(trend3,trend2,average)#
+trend_similarity(trend1,trend3,average)
+plot_trend <- function(trend,average,graph,index){#
+	time <- 1:12#
+	if(graph){#
+		plot(trend~time,xlab="month",ylab="activity",ylim=c(0,0.5),yaxt='n',col=0)#
+		lines(time,average,lty=2,col=1)#
+	}#
+	lines(time,trend,lty=1,col=index)#
+}
+plot_trend(trend1,average,graph=T,index=1)#
+plot_trend(trend2,average,graph=F,index=2)#
+plot_trend(trend3,average,graph=F,index=3)#
+legend("topright",c(paste("dog",1:3),"average"),lty=c(rep(1,3),2),col=c(1:3,1))#
+#
+trend_similarity(trend1,trend2,average)#
+trend_similarity(trend3,trend2,average)#
+trend_similarity(trend1,trend3,average)
+trend_similarity <- function(trend1,trend2,average){#
+	simi <- cor(trend1,trend2)#
+	#compare to average; similarity should be 0.5 when compared to average#
+	contra <- min(cor(trend2,average),cor(trend1,average))#
+	0.5*(simi-contra)/(1-contra)+0.5#
+}
+plot_trend(trend1,average,graph=T,index=1)#
+plot_trend(trend2,average,graph=F,index=2)#
+plot_trend(trend3,average,graph=F,index=3)#
+legend("topright",c(paste("dog",1:3),"average"),lty=c(rep(1,3),2),col=c(1:3,1))#
+#
+trend_similarity(trend1,trend2,average)#
+trend_similarity(trend3,trend2,average)#
+trend_similarity(trend1,trend3,average)
