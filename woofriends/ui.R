@@ -5,7 +5,7 @@ shinyUI(fluidPage(
     sidebarPanel(
      fluidRow(
      column(5,
-     h4(helpText("First dog")),
+     h4(helpText("Dog 1")),
       selectInput("gender1", 
         label = "Gender",
         choices = c("female","male","unknown"),
@@ -32,7 +32,7 @@ shinyUI(fluidPage(
         selected = "unknown")
       ),
       column(5,
-     h4(helpText("Second dog")),
+     h4(helpText("Dog 2")),
       selectInput("gender2", 
         label = "Gender",
         choices = c("female","male","unknown"),
