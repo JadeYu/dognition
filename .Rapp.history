@@ -1,261 +1,3 @@
-tests$age
-tests$age <- unlist(lapply((tests$age>=0)+(tests$age>1)+(tests$age>6),function(i){c("puppy","adult","senior")[i]}))
-tests <- read.csv("test_complete.csv",header=T)
-tests <- tests[!is.na(tests$neutered),]
-tests$age <- c("puppy","adult","senior")[(tests$age>=0)+(tests$age>1)+(tests$age>6)]
-tests$age
-tests <- read.csv("test_complete.csv",header=T)#
-#
-#Preprocessing#
-tests <- tests[!is.na(tests$neutered),]#
-#
-tests$age <- c("puppy","adult","senior")[(tests$age>=0)+(tests$age>1)+(tests$age>6)]#
-#
-tests$weight <- c("small","medium","large","giant")[(tests$weight>=0)+(tests$weight>19)+(tests$weight>49)+(tests$weight>89)]#
-#
-tests <- data.frame(time=as.factor(time_slot(0,0,tests$month,day_sect=2)),tests[,c(6:13)])
-rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=dog_tests,ntree=100,importance=T)
-tests$weight
-unique(tests$weight)
-rf
-round(importance(rf,type=1,scale=T),2)
-dogs <- read.csv("dog_list.csv",header=T)#
-dogs <- dogs[!is.na(dogs$neutered),]#
-dogs$age <- c("puppy","adult","senior")[(dogs$age>=0)+(dogs$age>1)+(dogs$age>6)]#
-dogs$weight <- c("small","medium","large","giant")[(dogs$weight>=0)+(dogs$weight>19)+(dogs$weight>49)+(dogs$weight>89)]#
-dogs <- data.frame(time=as.factor(time_slot(0,0,dogs$month,day_sect=2)),dogs[,c(6:13)])#
-#
-rfinit <- randomForest(time~gender+weight+personality+age+weight+btype+bgroup,data=dogs,ntree=100,importance=T)
-dogs$age
-dogs$weight
-rfinit <- randomForest(time~gender+neutered+personality+age+weight+btype+bgroup,data=dogs,ntree=100,importance=T)
-sum(is.na(dogs))
-dogs$time
-dogs <- read.csv("dog_list.csv",header=T)#
-dogs <- dogs[!is.na(dogs$neutered),]#
-dogs$age <- c("puppy","adult","senior")[(dogs$age>=0)+(dogs$age>1)+(dogs$age>6)]#
-dogs$weight <- c("small","medium","large","giant")[(dogs$weight>=0)+(dogs$weight>19)+(dogs$weight>49)+(dogs$weight>89)]#
-dogs <- data.frame(time=as.factor(time_slot(0,0,dogs$month,day_sect=2)),dogs[,c(6:13)])
-head(dogs)
-rfinit <- randomForest(time~gender+neutered+personality+age+weight+btype+bgroup,data=dogs,ntree=100,importance=T)
-dogs <- read.csv("dog_list.csv",header=T)
-dogs <- dogs[!is.na(dogs$neutered),]
-rfinit <- randomForest(time~gender+neutered+personality+age+weight+btype+bgroup,data=dogs,ntree=100,importance=T)
-dogs <- read.csv("dog_list.csv",header=T)#
-dogs <- dogs[!is.na(dogs$neutered),]#
-dogs$age <- c("puppy","adult","senior")[(dogs$age>=0)+(dogs$age>1)+(dogs$age>6)]#
-dogs$weight <- c("small","medium","large","giant")[(dogs$weight>=0)+(dogs$weight>19)+(dogs$weight>49)+(dogs$weight>89)]#
-dogs <- data.frame(time=as.factor(time_slot(0,0,dogs$month,day_sect=2)),dogs[,c(6:13)])
-rfinit <- randomForest(time~gender+neutered+personality+age+weight+btype+bgroup,data=dogs,ntree=100,importance=T)
-time_slot <- function(hour,day,month,day_sect=2){#make a distinct code for each month-day of the week-hour of the day combination#
-	time <- month*10 + day #
-	for(i in 1:(day_sect-1)){#
-		time <- time + 1/day_sect*(hour > 24/day_sect*i)#
-	}#
-	time#
-}#
-#
-feature_time_table <- function(feature, time){#
-	values <- sort(unique(feature))#
-	result <- t(matrix(unlist(lapply(values,time_profile,feature=feature,time=time)),ncol=length(values)))#
-	colnames(result) <- sort(unique(time))#
-	rownames(result) <- values#
-	result#
-}#
-#
-time_profile <- function(v,feature,time){#
-	nt <- sort(unique(time))#
-	profile <- numeric(length(nt))#
-	for(i in 1:length(nt)){#
-		profile[i] <- sum((feature==v)*(time==nt[i]))#
-	}#
-	profile#
-}
-dogs <- read.csv("dog_list.csv",header=T)#
-dogs <- dogs[!is.na(dogs$neutered),]#
-dogs$age <- c("puppy","adult","senior")[(dogs$age>=0)+(dogs$age>1)+(dogs$age>6)]#
-dogs$weight <- c("small","medium","large","giant")[(dogs$weight>=0)+(dogs$weight>19)+(dogs$weight>49)+(dogs$weight>89)]#
-dogs <- data.frame(time=as.factor(time_slot(0,0,dogs$month,day_sect=2)),dogs[,c(6:13)])
-rfinit <- randomForest(time~gender+neutered+personality+age+weight+btype+bgroup,data=dogs,ntree=100,importance=T)
-dogs <- read.csv("dog_list.csv",header=T)#
-dogs <- dogs[!is.na(dogs$neutered),]
-rfinit <- randomForest(time~gender+neutered+personality+age+weight+btype+bgroup,data=dogs,ntree=100,importance=T)
-class(dogs)
-names(dogs)
-dogs$age <- c("puppy","adult","senior")[(dogs$age>=0)+(dogs$age>1)+(dogs$age>6)]#
-dogs$weight <- c("small","medium","large","giant")[(dogs$weight>=0)+(dogs$weight>19)+(dogs$weight>49)+(dogs$weight>89)]#
-dogs <- data.frame(time=as.factor(time_slot(0,0,dogs$month,day_sect=2)),dogs[,c(6:13)])
-names(dogs)
-class(dogs)
-library(randomForest)
-tests <- read.csv("test_complete.csv",header=T)
-tests <- tests[!is.na(tests$neutered),]#
-#
-tests$age <- c("puppy","adult","senior")[(tests$age>=0)+(tests$age>1)+(tests$age>6)]#
-#
-tests$weight <- c("small","medium","large","giant")[(tests$weight>=0)+(tests$weight>19)+(tests$weight>49)+(tests$weight>89)]#
-#
-tests <- data.frame(time=as.factor(time_slot(0,0,tests$month,day_sect=2)),tests[,c(6:13)])
-rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=dog_tests,ntree=100,importance=T)
-rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=tests,ntree=100,importance=T)
-dog_tests <- data.frame(time=as.factor(time_slot(0,0,tests$month,day_sect=2)),tests[,c(6:13)])
-tests <- read.csv("test_complete.csv",header=T)
-tests <- tests[!is.na(tests$neutered),]
-dog_tests <- data.frame(time=as.factor(time_slot(0,0,tests$month,day_sect=2)),tests[,c(6:13)])
-rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=dog_tests,ntree=100,importance=T)
-rf
-tests$age <- c("puppy","adult","senior")[(tests$age>=0)+(tests$age>1)+(tests$age>6)]
-tests$weight <- c("small","medium","large","giant")[(tests$weight>=0)+(tests$weight>19)+(tests$weight>49)+(tests$weight>89)]
-dog_tests <- data.frame(time=as.factor(time_slot(0,0,tests$month,day_sect=2)),tests[,c(6:13)])
-rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=dog_tests,ntree=100,importance=T)
-tests <- read.csv("test_complete.csv",header=T)#
-#
-#Preprocessing#
-tests <- tests[!is.na(tests$neutered),]#
-#
-tests$age <- c("puppy","adult","senior")[(tests$age>=0)+(tests$age>1)+(tests$age>6)]#
-#
-tests$weight <- c("small","medium","large","giant")[(tests$weight>=0)+(tests$weight>19)+(tests$weight>49)+(tests$weight>89)]
-head(tests)
-dog_tests <- data.frame(time=as.factor(time_slot(0,0,tests$month,day_sect=2)),tests[,c(6:13)])
-head(dog_test)
-head(dog_tests)
-rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=dog_tests,ntree=100,importance=T)
-class(tests$age)
-class(tests$btype)
-tests$age <- factor(c("puppy","adult","senior")[(tests$age>=0)+(tests$age>1)+(tests$age>6)])
-tests$age
-tests <- read.csv("test_complete.csv",header=T)
-tests <- tests[!is.na(tests$neutered),]
-tests$age <- as.factor(c("puppy","adult","senior"))[(tests$age>=0)+(tests$age>1)+(tests$age>6)]
-tests$age
-tests$weight <- as.factor(c("small","medium","large","giant"))[(tests$weight>=0)+(tests$weight>19)+(tests$weight>49)+(tests$weight>89)]
-dog_tests <- data.frame(time=as.factor(time_slot(0,0,tests$month,day_sect=2)),tests[,c(6:13)])
-rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=dog_tests,ntree=100,importance=T)
-rf
-unique(tests$age)
-tests <- read.csv("test_complete.csv",header=T)
-tests <- tests[!is.na(tests$neutered),]
-tests <- data.frame(time=as.factor(time_slot(0,0,tests$month,day_sect=2)),tests[,c(6:13)])
-unique(tests$age)
-round(importance(rf,type=1,scale=T),2)
-rf
-unique(tests$weight)
-tests$age <- as.factor(c("0-1","2-4","5-7",">7"))[(tests$age>=0)+(tests$age>1)+(tests$age>4)+(tests$age>7)]#
-#
-tests$weight <- as.factor(c("0-19","20-49","50-89","90-139",">139"))[(tests$weight>=0)+(tests$weight>19)+(tests$weight>49)+(tests$weight>89)+(tests$weight>129)]#
-#
-#random forest classification#
-rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=tests,ntree=100,importance=T)
-rf
-round(importance(rf,type=1,scale=T),2)
-tests <- read.csv("test_complete.csv",header=T)
-unique(tests$age)
-tests <- tests[!is.na(tests$neutered),]#
-#
-tests <- data.frame(time=as.factor(time_slot(0,0,tests$month,day_sect=2)),tests[,c(6:13)])#
-#
-tests$age <- as.factor(c("0-1","2-4","5-7","7-10",">10"))[(tests$age>=0)+(tests$age>1)+(tests$age>4)+(tests$age>7)+(tests$age>10)]#
-#
-tests$weight <- as.factor(c("0-19","20-49","50-89","90-139",">139"))[(tests$weight>=0)+(tests$weight>19)+(tests$weight>49)+(tests$weight>89)+(tests$weight>129)]#
-#
-#random forest classification#
-rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=tests,ntree=100,importance=T)
-rf
-tests <- read.csv("test_complete.csv",header=T)#
-#
-#Preprocessing#
-tests <- tests[!is.na(tests$neutered),]#
-#
-tests <- data.frame(time=as.factor(time_slot(0,0,tests$month,day_sect=2)),tests[,c(6:13)])#
-#
-#random forest classification#
-rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=tests,ntree=100,importance=T)
-rf
-round(importance(rf,type=1,scale=T),2)
-dogs <- read.csv("dog_list.csv",header=T)#
-dogs <- dogs[!is.na(dogs$neutered),]#
-dogs <- data.frame(time=as.factor(time_slot(0,0,dogs$month,day_sect=2)),dogs[,c(6:13)])#
-#
-rfinit <- randomForest(time~gender+neutered+personality+age+weight+btype+bgroup,data=dogs,ntree=100,importance=T)
-rfinit
-rfncomp <- randomForest(ntests~gender+neutered+weight+personality+age+btype+bgroup,data=dogs,ntree=100,importance=T)
-dogs <- read.csv("dog_list.csv",header=T)
-names(dogs)
-dogs <- read.csv("dog_list.csv",header=T)#
-dogs <- dogs[!is.na(dogs$neutered),]#
-dogs <- data.frame(time=as.factor(time_slot(0,0,dogs$month,day_sect=2)),dogs[,c(6:15)])#
-#
-rfinit <- randomForest(time~gender+neutered+personality+age+weight+btype+bgroup,data=dogs,ntree=100,importance=T)#
-mean(rfinit$err.rate)#
-#
-rfncomp <- randomForest(ntests~gender+neutered+weight+personality+age+btype+bgroup,data=dogs,ntree=100,importance=T)#
-rfncomp#
-#
-rfmid <- randomForest(mid~gender+neutered+weight+personality+age+btype+bgroup,data=dogs,ntree=100,importance=T)#
-rfmid
-lmncomp <- lm(ntests~gender+neutered+weight+personality+age+btype+bgroup,data=dogs)
-summary(lmncomp)
-lmncomp <- glm(ntests~gender+neutered+weight+personality+age+btype+bgroup,data=dogs)
-summary(lmncomp)
-head(tests)
-#Make frequency tables for each feature (rows: feature levels; columns: month)#
-tests$age <- as.factor(c("0-1","2-4","5-7","7-10",">10"))[(tests$age>=0)+(tests$age>1)+(tests$age>4)+(tests$age>7)+(tests$age>10)]#
-#
-tests$weight <- as.factor(c("0-19","20-49","50-89","90-139",">139"))[(tests$weight>=0)+(tests$weight>19)+(tests$weight>49)+(tests$weight>89)+(tests$weight>129)]#
-#
-ftables <- list()#
-features <- c("gender","neutered","weight","personality","age","btype","bgroup")#
-for(i in 1:length(features)){#
-	ftables[[i]] <- feature_time_table(tests[,names(tests)==features[i]], tests$month)#
-}#
-names(ftables) <- features
-warnings()
-ftables$age
-head(tests)
-tests <- read.csv("test_complete.csv",header=T)#
-#
-#Preprocessing#
-tests <- tests[!is.na(tests$neutered),]#
-#
-tests$time <- as.factor(time_slot(0,0,tests$month,day_sect=2))
-tests$age <- as.factor(c("0-1","2-4","5-7","7-10",">10"))[(tests$age>=0)+(tests$age>1)+(tests$age>4)+(tests$age>7)+(tests$age>10)]#
-#
-tests$weight <- as.factor(c("0-19","20-49","50-89","90-139",">139"))[(tests$weight>=0)+(tests$weight>19)+(tests$weight>49)+(tests$weight>89)+(tests$weight>129)]
-head(tests)
-tests$time <- as.factor(time_slot(tests$hour,tests$day,tests$month,day_sect=2))
-head(tests)
-ftables <- list()#
-features <- c("gender","neutered","weight","personality","age","btype","bgroup")#
-for(i in 1:length(features)){#
-	ftables[[i]] <- feature_time_table(tests[,names(tests)==features[i]], tests$month)#
-}#
-names(ftables) <- features
-ftables$age
-rf <- randomForest(time~gender+neutered+personality+weight+age+btype+bgroup,data=tests,ntree=100,importance=T)
-rf <- randomForest(month~gender+neutered+personality+weight+age+btype+bgroup,data=tests,ntree=100,importance=T)
-rf
-rf <- randomForest(as.factor(month)~gender+neutered+personality+weight+age+btype+bgroup,data=tests,ntree=100,importance=T)
-rf
-feature_wts <- round(importance(rf,type=1,scale=T),2)
-feature_wts
-ftables$weight
-ftables <- list()#
-features <- c("gender","neutered","weight","personality","age","btype","bgroup")#
-for(i in 1:length(features)){#
-	ftables[[i]] <- feature_time_table(tests[,names(tests)==features[i]], tests$month)#
-	ftables[[i]] <- ftables[[i]]/rowSums(ftables[[i]])#
-}#
-names(ftables) <- features
-ftables$weight
-ftables$age
-match(1,c(2,1,3))
-x=numeric(3)
-x
-?cor
-match(4,c(2,1,3))
-colSums(ftables[[i]])/dim(ftables[[i]])[1]
-i
 i=2
 colSums(ftables[[i]])/dim(ftables[[i]])[1]
 i=3
@@ -452,9 +194,6 @@ plot_trend <- function(trend,graph,index){#
 	}#
 	lines(time,trend,lty=1,col=index)#
 }
-plot_trend(trend1,graph=T,index=1)#
-plot_trend(trend2,graph=F,index=2)#
-legend("topright",paste("dog",1:2),lty=1,col=1:2)
 plot_trend(trend1,graph=T,index=1)#
 plot_trend(trend2,graph=F,index=2)#
 legend("topright",paste("dog",1:2),lty=1,col=1:2)
@@ -824,3 +563,162 @@ legend("topright",c(paste("dog",1:3),"average"),lty=c(rep(1,3),2),col=c(1:3,1))#
 trend_similarity(trend1,trend2,average)#
 trend_similarity(trend3,trend2,average)#
 trend_similarity(trend1,trend3,average)
+getwd()
+library(randomForest)
+source("dognition_functions.R")
+tests <- read.csv("test_complete.csv",header=T)
+tests <- tests[!is.na(tests$neutered),]
+tests$time <- as.factor(time_slot(tests$hour,tests$day,tests$month,day_sect=2))
+tests$age <- as.factor(c("0-1","2-4","5-7","7-10",">10"))[(tests$age>=0)+(tests$age>1)+(tests$age>4)+(tests$age>7)+(tests$age>10)]#
+#
+tests$weight <- as.factor(c("0-19","20-49","50-89","90-139",">139"))[(tests$weight>=0)+(tests$weight>19)+(tests$weight>49)+(tests$weight>89)+(tests$weight>129)]
+rf <- randomForest(as.factor(month)~gender+neutered+personality+weight+age+btype+bgroup,data=tests,ntree=100,importance=T)
+feature_wts <- round(importance(rf,type=1,scale=T),2)
+feature_wts
+ftables <- list()#
+features <- c("gender","neutered","weight","personality","age","btype","bgroup")#
+for(i in 1:length(features)){#
+	ftables[[i]] <- feature_time_table(tests[,names(tests)==features[i]], tests$month)#
+}#
+names(ftables) <- features
+unique(tests$btype)
+unique(tests$bgrou)
+unique(tests$bgroup)
+?write.csv
+ftables <- list()#
+features <- c("gender","neutered","weight","personality","age","btype","bgroup")#
+for(i in 1:length(features)){#
+	ftables[[i]] <- feature_time_table(tests[,names(tests)==features[i]], tests$month)#
+	write.csv(ftables[[i]],paste(features[i],".csv",sep=""))#
+}#
+names(ftables) <- features
+ftables[[1]]
+features <- c("gender","neutered","weight","personality","age","btype","bgroup")#
+ftables <- list()#
+for(i in 1:length(features)){#
+	ftables[[i]] <- read.csv(paste(features[i],".csv",sep=""),header=T)#
+}#
+names(ftables) <- features
+ftables[[1]]
+ftables[[3]]
+average <- colSums(ftables[[4]])/dim(ftables[[4]])[1]
+ftables[[4]]
+class(ftables[[4]])
+dim(ftables[[4]])
+colSums(ftables[[4]])
+colSums(ftables[[5]])
+ftables[[5]]
+colSums(ftables[[5]])
+?read.csv
+features <- c("gender","neutered","weight","personality","age","btype","bgroup")#
+ftables <- list()#
+for(i in 1:length(features)){#
+	ftables[[i]] <- read.csv(paste(features[i],".csv",sep=""),header=T,row.names=1)#
+	#rownames(ftables[[i]]) = ftables[[i]]#
+}#
+names(ftables) <- features
+ftables[[5]]
+ftables[[4]]
+feature_wts <- round(importance(rf,type=1,scale=T),2)#
+#
+ftables <- list()#
+features <- c("gender","neutered","weight","personality","age","btype","bgroup")#
+for(i in 1:length(features)){#
+	ftables[[i]] <- feature_time_table(tests[,names(tests)==features[i]], tests$month)#
+}#
+names(ftables) <- features
+ftables[[4]]
+unique(tests$personality)
+features <- c("gender","neutered","weight","personality","age","btype","bgroup")#
+ftables <- list()#
+for(i in 1:length(features)){#
+	ftables[[i]] <- read.csv(paste(features[i],".csv",sep=""),header=T,row.names=1)#
+	#rownames(ftables[[i]]) = ftables[[i]]#
+}#
+names(ftables) <- features
+feature_wts
+ftables <- list()#
+features <- c("gender","neutered","personality","weight","age","btype","bgroup")#
+for(i in 1:length(features)){#
+	ftables[[i]] <- feature_time_table(tests[,names(tests)==features[i]], tests$month)#
+}#
+names(ftables) <- features
+write.csv(feature_wts,"feature_weights.csv")
+feature_wts = read.csv("feature_weights.csv")
+feature_wts
+feature_wts = read.csv("feature_weights.csv",header=T,row.names=1)
+feature_wts
+features <- c("gender","neutered","personality","weight","age","btype","bgroup")#
+ftables <- list()#
+for(i in 1:length(features)){#
+	ftables[[i]] <- read.csv(paste(features[i],".csv",sep=""),header=T,row.names=1)#
+	#rownames(ftables[[i]]) = ftables[[i]]#
+}#
+names(ftables) <- features
+average <- colSums(ftables[[4]])/dim(ftables[[4]])[1]
+average
+average <- average/sum(average)
+num
+sample(1)
+sample(1:4)
+sample(1,1:4)
+sample(1:4,2)
+sample(1:4,1)
+1
+getwd()
+setwd(paste(getwd(),"/..",sep=""))
+getwd()
+setwd(paste(getwd(),"/dognition",sep=""))
+getwd()
+library(shiny)
+runApp("woofriends")
+source("woofriends/dognition_functions.R")
+runApp("woofriends")
+feature_wts = read.csv("feature_weights.csv",header=T,row.names=1)
+feature_wts = read.csv("woofriends/feature_weights.csv",header=T,row.names=1)
+feature_wts
+get_trend
+feature_wts[1]
+feature_wts[2]
+feature_wts <- feature_wts[,1]
+feature_wts[2]
+runApp("woofriends")
+unique(tests$personality)
+runApp("woofriends")
+get_trend
+plot_trend
+runApp("woofriends")
+ftables$age
+get_trend
+vs1 = c("unknown","unknown","unknown","unknown","5-7","unknown","unknown")
+vs2 = c("unknown","unknown","unknown","unknown","unknown","unknown","unknown")
+trend1 <- get_trend(vs1,ftables,feature_wts,average)
+trend2 <- get_trend(vs2,ftables,feature_wts,average)
+trend1
+trend2
+plot_trend(trend1,average,graph=T,index=1)#
+		plot_trend(trend2,average,graph=F,index=2)#
+		legend("topright",c(paste("dog",1:2),"average"),lty=c(rep(1,2),2),col=c(1:2,1))
+class(trend1)
+dim(trend1)
+trend1 <- get_trend(vs1,ftables,feature_wts,average)[1,]
+trend2 <- get_trend(vs2,ftables,feature_wts,average)[1,]
+plot_trend(trend1,average,graph=T,index=1)
+trend1 <- as.numeric(get_trend(vs1,ftables,feature_wts,average))
+trend2 <- as.numeric(get_trend(vs2,ftables,feature_wts,average))
+trend1
+trend2
+plot_trend(trend1,average,graph=T,index=1)#
+		plot_trend(trend2,average,graph=F,index=2)#
+		legend("topright",c(paste("dog",1:2),"average"),lty=c(rep(1,2),2),col=c(1:2,1))
+runApp("woofriends")
+max(trend1,trend2)
+runApp("woofriends")
+data.frame("")
+as.character(45.6)
+getwd()
+library(shiny)
+runApp("woofriends")
+runApp("woofriends")
+runApp("woofriends")
+runApp("woofriends")

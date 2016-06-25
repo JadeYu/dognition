@@ -1,5 +1,5 @@
 library(randomForest)
-source("dognition_functions.R")
+source("woofriends/dognition_functions.R")
 
 ##I. Which dog feature(s) best determine dog activity pattern?
 
@@ -45,11 +45,13 @@ tests$weight <- as.factor(c("0-19","20-49","50-89","90-139",">139"))[(tests$weig
 rf <- randomForest(as.factor(month)~gender+neutered+personality+weight+age+btype+bgroup,data=tests,ntree=100,importance=T)
 
 feature_wts <- round(importance(rf,type=1,scale=T),2)
+write.csv(feature_wts,"feature_weights.csv")
 
 ftables <- list()
-features <- c("gender","neutered","weight","personality","age","btype","bgroup")
+features <- c("gender","neutered","personality","weight","age","btype","bgroup")
 for(i in 1:length(features)){
 	ftables[[i]] <- feature_time_table(tests[,names(tests)==features[i]], tests$month)
+	write.csv(ftables[[i]],paste(features[i],".csv",sep=""))
 }
 names(ftables) <- features
 
@@ -75,3 +77,8 @@ legend("topright",c(paste("dog",1:3),"average"),lty=c(rep(1,3),2),col=c(1:3,1))
 trend_similarity(trend1,trend2,average)
 trend_similarity(trend3,trend2,average)
 trend_similarity(trend1,trend3,average)
+
+
+vs1 = c("unknown","unknown","unknown","unknown","5-7","unknown","unknown")
+
+vs2 = c("unknown","unknown","unknown","unknown","unknown","unknown","unknown")

@@ -43,13 +43,13 @@ get_trend <- function(vs,ftables,wts,average){
 }
 
 #plot the time distribution
-plot_trend <- function(trend,average,graph,index){
+plot_trend <- function(trend,average,ulim,graph,index){
 	time <- 1:12
 	if(graph){
-		plot(trend~time,xlab="month",ylab="activity",ylim=c(0,0.5),yaxt='n',col=0)
-		lines(time,average,lty=2,col=1)
+		plot(trend^2~time,xlab="month",ylab="activity",ylim=c(0,ulim),yaxt='n',col=0,cex.lab=1.5,cex.axis=1.5)
+		lines(time,average^2,lty=2,col=1,lwd=2)
 	}
-	lines(time,trend,lty=1,col=index)
+	lines(time,trend^2,lty=1,col=index,lwd=2)
 }
 
 #calculate similarity between two time distributions
