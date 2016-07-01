@@ -1,488 +1,116 @@
-39000*0.22*14-292920
-172800/48000/0.2
-25000*0.94
-35000*0.91
-0.85*40000
-0.75*4500
-22*1.17
-22*1.17*2+9*1.17
-540*0.55
-50000*0.98
-50000/7876/0.02
-log(318)
-log(318)/log(1.02)
-50000*0.02/7876
-50000*0.02/7876+1
-log(1.13)/log(1.02)
-28*12.5
-250*1.18
-250*12
-250*12-9.6*295
-25250*0.22*14-45000
-175-21.99*0.8*3-52.9*0.8*2
-37.584/0.99
-37.584/0.99/0.8
-80*0.0009
-0.3*0.1*0.5*0.6
-80*0.009
-5/(9999+5)
-？f
-?f
-f1 <- function(A,r,n){#
-	A*(1+r)^n#
-}#
-#
-f1sum <- function(A,r,n){#
-	nseq <- 0:n#
-	sum(unlist(lapply(nseq,f1,A=A,r=r)))#
-}
-A = 100#
-r = 0.01#
-n = 5
-f1(A,r,n)
-f1sum(A,r,n)
-r = 0.001
-f1sum(A,r,n)
-17*68
-21*61
-22.3*0.08*4.5*365
-550*15*1000
-42*64+37*16+33*32+112*30+10000
-37*16
-1642-974
-668*0.7
-450.8/644-0.1
-0.6*1004
-227500/35.6
-8.51/3.82
-36.5*0.61
-9.2/11.4
-3.1/10.6
-36/176
-6*56
-42*8
-15*198
-115*22
-70*9.5
-7*76
-665-532
-133/7
-7.5*117
-80*12
-1200/117
-76*7
-70*9,5
-70*9.5
-7.5*117+7*76+15*198+6*56+6*45
-4985/12
-170/3.785
-45*0.64
-67/3.8
-18*0.25
-140/4/290^3/0.00013
-140/4/290^3/0.00013/5.7*10^8
-140/4/290^3/0.00013/5.7*10^8/3600
-0.9* 62/518 * 80
-86/3
-86/3*3
-86/3*0.03
-29*0.03
-18+6+8+6+4+5+5+12+10+10+14+10+10+10+10+10+30
-0.03*0.2/0.018
-4*10^(-11.82)/(2*10^(-4))
-library(shiny)
-library(rsconnect)
-deploy(woofriends)
-deployApp(woofriends)
 getwd()
-setwd("/Users/jadezhang/Documents/2016spring/2016summer/dognition")
-deployApp(woofriends)
-deployApp("woofriends")
-getwd()
-tests <- read.csv("test_complete.csv",header=T)
-tests <- tests[!is.na(tests$neutered),]
-names(dogs)
-dogs <- read.csv("dog_list.csv",header=T)#
-dogs <- dogs[!is.na(dogs$neutered),]
-names(dogs)
-names(tests)
-tests$time <- as.factor(time_slot(tests$hour,0,0,day_sect=4))
-source("woofriends2.0/dognition_functions")
-getwd()
+setwd(paste(getwd(),"/..",sep=""))
 source("woofriends2.0/dognition_functions.R")
-tests$time <- as.factor(time_slot(tests$hour,0,0,day_sect=4))
-unique(tests$time)
-unique(tests$month)
-length(unique(tests$month))
-?count
-dog_distr <- function(time,division="month"){#
-	if(division=="month"){#
-		slots <- 1:12#
-	}else{#
-		slots <- c(0,0.25,0.5,0.75)#
-	}#
-	distr <- unlist(lapply(slots,function(s){sum(time==s)}))#
-	distr/sum(distr)#
-}
-month_distr <- matrix(nrow=length(IDs),ncol=11)#
-day_distr <- matrix(nrow=length(IDs),ncol=3)#
-for(i in 1:length(IDs)){#
-	data <- tests[tests$dog_guid==IDs[i],]#
-	month_distr[i,] <- dog_distr(data$month,"month")[-1]#
-	day_distr[i,] <- dog_distr(data$time,"day")[-1]#
-}
-IDs <- dogs$dog_guid
-month_distr <- matrix(nrow=length(IDs),ncol=11)#
-day_distr <- matrix(nrow=length(IDs),ncol=3)#
-for(i in 1:length(IDs)){#
-	data <- tests[tests$dog_guid==IDs[i],]#
-	month_distr[i,] <- dog_distr(data$month,"month")[-1]#
-	day_distr[i,] <- dog_distr(data$time,"day")[-1]#
-}
-head(month_distr)
-dim(month_distr)
-head(day_distr)
-sum(day_distr[,1])
-sum(day_distr[,2])
-sum(day_distr[,3])
-behaviors <- data.frame(month_distr,day_distr,dogs$mid)
-head(behaviors)
-pca <- prcomp(behaviors,scale=T,center=T)
-colSums(behaviors)
-sum(is.na(dogs$mid))
-dogs <- dogs[!is.na(dogs$neutered)&&!is.na(dogs$mid),]
-IDs <- dogs$dog_guid#
-#
-month_distr <- matrix(nrow=length(IDs),ncol=11)#
-day_distr <- matrix(nrow=length(IDs),ncol=3)#
-for(i in 1:length(IDs)){#
-	data <- tests[tests$dog_guid==IDs[i],]#
-	month_distr[i,] <- dog_distr(data$month,"month")[-1]#
-	day_distr[i,] <- dog_distr(data$time,"day")[-1]#
-}
-behaviors <- data.frame(month_distr,day_distr,dogs$mid)
-pca <- prcomp(behaviors,scale=T,center=T)
-sum(is.na(dogs$mid))
-dogs <- dogs[!is.na(dogs$neutered)&&!is.na(dogs$mid),]
-sum(is.na(dogs$mid))
-dim(dogs)
-dogs <- dogs[!is.na(dogs$neutered)&!is.na(dogs$mid),]
-sum(is.na(dogs$mid))
-IDs <- dogs$dog_guid#
-#
-month_distr <- matrix(nrow=length(IDs),ncol=11)#
-day_distr <- matrix(nrow=length(IDs),ncol=3)#
-for(i in 1:length(IDs)){#
-	data <- tests[tests$dog_guid==IDs[i],]#
-	month_distr[i,] <- dog_distr(data$month,"month")[-1]#
-	day_distr[i,] <- dog_distr(data$time,"day")[-1]#
-}#
-#
-behaviors <- data.frame(month_distr,day_distr,dogs$mid)#
-#
-pca <- prcomp(behaviors,scale=T,center=T)
-print(pca)
-plot(pca,type="l")
-unique(dogs$ntest)
-behaviors <- data.frame(month_distr,day_distr,dogs$ntest)
-pca <- prcomp(behaviors,scale=T,center=T)
-plot(pca,type="l")
-pca <- prcomp(behaviors)
-plot(pca,type="l")
-behaviors <- data.frame(month_distr,day_distr,dogs$mid)
-pca <- prcomp(behaviors,center=T)
-plot(pca,type="l")
-pca <- prcomp(behaviors,scale=T)
-plot(pca,type="l")
-dog_distr <- function(time,division="month"){#
-	if(division=="month"){#
-		slots <- 1:12#
-	}else{#
-		slots <- c(0,0.25,0.5,0.75)#
-	}#
-	unlist(lapply(slots,function(s){sum(time==s)}))#
-}
-tests <- read.csv("test_complete.csv",header=T)#
-tests$time <- as.factor(time_slot(tests$hour,0,0,day_sect=4))#
-dogs <- read.csv("dog_list.csv",header=T)#
-dogs <- dogs[!is.na(dogs$neutered)&!is.na(dogs$mid),]#
-IDs <- dogs$dog_guid#
-#
-month_distr <- matrix(nrow=length(IDs),ncol=12)#
-day_distr <- matrix(nrow=length(IDs),ncol=4)#
-for(i in 1:length(IDs)){#
-	data <- tests[tests$dog_guid==IDs[i],]#
-	month_distr[i,] <- dog_distr(data$month,"month")#
-	day_distr[i,] <- dog_distr(data$time,"day")#
-}#
-#
-behaviors <- data.frame(month_distr,day_distr,dogs$mid)
-pca <- prcomp(behaviors,scale=T,center=T)
-plot(pca,type="l")
-summary(pca)
-behaviors <- data.frame(month_distr,dogs$mid)
-pca <- prcomp(behaviors,scale=T,center=T)
-plot(pca,type="l")
-time_slot <- function(time,division=="day",sect){#
-	if(division=="day"){#
-		whole <- 24#
-	}else if(division=="year"){#
-		whole <- 12#
-	}else{#
-		print("no such division")#
-		return()#
-	}#
-	for(i in 1:(sect-1)){#
-		time <- (time > whole/sect*i)#
-	}#
-	time#
-}
-time_slot <- function(time,division="day",sect){#
-	if(division=="day"){#
-		whole <- 24#
-	}else if(division=="year"){#
-		whole <- 12#
-	}else{#
-		print("no such division")#
-		return()#
-	}#
-	for(i in 1:(sect-1)){#
-		time <- (time > whole/sect*i)#
-	}#
-	time#
-}
-tests$time <- as.factor(time_slot(tests$hour,"day",sect=4))
-tests$season <- as.factor(time_slot(tests$month,"year",sect=4))
-unique(tests$time)
-unique(tests$season)
-time_slot <- function(time,division="day",sect){#
-	if(division=="day"){#
-		whole <- 24#
-	}else if(division=="year"){#
-		whole <- 12#
-	}else{#
-		print("no such division")#
-		return()#
-	}#
-	slot <- numeric(length(time))#
-	for(i in 1:(sect-1)){#
-		slot <- slot + (time > whole/sect*i)#
-	}#
-	slot#
-}
-tests$time <- as.factor(time_slot(tests$hour,"day",sect=4))
-unique(tests$time)
-tests$season <- as.factor(time_slot(tests$month,"year",sect=4))
-unique(tests$season)
-?numeric
-numeric(1,3)
-time_slot <- function(time,division="day",sect){#
-	if(division=="day"){#
-		whole <- 24#
-	}else if(division=="year"){#
-		whole <- 12#
-	}else{#
-		print("no such division")#
-		return()#
-	}#
-	slot <- rep(1,length(time))#
-	for(i in 1:(sect-1)){#
-		slot <- slot + (time > whole/sect*i)#
-	}#
-	slot#
-}
-tests$time <- as.factor(time_slot(tests$hour,"day",sect=4))#
-tests$season <- as.factor(time_slot(tests$month,"year",sect=4))
-unique(tests$season)
-unique(tests$time)
-dogs <- read.csv("dog_list.csv",header=T)#
+tests <- read.csv("test_complete.csv",header=T)
+dogs <- read.csv("dog_list.csv",header=T)
 dogs <- dogs[!is.na(dogs$neutered)&!is.na(dogs$mid),]#
 IDs <- dogs$dog_guid
-season_distr <- matrix(nrow=length(IDs),ncol=4)#
-day_distr <- matrix(nrow=length(IDs),ncol=4)#
-for(i in 1:length(IDs)){#
-	data <- tests[tests$dog_guid==IDs[i],]#
-	month_distr[i,] <- dog_distr(data$month,1:4)#
-	day_distr[i,] <- dog_distr(data$time,1:4)#
-}
-dog_distr
-dog_distr <- function(time,slots){#
-	unlist(lapply(slots,function(s){sum(time==s)}))#
-}
-season_distr <- matrix(nrow=length(IDs),ncol=4)#
-day_distr <- matrix(nrow=length(IDs),ncol=4)#
-for(i in 1:length(IDs)){#
-	data <- tests[tests$dog_guid==IDs[i],]#
-	month_distr[i,] <- dog_distr(data$month,1:4)#
-	day_distr[i,] <- dog_distr(data$time,1:4)#
-}
-season_distr <- matrix(nrow=length(IDs),ncol=4)#
-day_distr <- matrix(nrow=length(IDs),ncol=4)#
-for(i in 1:length(IDs)){#
-	data <- tests[tests$dog_guid==IDs[i],]#
-	season_distr[i,] <- dog_distr(data$season,1:4)#
-	day_distr[i,] <- dog_distr(data$time,1:4)#
-}
-behaviors <- data.frame(season_distr,dogs$mid)
-pca <- prcomp(behaviors,scale=T,center=T)
-plot(pca,type="l")
-behaviors <- data.frame(season_distr,day_distr,dogs$mid)
-pca <- prcomp(behaviors,scale=T,center=T)
-plot(pca,type="l")
-behaviors <- data.frame(day_distr,dogs$mid)
-dim(behaviors)
-pca <- prcomp(behaviors,scale=T,center=T)
-plot(pca,type="l")
-tests$time <- as.factor(time_slot(tests$hour,"day",sect=8))
-day_distr <- matrix(nrow=length(IDs),ncol=8)#
-for(i in 1:length(IDs)){#
-	data <- tests[tests$dog_guid==IDs[i],]#
-	#season_distr[i,] <- dog_distr(data$season,1:4)#
-	day_distr[i,] <- dog_distr(data$time,1:8)#
-}#
-#
-behaviors <- data.frame(day_distr,dogs$mid)
-head(behaviors)
-pca <- prcomp(behaviors,scale=T,center=T)
-plot(pca,type="l")
-behaviors <- data.frame(day_distr)
-pca <- prcomp(behaviors,scale=T,center=T)
-plot(pca,type="l")
-?prcomp
-tests <- read.csv("test_complete.csv",header=T)#
-tests$time <- as.factor(time_slot(tests$hour,"day",sect=3))#
-tests$season <- as.factor(time_slot(tests$month,"year",sect=4))#
-dogs <- read.csv("dog_list.csv",header=T)#
-dogs <- dogs[!is.na(dogs$neutered)&!is.na(dogs$mid),]#
-IDs <- dogs$dog_guid#
-#
-season_distr <- matrix(nrow=length(IDs),ncol=4)#
-day_distr <- matrix(nrow=length(IDs),ncol=8)#
-for(i in 1:length(IDs)){#
-	data <- tests[tests$dog_guid==IDs[i],]#
-	season_distr[i,] <- dog_distr(data$season,1:4)#
-	day_distr[i,] <- dog_distr(data$time,1:8)#
-}#
-#
-behaviors <- data.frame(season_distr,day_distr)
-pca <- prcomp(behaviors,scale=T,center=T)
-tests$time <- as.factor(time_slot(tests$hour,"day",sect=8))
-season_distr <- matrix(nrow=length(IDs),ncol=4)#
-day_distr <- matrix(nrow=length(IDs),ncol=8)#
-for(i in 1:length(IDs)){#
-	data <- tests[tests$dog_guid==IDs[i],]#
-	season_distr[i,] <- dog_distr(data$season,1:4)#
-	day_distr[i,] <- dog_distr(data$time,1:8)#
-}#
-#
-behaviors <- data.frame(season_distr,day_distr)
-pca <- prcomp(behaviors,scale=T,center=T)
-plot(pca,type="l")
-pca <- prcomp(behaviors)
-plot(pca,type="l")
-pca <- prcomp(behaviors,center=T)
-plot(pca,type="l")
-tests$time <- as.factor(time_slot(tests$hour,"day",sect=4))
-behaviors <- data.frame(day_distr)
-pca <- prcomp(behaviors,scale=T,center=T)
-plot(pca,type="l")
-pca <- prcomp(behaviors,center=T)
-plot(pca,type="l")
-summary(pca)
-pca <- prcomp(behaviors,scale=T,center=T)
-summary(pca)
-behaviors <- data.frame(season_distr,day_distr)
-pca <- prcomp(behaviors,scale=T,center=T)
-summary(pca)
-tests$time <- as.factor(time_slot(tests$hour,"day",sect=4))
-tests <- read.csv("test_complete.csv",header=T)#
-dogs <- read.csv("dog_list.csv",header=T)#
-dogs <- dogs[!is.na(dogs$neutered)&!is.na(dogs$mid),]#
-IDs <- dogs$dog_guid#
-#
+head(dogs)
 day_sect <- 4#
 tests$time <- as.factor(time_slot(tests$hour,"day",day_sect))#
-year_sect <- 4#
-tests$season <- as.factor(time_slot(tests$month,"year",year_sect))#
-season_distr <- matrix(nrow=length(IDs),ncol=year_sect)#
-day_distr <- matrix(nrow=length(IDs),ncol=day_sect)#
-for(i in 1:length(IDs)){#
-	data <- tests[tests$dog_guid==IDs[i],]#
-	season_distr[i,] <- dog_distr(data$season,1:year_sect)#
-	day_distr[i,] <- dog_distr(data$time,1:day_sect)#
-}
-behaviors <- data.frame(day_distr)
-pca <- prcomp(behaviors,scale=T,center=T)
-plot(pca,type="l")
-summary(pca)
-pca <- prcomp(behaviors,center=T)#
-#
-plot(pca,type="l")#
-summary(pca)
-behaviors <- data.frame(day_distr,season_distr)
-pca <- prcomp(behaviors,center=T)
-plot(pca,type="l")#
-summary(pca)
-pca <- prcomp(behaviors,scale=T,center=T)#
-#
-plot(pca,type="l")#
-summary(pca)
-day_sect <- 6#
-tests$time <- as.factor(time_slot(tests$hour,"day",day_sect))#
-year_sect <- 4#
-#tests$season <- as.factor(time_slot(tests$month,"year",year_sect))#
 #season_distr <- matrix(nrow=length(IDs),ncol=year_sect)#
 day_distr <- matrix(nrow=length(IDs),ncol=day_sect)#
 for(i in 1:length(IDs)){#
 	data <- tests[tests$dog_guid==IDs[i],]#
 	#season_distr[i,] <- dog_distr(data$season,1:year_sect)#
 	day_distr[i,] <- dog_distr(data$time,1:day_sect)#
-}#
-#
-#behaviors <- data.frame(season_distr,day_distr)#
-behaviors <- data.frame(day_distr)
-pca <- prcomp(behaviors)#
-#
-plot(pca,type="l")#
-summary(pca)
-pca
-day_sect <- 4#
-tests$time <- as.factor(time_slot(tests$hour,"day",day_sect))#
-year_sect <- 4#
-#tests$season <- as.factor(time_slot(tests$month,"year",year_sect))#
-#season_distr <- matrix(nrow=length(IDs),ncol=year_sect)#
+}
+tests$time <- as.factor(time_slot(tests$hour,"day",day_sect))
 day_distr <- matrix(nrow=length(IDs),ncol=day_sect)#
 for(i in 1:length(IDs)){#
 	data <- tests[tests$dog_guid==IDs[i],]#
 	#season_distr[i,] <- dog_distr(data$season,1:year_sect)#
 	day_distr[i,] <- dog_distr(data$time,1:day_sect)#
-}#
-#
-#behaviors <- data.frame(season_distr,day_distr)#
-behaviors <- data.frame(day_distr)#
-#
-pca <- prcomp(behaviors)#
-#
-plot(pca,type="l")#
+}
+i
+data <- tests[tests$dog_guid==IDs[i],]
+class(IDs)
+data <- tests[tests$dog_guid==as.character(IDs)[i],]
+day_sect <- 4#
+tests$time <- as.factor(time_slot(tests$hour,"day",day_sect))#
+#season_distr <- matrix(nrow=length(IDs),ncol=year_sect)#
+day_distr <- matrix(nrow=length(IDs),ncol=day_sect)#
+for(i in 1:length(IDs)){#
+	data <- tests[tests$dog_guid==as.character(IDs)[i],]#
+	#season_distr[i,] <- dog_distr(data$season,1:year_sect)#
+	day_distr[i,] <- dog_distr(data$time,1:day_sect)#
+}
+behaviors <- data.frame(day_distr)
+behaviors
+behaviors <- data.frame(behaviors,dogs$PC1,dogs$PC2,dogs$mid)
+plot(behaviors)
+behaviors <- data.frame(behaviors,dogs$PC1,dogs$PC2)
+plot(behaviors)
+behaviors <- data.frame(day_distr)
+behaviors <- data.frame(behaviors,dogs$PC1,dogs$PC2)#
+plot(behaviors)
+behaviors <- data.frame(behaviors,dogs$PC1,dogs$PC2,dogs$ntest)
+plot(behaviors)
+behaviors <- data.frame(day_distr)
+behaviors <- data.frame(behaviors,dogs$PC1,dogs$PC2,dogs$ntest)
+plot(behaviors)
+day_sect <- 8#
+tests$time <- as.factor(time_slot(tests$hour,"day",day_sect))#
+#season_distr <- matrix(nrow=length(IDs),ncol=year_sect)#
+day_distr <- matrix(nrow=length(IDs),ncol=day_sect)#
+for(i in 1:length(IDs)){#
+	data <- tests[tests$dog_guid==as.character(IDs)[i],]#
+	#season_distr[i,] <- dog_distr(data$season,1:year_sect)#
+	day_distr[i,] <- dog_distr(data$time,1:day_sect)#
+}
+behaviors <- data.frame(day_distr[-1,])
+pca <- prcomp(behaviors)
+plot(pca,type="l")
 summary(pca)
-pca
-predict(pca)
-pca <- prcomp(behaviors,scale=T,center=T)
-plot(pca,type="l")#
-summary(pca)
-pca <- prcomp(behaviors)#
-#
-plot(pca,type="l")#
-summary(pca)
-predictions <- predict(pca)
+predictions <- predict(pca)#
 dogs$PC1 <- predictions[,1]#
 dogs$PC2 <- predictions[,2]
-head(dogs)
+length(IDs)
+behaviors <- data.frame(day_distr[,-1])
+pca <- prcomp(behaviors)#
+plot(pca,type="l")#
+summary(pca)
+predictions <- predict(pca)#
+dogs$PC1 <- predictions[,1]#
+dogs$PC2 <- predictions[,2]
+behaviors <- data.frame(behaviors,dogs$PC1,dogs$PC2,dogs$ntest)
+plot(behaviors)
+day_sect <- 6#
+tests$time <- as.factor(time_slot(tests$hour,"day",day_sect))#
+#season_distr <- matrix(nrow=length(IDs),ncol=year_sect)#
+day_distr <- matrix(nrow=length(IDs),ncol=day_sect)#
+for(i in 1:length(IDs)){#
+	data <- tests[tests$dog_guid==as.character(IDs)[i],]#
+	#season_distr[i,] <- dog_distr(data$season,1:year_sect)#
+	day_distr[i,] <- dog_distr(data$time,1:day_sect)#
+}#
+#
+#behaviors <- data.frame(season_distr,day_distr)#
+behaviors <- data.frame(day_distr[,-1])#
+#
+#Principal component analysis#
+pca <- prcomp(behaviors)#
+plot(pca,type="l")#
+summary(pca)#
+predictions <- predict(pca)#
+dogs$PC1 <- predictions[,1]#
+dogs$PC2 <- predictions[,2]
+behaviors <- data.frame(behaviors,dogs$PC1,dogs$PC2,dogs$ntest)#
+plot(behaviors)
 write.csv(dogs,"dog_list.csv")
 dogs <- read.csv("dog_list.csv",header=T)
-head(dogs)
-plot(dogs$PC1~dogs$PC2,cex=16,col="yellow")
-plot(dogs$PC1~dogs$PC2,pch=16,col="yellow")
+plot(dogs$PC1~dogs$PC2,,xlab="Night howler",ylab="Early riser",pch=16,col="yellow")
+behaviors <- data.frame(day_distr[,-1])
+pca <- prcomp(behaviors,scale=T)#
+plot(pca,type="l")#
+summary(pca)
+predictions <- predict(pca)#
+dogs$PC1 <- predictions[,1]#
+dogs$PC2 <- predictions[,2]#
+#
+#Show what the components are#
+behaviors <- data.frame(behaviors,dogs$PC1,dogs$PC2,dogs$ntest)#
+plot(behaviors)
 pca <- prcomp(behaviors,scale=T,center=T)#
 plot(pca,type="l")#
 summary(pca)#
@@ -490,8 +118,450 @@ predictions <- predict(pca)#
 dogs$PC1 <- predictions[,1]#
 dogs$PC2 <- predictions[,2]#
 #
-#Write down results#
+#Show what the components are#
+behaviors <- data.frame(behaviors,dogs$PC1,dogs$PC2,dogs$ntest)
+plot(behaviors)
+behaviors <- data.frame(day_distr[,-1])
+behaviors <- data.frame(behaviors,dogs$PC1,dogs$PC2,dogs$ntest)
+plot(behaviors)
+pca <- prcomp(behaviors,scale=T,center=T)#
+plot(pca,type="l")#
+summary(pca)#
+predictions <- predict(pca)#
+dogs$PC1 <- predictions[,1]#
+dogs$PC2 <- predictions[,2]#
+#
+#Show what the components are#
+behaviors <- data.frame(behaviors,dogs$PC1,dogs$PC2,dogs$ntest)#
+plot(behaviors)
+behaviors <- data.frame(day_distr[,-1])
+behaviors <- data.frame(behaviors,dogs$PC1,dogs$PC2,dogs$ntest)
+plot(behaviors)
 write.csv(dogs,"dog_list.csv")
 dogs <- read.csv("dog_list.csv",header=T)
-plot(dogs$PC1~dogs$PC2,pch=16,col="yellow")
-plot(dogs$PC1~dogs$PC2,,xlab="PC2",ylab="PC1",pch=16,col="yellow")
+plot(dogs$PC1~dogs$PC2,,xlab="Night howler",ylab="Early riser",pch=16,col="yellow")
+dim(behaviors)
+names(behaviors)
+names(dogs)
+?matrix
+dist_distr <- function(PC1,PC2){#
+	dist <- matrix(nrow=length(PC1),ncol=length(PC1))#
+	for(i in 1:length(PC1)){#
+		for(j in (i+1):length(PC1)){#
+			dist[i,j] <- sqrt((PC1[i]-PC1[j])^2+(PC2[i]-PC2[j])^2)#
+		}#
+	}#
+	dist#
+}
+dist <- dist_distr(dogs$PC1,dogs$PC2)
+dist_distr <- function(PC1,PC2){#
+	dist <- matrix(nrow=length(PC1),ncol=length(PC1))#
+	for(i in 1:(length(PC1)-1)){#
+		for(j in (i+1):length(PC1)){#
+			dist[i,j] <- sqrt((PC1[i]-PC1[j])^2+(PC2[i]-PC2[j])^2)#
+		}#
+	}#
+	dist#
+}
+dist <- dist_distr(dogs$PC1,dogs$PC2)
+dim(dist)
+write.csv(dist,"distance_matrix.csv")
+dist <- read.csv("distance_matrix.csv",header=T)
+dim(dist)
+dist[1,]
+dist[,1]
+dist <- read.csv("distance_matrix.csv",header=T,rowname=1)
+?read.csv
+dist <- read.csv("distance_matrix.csv",header=T,row.names=1)
+dim(dist)
+hist(dist)
+hist(as.numeric(dist))
+as.numeric(dist)
+hist(as.numeric(dist[:,:]))
+hist(as.numeric(dist[:]))
+hist(as.matrix(dist))
+hist(as.matrix(dist),xlab="distance",main="")
+source("woofriends2.0/dognition_functions.R")
+dogs <- read.csv("dog_list.csv",header=T)#
+#
+dist <- read.csv("distance_matrix.csv",header=T,row.names=1)
+hist(as.matrix(dist),xlab="distance",main="")
+plot(dogs$PC1~dogs$PC2,,xlab="Night howler",ylab="Early riser",pch=16,col="yellow")
+names(dogs)
+unique(dogs$neutered)
+features =c("gender","neutered")#
+vs = c("female",1)#
+selected_dogs <- dog_selection(dogs,vs,features)
+selected_dogs
+source("woofriends2.0/dognition_functions.R")
+features <- c("gender","neutered","personality","weight","age","btype","bgroup")
+vs = c("female",1,"unknown","unknown","unknown","unknown","unknown")
+selected_dogs <- dog_selection(dogs,vs,features)
+length(selected_dogs)
+source("woofriends2.0/dognition_functions.R")
+plot(dogs$PC2~dogs$PC1,,ylab="Night howler",xlab="Early riser",pch=16,col="yellow")
+plot(dogs$PC2~dogs$PC1,,ylab="Night howler",xlab="Early riser",pch=16,col="yellow",axes='n')
+plot(dogs$PC2~dogs$PC1,,ylab="Night howler",xlab="Early riser",pch=16,col="yellow",xaxt='n',yaxt='n')
+sum(diag(dist))
+class(dist)
+sum(diag(as.matrix(dist)))
+dist[2,2]
+dist[2,3]
+dist_distr <- function(PC1,PC2){#
+	dist <- matrix(nrow=length(PC1),ncol=length(PC1))#
+	for(i in 1:(length(PC1)-1)){#
+		for(j in (i+1):length(PC1)){#
+			dist[i,j] <- sqrt((PC1[i]-PC1[j])^2+(PC2[i]-PC2[j])^2)#
+		}#
+	}#
+	diag(dist) <- 0#
+	dist#
+}
+dist <- dist_distr(dogs$PC1,dogs$PC2)
+write.csv(dist,"distance_matrix.csv")
+dist <- read.csv("distance_matrix.csv",header=T,row.names=1)
+dim(dist)
+dist[2,2]
+hist(as.matrix(dist),xlab="distance",main="")
+class(dist)
+length(as.matrix(dist))
+dog_selection <- function(dogs,vs,features){#
+	features <- features[vs != "all"]#
+	vs <- vs[vs != "all"]#
+	#When no feature is selected, length(features)==0#
+	for(i in 1:length(features)){#
+		dogs <- dogs[dogs[,match(features[i],names(dogs))]==vs[i],]#
+	}#
+	list(ID=dogs$dog_guid,X=dogs$PC1,Y=dogs$PC2)#
+}
+source("woofriends2.0/dognition_functions.R")
+selected_dogs <- dog_selection(dogs,vs,features)
+plot(dogs$PC2~dogs$PC1,,ylab="Night howler",xlab="Early riser",pch=16,col="yellow",xaxt='n',yaxt='n')
+map_dogs(selected_dogs$X,selected_dogs$Y,2)
+selected_dogs$X
+selected_dogs
+vs
+features <- c("gender","neutered","weight","age","btype","bgroup")#
+#
+vs = c("female",1,"all","all","all","all","all")#
+selected_dogs <- dog_selection(dogs,vs,features)
+selected_dogs
+map_dogs(selected_dogs$X,selected_dogs$Y,2)
+vs = c("female",1,"all","all","all","all","Herding")
+selected_dogs <- dog_selection(dogs,vs,features)
+unique(dogs$bgroup)
+vs = c("female",1,"all","all","all","all","Herding")
+selected_dogs <- dog_selection(dogs,vs,features)
+vs = c("female",1,"all","all","all","all","Sporting")
+selected_dogs <- dog_selection(dogs,vs,features)
+vs = c("all","all","all","all","all","all","Sporting")
+selected_dogs <- dog_selection(dogs,vs,features)
+features <- features[vs != "all"]
+features
+vs
+length(features)
+features <- c("gender","neutered","weight","age","btype","bgroup")
+vs = c("all","all","all","all","all","all","Sporting")
+features <- features[vs != "all"]
+features
+vs
+vs != "all"
+features <- c("gender","neutered","weight","age","btype","bgroup")
+length(features)
+features <- c("gender","neutered","weight","age","btype","bgroup")
+vs = c("female",1,"all","all","all","Sporting")
+vs = c("all","all","all","all","all","Sporting")
+selected_dogs <- dog_selection(dogs,vs,features)
+selected_dogs
+map_dogs(selected_dogs$X,selected_dogs$Y,2)
+plot(dogs$PC2~dogs$PC1,,ylab="Night howler",xlab="Early riser",pch=16,col="yellow",xaxt='n',yaxt='n')
+map_dogs(selected_dogs$X,selected_dogs$Y,2)
+plot(dogs$PC2~dogs$PC1,,ylab="Night howler",xlab="Early riser",pch=16,col="yellow",xaxt='n',yaxt='n')
+vs = c("female",1,"all","all","all","Sporting")
+selected_dogs <- dog_selection(dogs,vs,features)
+map_dogs(selected_dogs$X,selected_dogs$Y,2)
+unique(dogs$btype)
+vs = c("female",1,"all","all","Pure Breed","Sporting")
+selected_dogs <- dog_selection(dogs,vs,features)
+map_dogs(selected_dogs$X,selected_dogs$Y,2)
+plot(dogs$PC2~dogs$PC1,,ylab="Night howler",xlab="Early riser",pch=16,col="yellow",xaxt='n',yaxt='n')
+map_dogs(selected_dogs$X,selected_dogs$Y,2)
+vs2 = c("male",0,"all","all","Pure Breed","Sporting")#
+#
+selected_dogs2 <- dog_selection(dogs,vs2,features)#
+#
+map_dogs(selected_dogs2$X,selected_dogs2$Y,4)
+distance_pvalue(dist,selected_dogs1$ID,selected_dogs2$ID)
+features <- c("gender","neutered","weight","age","btype","bgroup")#
+plot(dogs$PC2~dogs$PC1,,ylab="Night howler",xlab="Early riser",pch=16,col="yellow",xaxt='n',yaxt='n')#
+#
+vs = c("female",1,"all","all","Pure Breed","Sporting")#
+#
+selected_dogs1 <- dog_selection(dogs,vs,features)#
+#
+map_dogs(selected_dogs1$X,selected_dogs1$Y,2)#
+#
+vs2 = c("male",0,"all","all","Pure Breed","Sporting")#
+#
+selected_dogs2 <- dog_selection(dogs,vs2,features)#
+#
+map_dogs(selected_dogs2$X,selected_dogs2$Y,4)
+distance_pvalue(dist,selected_dogs1$ID,selected_dogs2$ID)
+dist,selected_dogs1$ID
+selected_dogs1$ID
+distance_pvalue(dist,as.character(selected_dogs1$ID),as.character(selected_dogs2$ID))
+as.character(selected_dogs1$ID)
+source("woofriends2.0/dognition_functions.R")
+distance_pvalue(dist,as.character(selected_dogs1$ID),as.character(selected_dogs2$ID))
+distance_pvalue(dist,as.character(selected_dogs1$ID),as.character(selected_dogs2$ID),dogs$dog_guid)
+distance_pvalue(dist,selected_dogs1$ID,selected_dogs2$ID,dogs$dog_guid)
+dogs <- read.csv("dog_list.csv",header=T)
+dist <- read.csv("distance_matrix.csv",header=T,row.names=1)
+features <- c("gender","neutered","weight","age","btype","bgroup")#
+plot(dogs$PC2~dogs$PC1,,ylab="Night howler",xlab="Early riser",pch=16,col="yellow",xaxt='n',yaxt='n')#
+#
+vs = c("female",1,"all","all","Pure Breed","Sporting")#
+#
+selected_dogs1 <- dog_selection(dogs,vs,features)#
+#
+map_dogs(selected_dogs1$X,selected_dogs1$Y,2)#
+#
+vs2 = c("male",0,"all","all","Pure Breed","Sporting")#
+#
+selected_dogs2 <- dog_selection(dogs,vs2,features)#
+#
+map_dogs(selected_dogs2$X,selected_dogs2$Y,4)
+distance_pvalue(dist,selected_dogs1$ID,selected_dogs2$ID,dogs$dog_guid)
+IDs = dogs$dog_guid
+ID1 = selected_dogs1$ID
+ID2 = selected_dogs2$ID
+index1 <- match(ID1,IDs)
+index1
+match(1,2:4)
+match(1,c(2:4,1))
+index2 <- match(ID2,IDs)
+m <- mean(dist[index1,index2])
+dist[index1,index2]
+index1
+index2
+dim(dist)
+sum(is.na(dist))
+sum(!is.na(dist))
+dist_distr <- function(PC1,PC2){#
+	dist <- matrix(nrow=length(PC1),ncol=length(PC1))#
+	for(i in 1:(length(PC1)-1)){#
+		for(j in (i+1):length(PC1)){#
+			dist[i,j] <- dist[j,i] <- sqrt((PC1[i]-PC1[j])^2+(PC2[i]-PC2[j])^2)#
+		}#
+	}#
+	diag(dist) <- 0#
+	dist#
+}
+source("woofriends2.0/dognition_functions.R")
+dist <- dist_distr(dogs$PC1,dogs$PC2)
+sum(is.na(dist))
+sum(!is.na(dist))
+write.csv(dist,"distance_matrix.csv")
+dist <- read.csv("distance_matrix.csv",header=T,row.names=1)
+sum(!is.na(dist))
+m <- mean(dist[index1,index2])
+sum(!is.na(dist))
+sum(is.na(dist))
+dist[index1,index2]
+mean(dist[index1,index2])
+m <- mean(as.matrix(dist[index1,index2]))
+m
+sum(as.matrix(dist)<m)/length(as.matrix(dist))
+source("woofriends2.0/dognition_functions.R")
+distance_pvalue(dist,selected_dogs1$ID,selected_dogs2$ID,dogs$dog_guid)
+compatibility <- 1- distance_pvalue(dist,selected_dogs1$ID,selected_dogs2$ID,dogs$dog_guid)
+compatibility
+source("woofriends2.0/dognition_functions.R")
+hist(as.matrix(dist),xlab="distance",main="")#
+abline(v=distance$m,col=2)
+distance <- distance_pvalue(dist,selected_dogs1$ID,selected_dogs2$ID,dogs$dog_guid)#
+#
+compatibility <- 1- distance$p
+hist(as.matrix(dist),xlab="distance",main="")
+abline(v=distance$m,col=2)
+source("woofriends2.0/dognition_functions.R")
+dogs <- read.csv("dog_list.csv",header=T)#
+#
+dist <- read.csv("distance_matrix.csv",header=T,row.names=1)#
+#
+features <- c("gender","neutered","weight","age","btype","bgroup")#
+plot(dogs$PC2~dogs$PC1,,ylab="Night howler",xlab="Early riser",pch=16,col="yellow",xaxt='n',yaxt='n')#
+#
+vs = c("female",1,"all","all","Pure Breed","Sporting")#
+#
+selected_dogs1 <- dog_selection(dogs,vs,features)#
+#
+map_dogs(selected_dogs1$X,selected_dogs1$Y,2)#
+#
+vs2 = c("male",0,"all","all","Pure Breed","Sporting")#
+#
+selected_dogs2 <- dog_selection(dogs,vs2,features)#
+#
+map_dogs(selected_dogs2$X,selected_dogs2$Y,4)
+distance <- distance_pvalue(dist,selected_dogs1$ID,selected_dogs2$ID,dogs$dog_guid)#
+#
+compatibility <- 1- distance$p
+compatibiliity
+compatibility
+hist(as.matrix(dist),xlab="distance",main="")
+abline(v=distance$m,col=2)
+vs = c("female",1,"all","all","Popular Hybrid","Sporting")#
+#
+selected_dogs1 <- dog_selection(dogs,vs,features)#
+#
+map_dogs(selected_dogs1$X,selected_dogs1$Y,2)#
+#
+vs2 = c("male",0,"all","all","Pure Breed","Herding")#
+#
+selected_dogs2 <- dog_selection(dogs,vs2,features)#
+#
+map_dogs(selected_dogs2$X,selected_dogs2$Y,4)
+plot(dogs$PC2~dogs$PC1,,ylab="Night howler",xlab="Early riser",pch=16,col="yellow",xaxt='n',yaxt='n')#
+#
+vs = c("female",1,"all","all","Popular Hybrid","Sporting")#
+#
+selected_dogs1 <- dog_selection(dogs,vs,features)#
+#
+map_dogs(selected_dogs1$X,selected_dogs1$Y,2)#
+#
+vs2 = c("male",0,"all","all","Pure Breed","Herding")#
+#
+selected_dogs2 <- dog_selection(dogs,vs2,features)#
+#
+map_dogs(selected_dogs2$X,selected_dogs2$Y,4)
+vs = c("male",1,"all","all","Popular Hybrid","Sporting")#
+#
+selected_dogs1 <- dog_selection(dogs,vs,features)#
+#
+map_dogs(selected_dogs1$X,selected_dogs1$Y,2)
+vs = c("male",1,"all","all","Pure Breed","Sporting")#
+#
+selected_dogs1 <- dog_selection(dogs,vs,features)#
+#
+map_dogs(selected_dogs1$X,selected_dogs1$Y,2)#
+#
+vs2 = c("male",0,"all","all","Pure Breed","Herding")#
+#
+selected_dogs2 <- dog_selection(dogs,vs2,features)
+map_dogs(selected_dogs2$X,selected_dogs2$Y,4)
+distance <- distance_pvalue(dist,selected_dogs1$ID,selected_dogs2$ID,dogs$dog_guid)#
+#
+compatibility <- 1- distance$p#
+#
+hist(as.matrix(dist),xlab="distance",main="")#
+abline(v=distance$m,col=2)
+compatibility
+plot(dogs$PC2~dogs$PC1,,ylab="Night howler",xlab="Early riser",pch=16,col="yellow",xaxt='n',yaxt='n')#
+#
+vs = c("male",1,"all","all","Pure Breed","Sporting")#
+#
+selected_dogs1 <- dog_selection(dogs,vs,features)#
+#
+map_dogs(selected_dogs1$X,selected_dogs1$Y,2)#
+#
+vs2 = c("female",0,"all","all","Pure Breed","Herding")#
+#
+selected_dogs2 <- dog_selection(dogs,vs2,features)#
+#
+map_dogs(selected_dogs2$X,selected_dogs2$Y,4)
+distance <- distance_pvalue(dist,selected_dogs1$ID,selected_dogs2$ID,dogs$dog_guid)#
+#
+compatibility <- 1- distance$p#
+#
+hist(as.matrix(dist),xlab="distance",main="")#
+abline(v=distance$m,col=2)
+compatibility
+vs = c("male",1,"all","all","Pure Breed","Sporting")#
+#
+selected_dogs1 <- dog_selection(dogs,vs,features)#
+#
+map_dogs(selected_dogs1$X,selected_dogs1$Y,2)#
+#
+vs2 = c("male",1,"all","all","Pure Breed","Herding")#
+#
+selected_dogs2 <- dog_selection(dogs,vs2,features)
+plot(dogs$PC2~dogs$PC1,,ylab="Night howler",xlab="Early riser",pch=16,col="yellow",xaxt='n',yaxt='n')#
+#
+vs = c("male",1,"all","all","Pure Breed","Sporting")#
+#
+selected_dogs1 <- dog_selection(dogs,vs,features)#
+#
+map_dogs(selected_dogs1$X,selected_dogs1$Y,2)#
+#
+vs2 = c("male",1,"all","all","Pure Breed","Herding")#
+#
+selected_dogs2 <- dog_selection(dogs,vs2,features)
+map_dogs(selected_dogs2$X,selected_dogs2$Y,4)
+distance <- distance_pvalue(dist,selected_dogs1$ID,selected_dogs2$ID,dogs$dog_guid)#
+#
+compatibility <- 1- distance$p#
+compatibility#
+#
+hist(as.matrix(dist),xlab="distance",main="")#
+abline(v=distance$m,col=2)
+plot(dogs$PC2~dogs$PC1,,ylab="Night howler",xlab="Early riser",pch=16,col="yellow",xaxt='n',yaxt='n')#
+#
+vs = c("male",1,"all","all","Pure Breed","Herding")#
+#
+selected_dogs1 <- dog_selection(dogs,vs,features)#
+#
+map_dogs(selected_dogs1$X,selected_dogs1$Y,2)#
+#
+vs2 = c("male",1,"all","all","Pure Breed","Herding")#
+#
+selected_dogs2 <- dog_selection(dogs,vs2,features)#
+#
+map_dogs(selected_dogs2$X,selected_dogs2$Y,4)#
+#
+distance <- distance_pvalue(dist,selected_dogs1$ID,selected_dogs2$ID,dogs$dog_guid)#
+#
+compatibility <- 1- distance$p#
+compatibility#
+#
+hist(as.matrix(dist),xlab="distance",main="")#
+abline(v=distance$m,col=2)
+map_dogs <- function(X,Y,style,color){#
+	points(X,Y,pch=style,col=color)#
+}
+plot(dogs$PC2~dogs$PC1,,ylab="Night howler",xlab="Early riser",pch=16,col="yellow",xaxt='n',yaxt='n')#
+#
+vs = c("male",1,"all","all","Pure Breed","Herding")#
+#
+selected_dogs1 <- dog_selection(dogs,vs,features)#
+#
+map_dogs(selected_dogs1$X,selected_dogs1$Y,2,2)#
+#
+vs2 = c("male",1,"all","all","Pure Breed","Herding")#
+#
+selected_dogs2 <- dog_selection(dogs,vs2,features)#
+#
+map_dogs(selected_dogs2$X,selected_dogs2$Y,3,4)
+features <- c("gender","neutered","weight","age","bgroup")#
+#
+plot(dogs$PC2~dogs$PC1,,ylab="Night howler",xlab="Early riser",pch=16,col="yellow",xaxt='n',yaxt='n')#
+#
+vs = c("male",0,"all","all","Herding")#
+#
+selected_dogs1 <- dog_selection(dogs,vs,features)#
+#
+map_dogs(selected_dogs1$X,selected_dogs1$Y,2,2)#
+#
+vs2 = c("female",1,"all","all","Sporting")#
+#
+selected_dogs2 <- dog_selection(dogs,vs2,features)#
+#
+map_dogs(selected_dogs2$X,selected_dogs2$Y,3,4)#
+#
+distance <- distance_pvalue(dist,selected_dogs1$ID,selected_dogs2$ID,dogs$dog_guid)#
+#
+compatibility <- 1- distance$p#
+compatibility#
+#
+hist(as.matrix(dist),xlab="distance",main="")#
+abline(v=distance$m,col=2)
+legend("bottomright",paste("dog",1:2),pch=2:3,col=c(2,4))
