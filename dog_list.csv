@@ -1,517 +1,506 @@
-dog_guid,MIN(c.created_at),hour,day,month,gender,neutered,personality,age,weight,breed,btype,bgroup,ntests,mid
-fd27b86c-7144-11e5-ba71-058fbc01cf0b,2013-02-05 18:26:54,18,3,2,female,0,einstein,4.0,190,Shih Tzu,Pure Breed,Toy,31,7.7342542438
-fd27ba1a-7144-11e5-ba71-058fbc01cf0b,2013-02-05 20:35:47,20,3,2,male,1,maverick,32.0,190,Shih Tzu,Pure Breed,Toy,27,6.1905898326
-fd27d770-7144-11e5-ba71-058fbc01cf0b,2013-02-10 15:10:37,15,1,2,female,1,socialite,3.0,60,Bouvier des Flandres,Pure Breed,Herding,25,3.8906365741
-fd27d9fa-7144-11e5-ba71-058fbc01cf0b,2014-09-24 15:10:03,15,4,9,female,1,einstein,8.0,90,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.013653752437
-fd27e9a4-7144-11e5-ba71-058fbc01cf0b,2013-03-22 16:13:32,16,6,3,male,0,protodog,2.0,190,Shih Tzu,Pure Breed,Toy,22,5.5305561067
-fd27ed46-7144-11e5-ba71-058fbc01cf0b,2013-02-06 20:14:43,20,4,2,female,0,maverick,2.0,190,Shih Tzu,Pure Breed,Toy,25,4.3253255208
-fd3ccf2c-7144-11e5-ba71-058fbc01cf0b,2013-10-10 18:47:21,18,5,10,female,1,einstein,7.0,190,Shih Tzu,Pure Breed,Toy,22,13.520467372
-fd3d0f00-7144-11e5-ba71-058fbc01cf0b,2013-02-08 15:12:24,15,6,2,male,0,expert,6.0,10,Labradoodle,Popular Hybrid,,20,0.0073531920117
-fd3d1b44-7144-11e5-ba71-058fbc01cf0b,2013-05-13 16:17:04,16,2,5,male,1,einstein,5.0,190,Shih Tzu,Pure Breed,Toy,20,3.055451998
-fd3d2f9e-7144-11e5-ba71-058fbc01cf0b,2013-02-09 21:48:46,21,7,2,female,1,socialite,8.0,40,Poodle,Pure Breed,Non-Sporting,20,0.0026522904488
-fd3d3688-7144-11e5-ba71-058fbc01cf0b,2013-02-10 19:39:00,19,1,2,female,1,ace,5.0,60,Mixed,Mixed Breed/ Other/ I Don't Know,,34,26.732909652
-fd3d587a-7144-11e5-ba71-058fbc01cf0b,2013-02-22 17:00:49,17,6,2,male,1,stargazer,3.0,190,Shih Tzu,Pure Breed,Toy,22,1.8643253968
-fd3f8aa0-7144-11e5-ba71-058fbc01cf0b,2013-02-13 06:22:47,6,4,2,male,1,renaissance-dog,6.0,30,Beagle,Pure Breed,Hound,23,6.3134048822
-fd3fc0ce-7144-11e5-ba71-058fbc01cf0b,2013-02-14 17:44:23,17,5,2,female,1,stargazer,2.0,190,Shih Tzu,Pure Breed,Toy,20,0.00084307991995
-fd3fcc40-7144-11e5-ba71-058fbc01cf0b,2013-02-15 05:09:23,5,6,2,female,1,protodog,4.0,10,Chihuahua-Dachshund Mix,Cross Breed,,20,0.010620126709
-fd3fdd20-7144-11e5-ba71-058fbc01cf0b,2013-02-17 22:32:10,22,1,2,female,,protodog,4.0,80,German Shepherd Dog,Pure Breed,Herding,20,1.0997874025
-fd3fea04-7144-11e5-ba71-058fbc01cf0b,2014-01-09 18:23:32,18,5,1,female,1,ace,10.0,20,Boston Terrier,Pure Breed,Non-Sporting,21,0.15459548612
-fd3fea9a-7144-11e5-ba71-058fbc01cf0b,2013-02-18 21:06:28,21,2,2,male,1,einstein,2.0,190,Shih Tzu,Pure Breed,Toy,35,12.480236588
-fd3fee14-7144-11e5-ba71-058fbc01cf0b,2013-02-23 18:47:46,18,7,2,female,1,protodog,3.0,30,Mixed,Mixed Breed/ Other/ I Don't Know,,22,2.994804343
-fd3ffecc-7144-11e5-ba71-058fbc01cf0b,2013-02-22 17:55:10,17,6,2,male,1,ace,11.0,40,Mixed,Mixed Breed/ Other/ I Don't Know,,23,4.4533154461
-fd401614-7144-11e5-ba71-058fbc01cf0b,2013-08-19 14:30:31,14,2,8,female,1,protodog,3.0,190,Shih Tzu,Pure Breed,Toy,36,11.191646825
-fd404634-7144-11e5-ba71-058fbc01cf0b,2013-02-21 16:41:41,16,5,2,female,1,maverick,4.0,190,Shih Tzu,Pure Breed,Toy,20,5.7324329922
-fd404b02-7144-11e5-ba71-058fbc01cf0b,2013-02-28 01:44:54,1,5,2,male,1,ace,5.0,70,Boxer,Pure Breed,Working,20,2.4086440058
-fd404d3c-7144-11e5-ba71-058fbc01cf0b,2013-02-21 19:01:12,19,5,2,female,1,maverick,8.0,20,Mixed,Mixed Breed/ Other/ I Don't Know,,20,5.8291246345
-fd4054ee-7144-11e5-ba71-058fbc01cf0b,2013-06-06 13:35:50,13,5,6,female,1,protodog,2.0,190,Shih Tzu,Pure Breed,Toy,45,9.3910051031
-fd405732-7144-11e5-ba71-058fbc01cf0b,2013-02-25 20:03:44,20,2,2,female,1,socialite,7.0,40,Mixed,Mixed Breed/ Other/ I Don't Know,,20,2.5366240253
-fd405b88-7144-11e5-ba71-058fbc01cf0b,2013-02-22 11:25:02,11,6,2,female,1,protodog,3.0,0,Mixed,Mixed Breed/ Other/ I Don't Know,,31,4.6610760031
-fd406466-7144-11e5-ba71-058fbc01cf0b,2013-06-09 15:51:00,15,1,6,male,1,socialite,3.0,20,Miniature Schnauzer-Poodle Mix,Cross Breed,,20,0.11003411306
-fd40bd62-7144-11e5-ba71-058fbc01cf0b,2013-03-03 22:10:22,22,1,3,male,1,stargazer,3.0,190,Shih Tzu,Pure Breed,Toy,35,18.763468137
-fd40cb7c-7144-11e5-ba71-058fbc01cf0b,2013-02-28 20:19:45,20,5,2,male,1,ace,5.0,20,Scottish Terrier,Pure Breed,Terrier,20,0.10449439571
-fd40d4dc-7144-11e5-ba71-058fbc01cf0b,2013-03-03 23:39:20,23,1,3,male,1,expert,4.0,80,Weimaraner,Pure Breed,Sporting,20,1.1547179581
-fd40debe-7144-11e5-ba71-058fbc01cf0b,2013-02-27 15:21:06,15,4,2,male,1,charmer,10.0,50,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.023353435669
-fd410a7e-7144-11e5-ba71-058fbc01cf0b,2013-03-02 21:36:30,21,7,3,female,1,stargazer,5.0,40,Australian Cattle Dog-Border Collie Mix,Cross Breed,,20,1.526494883
-fd4111f4-7144-11e5-ba71-058fbc01cf0b,2013-03-05 16:19:34,16,3,3,male,1,charmer,5.0,60,Mixed,Mixed Breed/ Other/ I Don't Know,,20,2.9640052388
-fd411b0e-7144-11e5-ba71-058fbc01cf0b,2013-03-02 17:22:59,17,7,3,male,1,charmer,6.0,90,Golden Retriever,Pure Breed,Sporting,20,12.518426535
-fd413080-7144-11e5-ba71-058fbc01cf0b,2013-03-02 21:40:48,21,7,3,male,1,renaissance-dog,5.0,30,Labradoodle,Popular Hybrid,,20,0.041263401557
-fd414674-7144-11e5-ba71-058fbc01cf0b,2013-03-02 21:10:09,21,7,3,female,1,charmer,4.0,10,Shetland Sheepdog,Pure Breed,Herding,20,0.22011634991
-fd4146f6-7144-11e5-ba71-058fbc01cf0b,2013-03-02 21:27:15,21,7,3,male,1,protodog,5.0,10,Shetland Sheepdog,Pure Breed,Herding,20,0.22084064327
-fd415a7e-7144-11e5-ba71-058fbc01cf0b,2013-03-03 21:09:43,21,1,3,male,1,protodog,9.0,50,German Shepherd Dog-Beagle Mix,Cross Breed,,20,22.429475512
-fd418a8a-7144-11e5-ba71-058fbc01cf0b,2013-03-06 01:05:47,1,4,3,female,1,ace,3.0,20,Shiba Inu,Pure Breed,Non-Sporting,27,2.8291751246
-fd419598-7144-11e5-ba71-058fbc01cf0b,2013-03-14 22:43:46,22,5,3,female,0,ace,3.0,50,German Shepherd Dog,Pure Breed,Herding,20,2.2125201023
-fd41bca8-7144-11e5-ba71-058fbc01cf0b,2013-03-08 19:55:54,19,6,3,male,1,stargazer,5.0,190,Labrador Retriever,Pure Breed,Sporting,39,20.94169682
-fd41e106-7144-11e5-ba71-058fbc01cf0b,2013-03-14 16:41:54,16,5,3,male,1,protodog,7.0,30,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.27051352339
-fd41f056-7144-11e5-ba71-058fbc01cf0b,2014-10-09 17:19:01,17,5,10,male,0,maverick,3.0,190,Shih Tzu,Pure Breed,Toy,20,5.0525213207
-fd420276-7144-11e5-ba71-058fbc01cf0b,2013-03-17 19:14:14,19,1,3,male,0,charmer,6.0,60,Golden Doodle,Popular Hybrid,,37,11.71638696
-fd4212ca-7144-11e5-ba71-058fbc01cf0b,2013-03-16 06:43:06,6,7,3,male,1,charmer,12.0,30,Shetland Sheepdog,Pure Breed,Herding,20,0.041185428854
-fd421838-7144-11e5-ba71-058fbc01cf0b,2015-05-16 20:48:46,20,7,5,male,1,ace,9.0,50,Alaskan Malamute-Collie Mix,Cross Breed,,20,0.35759868421
-fd421d7e-7144-11e5-ba71-058fbc01cf0b,2013-03-18 23:04:53,23,2,3,female,0,ace,5.0,50,Weimaraner,Pure Breed,Sporting,20,0.0018250487291
-fd422210-7144-11e5-ba71-058fbc01cf0b,2013-03-19 17:24:15,17,3,3,male,1,stargazer,1.0,190,Shih Tzu,Pure Breed,Toy,20,0.00069078947666
-fd42226a-7144-11e5-ba71-058fbc01cf0b,2013-03-19 17:59:41,17,3,3,male,1,ace,2.0,190,Shih Tzu,Pure Breed,Toy,20,0.0010483674461
-fd422332-7144-11e5-ba71-058fbc01cf0b,2013-03-19 18:42:39,18,3,3,male,1,socialite,2.0,190,Shih Tzu,Pure Breed,Toy,20,0.0010971003885
-fd422e0e-7144-11e5-ba71-058fbc01cf0b,2013-03-20 19:42:14,19,4,3,male,1,renaissance-dog,1.0,190,Shih Tzu,Pure Breed,Toy,45,8.4542703072
-fd423714-7144-11e5-ba71-058fbc01cf0b,2013-03-21 19:35:27,19,5,3,male,1,maverick,2.0,190,Shih Tzu,Pure Breed,Toy,31,26.794221451
-fd4275a8-7144-11e5-ba71-058fbc01cf0b,2013-03-27 22:13:44,22,4,3,male,0,renaissance-dog,1.0,40,Golden Retriever,Pure Breed,Sporting,20,0.035179702724
-fd428d68-7144-11e5-ba71-058fbc01cf0b,2013-03-30 12:38:35,12,7,3,male,1,einstein,8.0,50,Australian Shepherd,Pure Breed,Herding,20,1.7138730507
-fd42913c-7144-11e5-ba71-058fbc01cf0b,2013-05-08 13:57:34,13,4,5,male,1,stargazer,2.0,190,Shih Tzu,Pure Breed,Toy,27,16.814351852
-fd4298c6-7144-11e5-ba71-058fbc01cf0b,2013-04-01 06:25:55,6,2,4,female,1,charmer,3.0,130,Great Dane,Pure Breed,Working,20,0.29707541423
-fd429de4-7144-11e5-ba71-058fbc01cf0b,2013-04-02 14:40:47,14,3,4,male,1,expert,3.0,190,Shih Tzu,Pure Breed,Toy,20,0.00069688109221
-fd42ad20-7144-11e5-ba71-058fbc01cf0b,2014-07-14 14:09:08,14,2,7,male,1,einstein,2.0,190,Shih Tzu,Pure Breed,Toy,20,22.850757188
-fd42b78e-7144-11e5-ba71-058fbc01cf0b,2013-04-11 02:31:02,2,5,4,male,1,socialite,4.0,90,German Shepherd Dog,Pure Breed,Herding,20,5.8471284113
-fd42cd96-7144-11e5-ba71-058fbc01cf0b,2013-05-14 22:29:01,22,3,5,female,1,ace,5.0,190,Shih Tzu,Pure Breed,Toy,24,0.039759460548
-fd42d930-7144-11e5-ba71-058fbc01cf0b,2013-04-14 06:34:18,6,1,4,female,1,charmer,2.0,30,Belgian Tervuren,Pure Breed,Herding,20,0.3055914961
-fd42e33a-7144-11e5-ba71-058fbc01cf0b,2013-04-16 21:39:40,21,3,4,female,1,stargazer,2.0,190,Shih Tzu,Pure Breed,Toy,22,2.3722437169
-fd42e542-7144-11e5-ba71-058fbc01cf0b,2013-04-20 22:02:13,22,7,4,female,0,ace,3.0,30,Border Collie,Pure Breed,Herding,20,0.053977217347
-fd42f7ee-7144-11e5-ba71-058fbc01cf0b,2013-04-18 18:55:50,18,5,4,male,1,stargazer,5.0,20,Mixed,Mixed Breed/ Other/ I Don't Know,Toy,20,0.0013072612132
-fd42f85c-7144-11e5-ba71-058fbc01cf0b,2013-04-18 19:46:16,19,5,4,female,1,stargazer,8.0,190,Shih Tzu,Pure Breed,Toy,20,20.011507066
-fd433632-7144-11e5-ba71-058fbc01cf0b,2013-04-23 22:19:23,22,3,4,male,1,protodog,1.0,60,Golden Retriever,Pure Breed,Sporting,20,1.0494109405
-fd435608-7144-11e5-ba71-058fbc01cf0b,2013-04-27 17:33:10,17,7,4,female,1,expert,3.0,70,Chesapeake Bay Retriever,Pure Breed,Sporting,26,2.2375449074
-fd4373e0-7144-11e5-ba71-058fbc01cf0b,2013-04-24 21:06:53,21,4,4,female,1,stargazer,3.0,60,German Shepherd Dog,Pure Breed,Herding,20,4.4726894493
-fd43a202-7144-11e5-ba71-058fbc01cf0b,2013-04-25 02:05:40,2,5,4,female,1,socialite,6.0,20,American Eskimo Dog-Russell Terrier Mix,Cross Breed,,20,21.102933723
-fd43a4c8-7144-11e5-ba71-058fbc01cf0b,2013-04-25 21:06:43,21,5,4,female,1,renaissance-dog,1.0,60,Labrador Retriever,Pure Breed,Sporting,30,10.239994013
-fd43aef0-7144-11e5-ba71-058fbc01cf0b,2013-04-26 00:11:31,0,6,4,female,1,protodog,5.0,50,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.0038243177358
-fd43b936-7144-11e5-ba71-058fbc01cf0b,2013-04-26 11:21:41,11,6,4,male,0,expert,5.0,80,Cocker Spaniel,Pure Breed,Sporting,20,0.010480019497
-fd440d6e-7144-11e5-ba71-058fbc01cf0b,2013-05-09 15:33:51,15,5,5,female,0,stargazer,31.0,190,Shih Tzu,Pure Breed,Toy,20,0.05071028265
-fd441034-7144-11e5-ba71-058fbc01cf0b,2013-05-03 21:03:36,21,6,5,male,1,ace,2.0,30,Australian Cattle Dog-Border Collie Mix,Cross Breed,,25,1.5473480903
-fd4415b6-7144-11e5-ba71-058fbc01cf0b,2013-06-10 14:26:03,14,2,6,female,1,stargazer,3.0,10,Afghan Hound,Pure Breed,Hound,20,0.0024738060371
-fd4458aa-7144-11e5-ba71-058fbc01cf0b,2013-06-11 13:56:48,13,3,6,female,1,protodog,9.0,40,Portuguese Water Dog,Pure Breed,Working,20,0.70560550682
-fd4469da-7144-11e5-ba71-058fbc01cf0b,2013-05-26 17:34:41,17,1,5,female,1,ace,8.0,90,Labrador Retriever,Pure Breed,Sporting,20,0.0015655458096
-fd448dac-7144-11e5-ba71-058fbc01cf0b,2013-06-28 17:24:32,17,6,6,female,1,renaissance-dog,10.0,20,Cocker Spaniel,Pure Breed,Sporting,23,14.36111532
-fd44e57c-7144-11e5-ba71-058fbc01cf0b,2013-05-15 17:07:14,17,4,5,female,1,charmer,6.0,20,German Shepherd Dog,Pure Breed,Herding,23,0.0049884259246
-fd44f68e-7144-11e5-ba71-058fbc01cf0b,2013-06-04 18:58:44,18,3,6,male,1,stargazer,1.0,190,Shih Tzu,Pure Breed,Toy,20,0.021543006823
-fd452fa0-7144-11e5-ba71-058fbc01cf0b,2013-05-21 16:53:42,16,3,5,female,1,stargazer,3.0,10,Akita,Pure Breed,Working,23,0.0015588173411
-fd453496-7144-11e5-ba71-058fbc01cf0b,2013-05-22 00:23:03,0,4,5,female,1,ace,2.0,30,Puggle,Popular Hybrid,,20,0.042435428851
-fd453b6c-7144-11e5-ba71-058fbc01cf0b,2013-05-23 18:52:19,18,5,5,male,1,stargazer,2.0,190,Shih Tzu,Pure Breed,Toy,28,0.47895833333
-fd455250-7144-11e5-ba71-058fbc01cf0b,2013-05-26 12:40:01,12,1,5,female,1,socialite,7.0,20,Cocker Spaniel,Pure Breed,Sporting,20,0.0073403996097
-fd4560f6-7144-11e5-ba71-058fbc01cf0b,2013-06-02 14:29:47,14,1,6,male,1,renaissance-dog,14.0,10,Mixed,Mixed Breed/ Other/ I Don't Know,,20,2.1547636452
-fd456e16-7144-11e5-ba71-058fbc01cf0b,2013-05-28 17:35:19,17,3,5,female,0,maverick,2.0,50,Labrador Retriever-Golden Retriever Mix,Cross Breed,,20,3.628919347
-fd458964-7144-11e5-ba71-058fbc01cf0b,2013-05-29 18:25:56,18,4,5,female,1,charmer,3.0,40,American Pit Bull Terrier-Boston Terrier Mix,Cross Breed,,20,0.094918981483
-fd45ae08-7144-11e5-ba71-058fbc01cf0b,2013-06-04 18:53:41,18,3,6,male,0,ace,31.0,180,Shih Tzu,Pure Breed,Toy,32,11.575051897
-fd45aeda-7144-11e5-ba71-058fbc01cf0b,2013-06-04 18:51:18,18,3,6,male,0,stargazer,2.0,190,Shih Tzu,Pure Breed,Toy,21,0.80292939815
-fd45b452-7144-11e5-ba71-058fbc01cf0b,2013-06-05 16:52:08,16,4,6,male,1,stargazer,2.0,20,Cockapoo,Popular Hybrid,,20,0.0016678849935
-fd45c104-7144-11e5-ba71-058fbc01cf0b,2013-06-06 16:58:48,16,5,6,male,1,expert,4.0,0,Yorkshire Terrier-Maltese Mix,Cross Breed,,20,0.024376218324
-fd45ea44-7144-11e5-ba71-058fbc01cf0b,2013-06-08 23:44:06,23,7,6,male,1,einstein,1.0,10,Mixed,Mixed Breed/ Other/ I Don't Know,,20,5.6341684941
-fd45f462-7144-11e5-ba71-058fbc01cf0b,2013-06-10 15:21:50,15,2,6,male,1,stargazer,1.0,190,Shih Tzu,Pure Breed,Toy,20,0.0016800682306
-fd45f5f2-7144-11e5-ba71-058fbc01cf0b,2013-06-11 03:12:36,3,3,6,male,1,socialite,3.0,30,Pembroke Welsh Corgi,Pure Breed,Herding,20,0.055583576996
-fd4615dc-7144-11e5-ba71-058fbc01cf0b,2013-06-15 17:22:11,17,7,6,male,1,socialite,5.0,10,Dachshund,Pure Breed,Hound,20,0.053212719302
-fd462086-7144-11e5-ba71-058fbc01cf0b,2013-06-30 14:17:38,14,1,6,female,1,expert,8.0,10,Poodle,Pure Breed,Non-Sporting,43,7.3335146605
-fd4647fa-7144-11e5-ba71-058fbc01cf0b,2013-06-18 15:53:02,15,3,6,male,1,stargazer,6.0,100,Shih Tzu,Pure Breed,Toy,33,1.1601555266
-fd46539e-7144-11e5-ba71-058fbc01cf0b,2013-06-23 11:57:47,11,1,6,female,1,socialite,10.0,60,Boxer,Pure Breed,Working,20,5.6548659844
-fd4658b2-7144-11e5-ba71-058fbc01cf0b,2013-06-21 17:12:18,17,6,6,female,1,ace,3.0,10,Miniature Schnauzer-Poodle Mix,Cross Breed,,21,26.048071759
-fd46856c-7144-11e5-ba71-058fbc01cf0b,2013-06-26 13:22:15,13,4,6,male,0,protodog,32.0,190,Shih Tzu,Pure Breed,Toy,20,0.00095090156079
-fd46ae84-7144-11e5-ba71-058fbc01cf0b,2013-06-27 16:16:01,16,5,6,female,0,protodog,32.0,190,Shih Tzu,Pure Breed,Toy,20,0.0012701023371
-fd46d3fa-7144-11e5-ba71-058fbc01cf0b,2013-07-01 10:10:46,10,2,7,female,0,socialite,8.0,40,English Setter,Pure Breed,Sporting,23,1.4574047769
-fd473f2a-7144-11e5-ba71-058fbc01cf0b,2013-07-09 03:41:10,3,3,7,male,1,expert,7.0,20,Bichon Frise,Pure Breed,Non-Sporting,20,0.031316398637
-fd479182-7144-11e5-ba71-058fbc01cf0b,2013-07-11 20:31:08,20,5,7,male,0,socialite,2.0,50,Afghan Hound,Pure Breed,Hound,20,0.002555433722
-fd47fca8-7144-11e5-ba71-058fbc01cf0b,2013-07-17 04:43:54,4,4,7,female,0,renaissance-dog,2.0,60,Golden Retriever-Labrador Retriever Mix,Cross Breed,,20,1.4751163499
-fd47ffe6-7144-11e5-ba71-058fbc01cf0b,2013-07-20 22:03:11,22,7,7,female,0,protodog,1.0,50,Labrador Retriever-Golden Retriever Mix,Cross Breed,,20,1.2599409113
-fd480bbc-7144-11e5-ba71-058fbc01cf0b,2013-07-19 19:19:34,19,6,7,female,1,socialite,2.0,60,Golden Retriever-Labrador Retriever Mix,Cross Breed,,20,1.4387682749
-fd484046-7144-11e5-ba71-058fbc01cf0b,2013-07-18 13:39:56,13,5,7,female,0,protodog,2.0,60,Labrador Retriever,Pure Breed,Sporting,20,0.80680433723
-fd484172-7144-11e5-ba71-058fbc01cf0b,2013-07-21 15:16:33,15,1,7,male,1,socialite,2.0,50,Labrador Retriever-Golden Retriever Mix,Cross Breed,,20,0.91862329434
-fd486a1c-7144-11e5-ba71-058fbc01cf0b,2013-07-19 23:12:09,23,6,7,female,1,charmer,8.0,100,St. Bernard-Labrador Retriever Mix,Cross Breed,,20,3.6163791423
-fd48b738-7144-11e5-ba71-058fbc01cf0b,2013-07-23 20:40:29,20,3,7,male,0,socialite,2.0,70,Labrador Retriever,Pure Breed,Sporting,20,1.1098324805
-fd48f75c-7144-11e5-ba71-058fbc01cf0b,2013-08-07 15:01:09,15,4,8,male,1,protodog,3.0,70,Labrador Retriever,Pure Breed,Sporting,20,1.3228137183
-fd491caa-7144-11e5-ba71-058fbc01cf0b,2013-08-07 16:23:04,16,4,8,female,0,stargazer,2.0,60,Golden Retriever,Pure Breed,Sporting,20,0.44158930312
-fd4a33a6-7144-11e5-ba71-058fbc01cf0b,2013-08-04 17:38:35,17,1,8,female,1,protodog,4.0,20,Icelandic Sheepdog,Pure Breed,Herding,28,7.4821626372
-fd4a3c84-7144-11e5-ba71-058fbc01cf0b,2013-09-02 02:17:16,2,2,9,male,1,charmer,2.0,50,Rottweiler,Pure Breed,Working,20,0.18293189571
-fd4a6b6e-7144-11e5-ba71-058fbc01cf0b,2013-08-07 21:58:45,21,4,8,male,0,stargazer,1.0,0,Affenpinscher,Pure Breed,Toy,20,0.004853192006
-fd4a7712-7144-11e5-ba71-058fbc01cf0b,2013-09-20 19:16:33,19,6,9,male,1,protodog,5.0,30,German Shepherd Dog,Pure Breed,Herding,20,0.14745065789
-fd4ae90e-7144-11e5-ba71-058fbc01cf0b,2013-08-08 19:58:02,19,5,8,female,1,ace,5.0,60,Labrador Retriever,Pure Breed,Sporting,20,3.3760897904
-fd4b24fa-7144-11e5-ba71-058fbc01cf0b,2013-08-17 03:35:44,3,7,8,male,1,charmer,2.0,60,Mixed,Mixed Breed/ Other/ I Don't Know,,23,13.895530829
-fd4bc1da-7144-11e5-ba71-058fbc01cf0b,2013-08-21 02:19:56,2,4,8,female,1,stargazer,13.0,30,Poodle,Pure Breed,Non-Sporting,20,1.2562164961
-fd50e192-7144-11e5-ba71-058fbc01cf0b,2013-09-01 18:12:42,18,1,9,female,1,ace,4.0,40,Poodle,Pure Breed,Non-Sporting,20,0.85374451755
-fd515b68-7144-11e5-ba71-058fbc01cf0b,2013-09-20 21:10:35,21,6,9,male,1,einstein,3.0,50,Poodle,Pure Breed,Non-Sporting,20,0.26796661793
-fd51a5aa-7144-11e5-ba71-058fbc01cf0b,2013-08-28 21:17:57,21,4,8,female,1,socialite,4.0,50,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.14250426413
-fd51daac-7144-11e5-ba71-058fbc01cf0b,2014-10-21 18:53:02,18,3,10,male,1,,6.0,10,Dachshund,Pure Breed,Hound,3,0.0059317129785
-fd52059a-7144-11e5-ba71-058fbc01cf0b,2013-09-03 14:08:04,14,3,9,female,1,ace,4.0,60,Mixed,Mixed Breed/ Other/ I Don't Know,,26,6.9281782407
-fd520720-7144-11e5-ba71-058fbc01cf0b,2013-09-06 13:10:59,13,6,9,male,1,protodog,6.0,60,Boxer,Pure Breed,Working,20,0.0048976608147
-fd5273b8-7144-11e5-ba71-058fbc01cf0b,2013-12-01 16:18:16,16,1,12,female,1,charmer,8.0,30,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.0070845516594
-fd52a90a-7144-11e5-ba71-058fbc01cf0b,2013-09-12 00:31:24,0,5,9,male,1,protodog,9.0,40,Mixed,Mixed Breed/ Other/ I Don't Know,,20,11.149381092
-fd52b300-7144-11e5-ba71-058fbc01cf0b,2013-09-13 16:30:06,16,6,9,female,1,ace,8.0,60,Labradoodle,Popular Hybrid,,20,1.3788943713
-fd52c8cc-7144-11e5-ba71-058fbc01cf0b,2013-09-24 00:04:02,0,3,9,male,1,ace,3.0,130,Black Russian Terrier,Pure Breed,Working,20,1.1923099415
-fd538fa0-7144-11e5-ba71-058fbc01cf0b,2013-09-20 16:34:56,16,6,9,female,1,maverick,8.0,60,German Shepherd Dog-Rottweiler Mix,Cross Breed,,20,0.0015405701705
-fd539b8a-7144-11e5-ba71-058fbc01cf0b,2013-10-12 20:11:35,20,7,10,female,1,expert,7.0,70,Greyhound,Pure Breed,Hound,20,0.057015107216
-fd539c5c-7144-11e5-ba71-058fbc01cf0b,2013-10-21 12:36:39,12,2,10,male,1,charmer,5.0,30,Mixed,Mixed Breed/ Other/ I Don't Know,,20,2.190082846
-fd53cf92-7144-11e5-ba71-058fbc01cf0b,2013-09-20 20:13:44,20,6,9,female,1,protodog,5.0,60,Golden Retriever-Chow Chow Mix,Cross Breed,,20,0.32024488304
-fd53f044-7144-11e5-ba71-058fbc01cf0b,2013-09-18 01:25:17,1,4,9,female,1,protodog,3.0,30,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.019989035092
-fd58eb76-7144-11e5-ba71-058fbc01cf0b,2013-10-05 20:46:33,20,7,10,male,1,ace,3.0,90,German Shepherd Dog,Pure Breed,Herding,25,13.989423708
-fd591768-7144-11e5-ba71-058fbc01cf0b,2013-10-14 16:27:24,16,2,10,male,1,einstein,7.0,30,I Don't Know,Mixed Breed/ Other/ I Don't Know,,20,0.058450292398
-fd59188a-7144-11e5-ba71-058fbc01cf0b,2013-10-18 19:45:54,19,6,10,female,1,ace,9.0,40,Border Collie,Pure Breed,Herding,20,0.10655397174
-fd596966-7144-11e5-ba71-058fbc01cf0b,2013-10-10 17:30:35,17,5,10,male,1,einstein,8.0,70,Labrador Retriever,Pure Breed,Sporting,20,0.067424463942
-fd5b15cc-7144-11e5-ba71-058fbc01cf0b,2013-11-03 16:07:52,16,1,11,male,1,socialite,2.0,60,Labrador Retriever-Golden Retriever Mix,Cross Breed,,20,5.3881572856
-fd5b36b0-7144-11e5-ba71-058fbc01cf0b,2013-10-13 16:29:31,16,1,10,male,1,einstein,4.0,60,German Shepherd Dog,Pure Breed,Herding,20,0.056588084798
-fd5b4092-7144-11e5-ba71-058fbc01cf0b,2013-10-14 20:25:31,20,2,10,male,1,renaissance-dog,7.0,10,Havanese,Pure Breed,Toy,20,0.096899975637
-fd5b56d6-7144-11e5-ba71-058fbc01cf0b,2013-10-21 15:14:25,15,2,10,female,1,stargazer,2.0,40,Mixed,Mixed Breed/ Other/ I Don't Know,,20,3.8999829435
-fd5c0e8c-7144-11e5-ba71-058fbc01cf0b,2013-10-22 13:50:31,13,3,10,male,1,stargazer,2.0,50,Golden Doodle,Popular Hybrid,,20,2.6932535331
-fd5c2f66-7144-11e5-ba71-058fbc01cf0b,2013-10-30 21:13:14,21,4,10,male,1,ace,10.0,80,Labrador Retriever,Pure Breed,Sporting,20,1.5805921053
-fd5c77d2-7144-11e5-ba71-058fbc01cf0b,2013-10-30 23:52:59,23,4,10,male,1,socialite,2.0,50,Labrador Retriever-Golden Retriever Mix,Cross Breed,,20,0.2128076267
-fd5c7e62-7144-11e5-ba71-058fbc01cf0b,2013-11-01 20:12:33,20,6,11,female,0,socialite,1.0,50,Labrador Retriever-Golden Retriever Mix,Cross Breed,,20,0.5272417154
-fd5d21a0-7144-11e5-ba71-058fbc01cf0b,2013-11-09 11:56:14,11,7,11,female,1,renaissance-dog,4.0,60,Beauceron,Pure Breed,Herding,20,0.01729836745
-fd5d27fe-7144-11e5-ba71-058fbc01cf0b,2013-11-10 11:46:23,11,1,11,male,1,stargazer,2.0,70,Other,Mixed Breed/ Other/ I Don't Know,,20,0.053545930803
-fd5d4d24-7144-11e5-ba71-058fbc01cf0b,2013-12-25 03:53:46,3,4,12,female,1,socialite,14.0,50,Pointer,Pure Breed,Sporting,20,4.2682395224
-fd5e0a2a-7144-11e5-ba71-058fbc01cf0b,2013-11-19 21:59:37,21,3,11,female,1,ace,1.0,20,Cockapoo,Popular Hybrid,,23,14.773922559
-fd5e203c-7144-11e5-ba71-058fbc01cf0b,2013-11-22 17:27:59,17,6,11,female,1,charmer,2.0,0,Chihuahua,Pure Breed,Toy,25,2.9277464313
-fd646406-7144-11e5-ba71-058fbc01cf0b,2013-11-27 17:11:21,17,4,11,male,1,protodog,11.0,10,Bichon Frise,Pure Breed,Non-Sporting,20,0.0031499756304
-fd646820-7144-11e5-ba71-058fbc01cf0b,2013-11-28 11:52:13,11,5,11,male,1,renaissance-dog,6.0,30,German Shepherd Dog,Pure Breed,Herding,20,0.002237451269
-fd64757c-7144-11e5-ba71-058fbc01cf0b,2013-11-29 20:29:48,20,6,11,female,1,socialite,3.0,10,Poodle,Pure Breed,Non-Sporting,20,7.0067050439
-fd64ae20-7144-11e5-ba71-058fbc01cf0b,2013-12-06 18:47:59,18,6,12,male,1,socialite,4.0,50,Australian Shepherd,Pure Breed,Herding,20,0.10264498051
-fd6512b6-7144-11e5-ba71-058fbc01cf0b,2013-12-10 00:00:34,0,3,12,female,1,protodog,10.0,10,Shih Tzu,Pure Breed,Toy,20,0.0021156189093
-fd652116-7144-11e5-ba71-058fbc01cf0b,2013-12-25 01:43:52,1,4,12,male,1,ace,2.0,60,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.0027284356704
-fd65343a-7144-11e5-ba71-058fbc01cf0b,2013-12-17 21:09:57,21,3,12,male,1,stargazer,11.0,60,I Don't Know,Mixed Breed/ Other/ I Don't Know,,20,4.4883741472
-fd659b82-7144-11e5-ba71-058fbc01cf0b,2013-12-24 16:28:43,16,3,12,male,1,expert,4.0,140,Great Dane,Pure Breed,Working,20,0.31831079435
-fd65b20c-7144-11e5-ba71-058fbc01cf0b,2014-01-17 04:47:23,4,6,1,male,1,renaissance-dog,2.0,70,German Shepherd Dog,Pure Breed,Herding,38,13.512659222
-fd65d71e-7144-11e5-ba71-058fbc01cf0b,2013-12-28 18:33:38,18,7,12,male,1,socialite,5.0,70,I Don't Know,Mixed Breed/ Other/ I Don't Know,,20,0.052149122808
-fd65fcd0-7144-11e5-ba71-058fbc01cf0b,2013-12-31 04:56:32,4,3,12,male,1,ace,8.0,70,Rottweiler-Border Collie Mix,Cross Breed,,20,3.843079922
-fd660072-7144-11e5-ba71-058fbc01cf0b,2014-01-04 15:01:56,15,7,1,female,1,renaissance-dog,3.0,60,German Shepherd Dog,Pure Breed,Herding,20,0.59364522417
-fd662bb0-7144-11e5-ba71-058fbc01cf0b,2014-01-06 21:44:23,21,2,1,male,0,einstein,9.0,50,I Don't Know,Mixed Breed/ Other/ I Don't Know,,20,0.091839059452
-fd662e76-7144-11e5-ba71-058fbc01cf0b,2014-01-07 18:31:39,18,3,1,female,0,protodog,2.0,10,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.0042013888871
-fd666670-7144-11e5-ba71-058fbc01cf0b,2014-01-12 17:58:21,17,1,1,male,1,charmer,5.0,60,Golden Retriever,Pure Breed,Sporting,20,0.0081432748487
-fd6673d6-7144-11e5-ba71-058fbc01cf0b,2014-01-17 19:11:30,19,6,1,male,1,protodog,10.0,70,Labrador Retriever,Pure Breed,Sporting,20,1.2083601365
-fd667476-7144-11e5-ba71-058fbc01cf0b,2014-02-22 21:08:35,21,7,2,male,1,stargazer,13.0,10,I Don't Know,Mixed Breed/ Other/ I Don't Know,,20,0.62588754873
-fd667fde-7144-11e5-ba71-058fbc01cf0b,2014-01-30 20:59:57,20,5,1,female,1,charmer,3.0,60,Labrador Retriever,Pure Breed,Sporting,23,16.596052189
-fd669d52-7144-11e5-ba71-058fbc01cf0b,2014-01-25 00:13:18,0,7,1,male,1,protodog,5.0,70,Mixed,Mixed Breed/ Other/ I Don't Know,,20,1.3279507797
-fd66c692-7144-11e5-ba71-058fbc01cf0b,2014-01-30 20:47:22,20,5,1,female,1,renaissance-dog,0.0,40,Mixed,Mixed Breed/ Other/ I Don't Know,,28,2.0641435185
-fd66c98a-7144-11e5-ba71-058fbc01cf0b,2014-01-31 20:55:00,20,6,1,female,1,socialite,2.0,20,Mixed,Mixed Breed/ Other/ I Don't Know,,20,4.4709052144
-fd66d664-7144-11e5-ba71-058fbc01cf0b,2014-02-02 18:51:50,18,1,2,male,1,renaissance-dog,6.0,120,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.0029148391791
-fd66dad8-7144-11e5-ba71-058fbc01cf0b,2014-03-14 17:03:11,17,6,3,male,1,socialite,7.0,50,Golden Retriever,Pure Breed,Sporting,20,0.0095547027273
-fd66dd62-7144-11e5-ba71-058fbc01cf0b,2014-03-06 02:03:55,2,5,3,male,0,stargazer,0.0,70,Labrador Retriever,Pure Breed,Sporting,20,0.82046905458
-fd66e370-7144-11e5-ba71-058fbc01cf0b,2014-02-04 01:51:53,1,3,2,male,1,maverick,0.0,10,Miniature Schnauzer,Pure Breed,Terrier,20,0.012176535086
-fd66e654-7144-11e5-ba71-058fbc01cf0b,2014-02-23 10:16:21,10,1,2,male,0,socialite,1.0,80,German Shepherd Dog,Pure Breed,Herding,20,0.17670199805
-fd66e794-7144-11e5-ba71-058fbc01cf0b,2014-03-14 17:43:34,17,6,3,male,0,protodog,7.0,60,Bearded Collie,Pure Breed,Herding,20,0.11147660819
-fd66ea0a-7144-11e5-ba71-058fbc01cf0b,2014-02-05 06:36:37,6,4,2,male,0,protodog,3.0,20,I Don't Know,Mixed Breed/ Other/ I Don't Know,,20,3.4530677388
-fd66ec8a-7144-11e5-ba71-058fbc01cf0b,2014-02-05 20:40:49,20,4,2,female,1,charmer,5.0,70,Doberman Pinscher,Pure Breed,Working,20,0.27388036062
-fd66edc0-7144-11e5-ba71-058fbc01cf0b,2014-02-16 21:45:09,21,1,2,male,1,protodog,4.0,80,Greyhound,Pure Breed,Hound,20,1.4138791423
-fd6708fa-7144-11e5-ba71-058fbc01cf0b,2014-02-14 02:12:42,2,6,2,female,1,protodog,13.0,70,German Shepherd Dog,Pure Breed,Herding,20,0.15105019493
-fd6718a4-7144-11e5-ba71-058fbc01cf0b,2014-02-14 18:11:35,18,6,2,male,0,einstein,1.0,190,Shih Tzu,Pure Breed,Toy,20,0.00067982456259
-fd672db2-7144-11e5-ba71-058fbc01cf0b,2014-02-18 14:07:19,14,3,2,male,1,stargazer,0.0,40,I Don't Know,Mixed Breed/ Other/ I Don't Know,,20,0.01157772905
-fd672ee8-7144-11e5-ba71-058fbc01cf0b,2014-02-19 23:44:59,23,4,2,female,1,stargazer,1.0,90,Great Dane,Pure Breed,Working,20,0.0588170078
-fd672f4c-7144-11e5-ba71-058fbc01cf0b,2014-03-10 19:22:33,19,2,3,male,1,socialite,8.0,40,Labrador Retriever-Poodle Mix,Cross Breed,,20,0.15710648148
-fd674b94-7144-11e5-ba71-058fbc01cf0b,2014-03-13 18:38:38,18,5,3,male,1,stargazer,6.0,10,West Highland White Terrier,Pure Breed,Terrier,20,0.0031980994145
-fd674cca-7144-11e5-ba71-058fbc01cf0b,2014-03-13 17:28:09,17,5,3,male,1,socialite,5.0,50,German Shepherd Dog,Pure Breed,Herding,20,0.16988974171
-fd674e5a-7144-11e5-ba71-058fbc01cf0b,2014-03-11 23:34:15,23,3,3,male,1,einstein,2.0,40,Golden Retriever-Poodle Mix,Cross Breed,,20,0.0023732943471
-fd674ebe-7144-11e5-ba71-058fbc01cf0b,2014-03-05 22:54:47,22,4,3,male,1,renaissance-dog,2.0,60,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.77016386452
-fd674f90-7144-11e5-ba71-058fbc01cf0b,2014-03-14 11:21:02,11,6,3,male,1,ace,5.0,40,Border Collie,Pure Breed,Herding,23,0.27329650674
-fd675544-7144-11e5-ba71-058fbc01cf0b,2014-03-09 15:56:41,15,1,3,female,0,stargazer,7.0,10,Shiba Inu,Pure Breed,Non-Sporting,20,0.0038827972695
-fd675616-7144-11e5-ba71-058fbc01cf0b,2014-03-08 18:52:35,18,7,3,male,1,renaissance-dog,5.0,80,Giant Schnauzer,Pure Breed,Working,20,0.27599780702
-fd675db4-7144-11e5-ba71-058fbc01cf0b,2014-03-19 16:43:57,16,4,3,male,1,charmer,4.0,90,Beauceron,Pure Breed,Herding,20,0.53347770468
-fd676674-7144-11e5-ba71-058fbc01cf0b,2014-03-12 20:16:53,20,4,3,female,1,protodog,1.0,30,Boxer,Pure Breed,Working,20,0.107270346
-fd6778d0-7144-11e5-ba71-058fbc01cf0b,2014-03-16 02:58:22,2,1,3,male,1,stargazer,4.0,20,Maltese-Poodle Mix,Cross Breed,Toy,20,0.0021089181291
-fd67883e-7144-11e5-ba71-058fbc01cf0b,2014-03-15 22:45:36,22,7,3,male,1,ace,10.0,20,Wire Fox Terrier,Pure Breed,Terrier,20,0.0059594298208
-fd6797d4-7144-11e5-ba71-058fbc01cf0b,2014-03-20 20:52:02,20,5,3,male,1,stargazer,6.0,20,Russell Terrier,Pure Breed,Terrier,20,1.7473135965
-fd67a472-7144-11e5-ba71-058fbc01cf0b,2014-03-24 11:54:54,11,2,3,female,1,charmer,6.0,30,Border Collie,Pure Breed,Herding,27,13.558428152
-fd67ae40-7144-11e5-ba71-058fbc01cf0b,2014-03-29 22:33:21,22,7,3,female,1,charmer,7.0,10,Mixed,Mixed Breed/ Other/ I Don't Know,,31,7.2100752315
-fd67b098-7144-11e5-ba71-058fbc01cf0b,2014-03-30 17:31:17,17,1,3,male,0,charmer,0.0,50,Australian Shepherd,Pure Breed,Herding,20,0.49155519006
-fd67f738-7144-11e5-ba71-058fbc01cf0b,2014-04-18 19:17:05,19,6,4,female,1,expert,5.0,30,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.48019980507
-fd67fc24-7144-11e5-ba71-058fbc01cf0b,2014-04-19 17:59:06,17,7,4,male,1,charmer,10.0,40,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.19578642787
-fd680124-7144-11e5-ba71-058fbc01cf0b,2014-11-10 21:21:06,21,2,11,female,1,,8.0,70,Belgian Tervuren,Pure Breed,Herding,13,2.9301138117
-fd681344-7144-11e5-ba71-058fbc01cf0b,2014-04-28 05:43:40,5,2,4,male,1,protodog,8.0,50,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.0016873781629
-fd6816be-7144-11e5-ba71-058fbc01cf0b,2014-04-29 21:33:31,21,3,4,female,1,maverick,2.0,80,German Shepherd Dog,Pure Breed,Herding,28,1.9169491598
-fd684d5a-7144-11e5-ba71-058fbc01cf0b,2014-05-09 23:10:38,23,6,5,male,0,socialite,6.0,50,Belgian Tervuren,Pure Breed,Herding,20,24.317203338
-fd685084-7144-11e5-ba71-058fbc01cf0b,2014-06-13 21:51:56,21,6,6,female,1,charmer,1.0,60,Golden Retriever-Labrador Retriever Mix,Cross Breed,,20,0.40864217836
-fd6852dc-7144-11e5-ba71-058fbc01cf0b,2014-05-09 18:59:40,18,6,5,male,1,socialite,1.0,60,Labrador Retriever-Golden Retriever Mix,Cross Breed,,20,0.58859344542
-fd6858c2-7144-11e5-ba71-058fbc01cf0b,2014-05-13 23:30:47,23,3,5,female,0,socialite,6.0,20,English Cocker Spaniel,Pure Breed,Sporting,20,1.0051449805
-fd68598a-7144-11e5-ba71-058fbc01cf0b,2014-05-17 15:51:57,15,7,5,female,0,socialite,0.0,40,Golden Retriever-Labrador Retriever Mix,Cross Breed,,20,2.6319937865
-fd686f9c-7144-11e5-ba71-058fbc01cf0b,2014-06-01 22:55:01,22,1,6,male,1,renaissance-dog,5.0,40,Soft Coated Wheaten Terrier,Pure Breed,Terrier,20,0.6445711501
-fd6872c6-7144-11e5-ba71-058fbc01cf0b,2014-05-18 19:59:11,19,1,5,male,0,socialite,1.0,90,Labrador Retriever,Pure Breed,Sporting,20,1.1153782895
-fd68732a-7144-11e5-ba71-058fbc01cf0b,2014-05-19 08:49:02,8,2,5,male,1,renaissance-dog,1.0,20,Labradoodle,Popular Hybrid,,20,0.14707236842
-fd6875e6-7144-11e5-ba71-058fbc01cf0b,2014-05-29 12:00:50,12,5,5,male,0,renaissance-dog,7.0,0,Chihuahua-Yorkshire Terrier Mix,Cross Breed,,20,0.22000913743
-fd688478-7144-11e5-ba71-058fbc01cf0b,2014-05-25 11:52:28,11,1,5,female,0,renaissance-dog,0.0,50,Labrador Retriever-Golden Retriever Mix,Cross Breed,,20,0.74931225633
-fd689710-7144-11e5-ba71-058fbc01cf0b,2014-05-28 02:03:54,2,4,5,male,0,renaissance-dog,6.0,150,Irish Wolfhound,Pure Breed,Hound,20,0.21283199318
-fd68bca4-7144-11e5-ba71-058fbc01cf0b,2014-06-07 10:28:48,10,7,6,male,1,einstein,5.0,20,Mixed,Mixed Breed/ Other/ I Don't Know,,42,0.10873419151
-fd68cd48-7144-11e5-ba71-058fbc01cf0b,2014-06-13 21:36:49,21,6,6,female,1,renaissance-dog,0.0,0,Maltese-Poodle Mix,Cross Breed,,20,0.091566154972
-fd68d2ac-7144-11e5-ba71-058fbc01cf0b,2014-06-16 21:54:02,21,2,6,male,1,ace,6.0,70,Other,Mixed Breed/ Other/ I Don't Know,,22,1.8152441578
-fd68d4a0-7144-11e5-ba71-058fbc01cf0b,2014-06-17 17:58:54,17,3,6,female,1,maverick,2.0,190,Shih Tzu,Pure Breed,Toy,20,0.0011744639396
-fd68d55e-7144-11e5-ba71-058fbc01cf0b,2014-06-17 20:19:29,20,3,6,male,0,stargazer,1.0,190,Shih Tzu,Pure Breed,Toy,20,0.0022283138427
-fd68e80a-7144-11e5-ba71-058fbc01cf0b,2014-06-27 17:25:33,17,6,6,male,,renaissance-dog,6.0,30,Puggle,Popular Hybrid,,20,0.0064662524414
-fd68f6ce-7144-11e5-ba71-058fbc01cf0b,2014-06-30 23:06:49,23,2,6,female,1,ace,8.0,50,Siberian Husky,Pure Breed,Working,28,13.260423954
-fd68fa20-7144-11e5-ba71-058fbc01cf0b,2014-06-29 16:15:21,16,1,6,female,1,socialite,7.0,10,Shetland Sheepdog,Pure Breed,Herding,20,3.0178782895
-fd68fe62-7144-11e5-ba71-058fbc01cf0b,2014-06-29 16:45:32,16,1,6,female,1,renaissance-dog,7.0,10,Shetland Sheepdog,Pure Breed,Herding,19,0.0091782407382
-fd690ef2-7144-11e5-ba71-058fbc01cf0b,2014-06-30 22:29:10,22,2,6,male,1,maverick,10.0,50,Border Collie-Belgian Sheepdog Mix,Cross Breed,,20,0.0065777290454
-fd691a3c-7144-11e5-ba71-058fbc01cf0b,2014-07-10 10:10:28,10,5,7,male,1,ace,5.0,10,Parson Russell Terrier,Pure Breed,Terrier,20,0.2062627924
-fd692ee6-7144-11e5-ba71-058fbc01cf0b,2014-07-17 20:45:19,20,5,7,male,,socialite,5.0,70,Labrador Retriever,Pure Breed,Sporting,20,0.0031390107224
-fd692f4a-7144-11e5-ba71-058fbc01cf0b,2014-07-17 22:18:07,22,5,7,male,,renaissance-dog,2.0,70,Labrador Retriever,Pure Breed,Sporting,20,0.0029544346953
-fd693dbe-7144-11e5-ba71-058fbc01cf0b,2014-08-05 15:33:02,15,3,8,male,1,charmer,2.0,0,Shorkie,Popular Hybrid,,20,0.33179215399
-fd696dd4-7144-11e5-ba71-058fbc01cf0b,2014-08-15 22:13:05,22,6,8,male,1,protodog,6.0,10,Other,Mixed Breed/ Other/ I Don't Know,,23,0.9076288931
-fd696e38-7144-11e5-ba71-058fbc01cf0b,2014-08-15 21:43:51,21,6,8,male,1,socialite,7.0,10,Other,Mixed Breed/ Other/ I Don't Know,,23,0.91009364478
-fd6986ca-7144-11e5-ba71-058fbc01cf0b,2014-09-01 01:46:19,1,2,9,female,0,socialite,0.0,40,Belgian Malinois,Pure Breed,Herding,20,2.4669657651
-fd699516-7144-11e5-ba71-058fbc01cf0b,2014-09-05 08:02:19,8,6,9,male,0,protodog,5.0,10,Poodle,Pure Breed,Non-Sporting,20,1.5687426901
-fd6998a4-7144-11e5-ba71-058fbc01cf0b,2014-09-05 07:53:49,7,6,9,male,0,protodog,2.0,0,Poodle,Pure Breed,Non-Sporting,20,1.5142336745
-fd699908-7144-11e5-ba71-058fbc01cf0b,2014-09-12 13:16:13,13,6,9,male,0,protodog,2.0,50,Mixed,Mixed Breed/ Other/ I Don't Know,,20,1.1973148148
-fd699c28-7144-11e5-ba71-058fbc01cf0b,2014-09-19 17:42:37,17,6,9,male,0,,0.0,20,Pembroke Welsh Corgi,Pure Breed,Herding,4,1.0036574074
-fd699c8c-7144-11e5-ba71-058fbc01cf0b,2014-10-08 08:54:34,8,4,10,male,1,protodog,4.0,0,Pomeranian,Pure Breed,Toy,20,0.0085916179355
-fd69a682-7144-11e5-ba71-058fbc01cf0b,2014-09-08 18:25:59,18,2,9,male,1,stargazer,2.0,10,Mixed,Mixed Breed/ Other/ I Don't Know,,20,5.9459265351
-fd69b186-7144-11e5-ba71-058fbc01cf0b,2014-09-10 11:53:47,11,4,9,male,0,protodog,8.0,10,Bichon Frise-Poodle Mix,Cross Breed,,20,1.0415612817
-fd69d634-7144-11e5-ba71-058fbc01cf0b,2014-09-12 03:18:36,3,6,9,female,1,socialite,2.0,60,I Don't Know,Mixed Breed/ Other/ I Don't Know,,20,4.8418019006
-fd69dba2-7144-11e5-ba71-058fbc01cf0b,2014-09-13 16:51:44,16,7,9,female,1,protodog,4.0,40,American Staffordshire Terrier-Labrador Retriever Mix,Cross Breed,,20,7.0552570663
-fd69f68c-7144-11e5-ba71-058fbc01cf0b,2014-09-13 15:51:25,15,7,9,female,1,ace,9.0,10,Poodle,Pure Breed,Non-Sporting,20,0.52782955653
-fd69f862-7144-11e5-ba71-058fbc01cf0b,2014-09-13 18:22:24,18,7,9,male,1,ace,4.0,30,Pembroke Welsh Corgi,Pure Breed,Herding,20,5.8524567495
-fd6a1270-7144-11e5-ba71-058fbc01cf0b,2014-09-19 23:10:40,23,6,9,male,,protodog,3.0,30,Australian Shepherd,Pure Breed,Herding,36,4.6573468915
-fd6a1644-7144-11e5-ba71-058fbc01cf0b,2014-09-24 20:27:37,20,4,9,female,1,renaissance-dog,1.0,30,Mixed,Mixed Breed/ Other/ I Don't Know,,20,5.0488675682
-fd6a181a-7144-11e5-ba71-058fbc01cf0b,2014-10-06 04:40:15,4,2,10,male,0,stargazer,4.0,20,I Don't Know,Mixed Breed/ Other/ I Don't Know,,20,0.071302387912
-fd6a3b2e-7144-11e5-ba71-058fbc01cf0b,2014-09-23 13:15:47,13,3,9,female,0,maverick,1.0,40,Australian Shepherd,Pure Breed,Herding,20,0.10395163255
-fd6a3ef8-7144-11e5-ba71-058fbc01cf0b,2014-09-25 10:49:33,10,5,9,female,1,stargazer,7.0,0,Poodle,Pure Breed,Non-Sporting,20,0.94923976608
-fd6a41d2-7144-11e5-ba71-058fbc01cf0b,2014-09-25 18:06:06,18,5,9,female,0,ace,3.0,0,Mixed,Mixed Breed/ Other/ I Don't Know,,20,2.5342750975
-fd6a4c18-7144-11e5-ba71-058fbc01cf0b,2014-10-04 00:50:19,0,7,10,female,1,socialite,2.0,70,Labrador Retriever-Weimaraner Mix,Cross Breed,,31,11.298986883
-fd6a4c86-7144-11e5-ba71-058fbc01cf0b,2014-10-04 01:59:36,1,7,10,male,1,charmer,4.0,70,Labrador Retriever-Weimaraner Mix,Cross Breed,,30,4.7936717752
-fd6a51ea-7144-11e5-ba71-058fbc01cf0b,2014-10-04 01:43:43,1,7,10,male,1,protodog,2.0,20,Samoyed,Pure Breed,Working,20,0.012956871345
-fd6a5dc0-7144-11e5-ba71-058fbc01cf0b,2014-10-06 01:02:34,1,2,10,female,1,expert,5.0,70,German Shepherd Dog,Pure Breed,Herding,20,0.37454861111
-fd6a68e2-7144-11e5-ba71-058fbc01cf0b,2014-10-06 00:59:40,0,2,10,male,0,ace,1.0,50,German Shorthaired Pointer,Pure Breed,Sporting,20,0.47794651559
-fd6a7490-7144-11e5-ba71-058fbc01cf0b,2014-10-06 00:55:58,0,2,10,male,1,socialite,5.0,70,Golden Retriever,Pure Breed,Sporting,20,1.6869724659
-fd6a7774-7144-11e5-ba71-058fbc01cf0b,2014-10-06 00:57:46,0,2,10,female,1,,4.0,0,Chihuahua,Pure Breed,Toy,2,3.9153356481
-fd6acaee-7144-11e5-ba71-058fbc01cf0b,2014-10-07 23:06:18,23,3,10,male,0,renaissance-dog,2.0,120,Newfoundland,Pure Breed,Working,20,2.0990478801
-fd6ade30-7144-11e5-ba71-058fbc01cf0b,2014-10-06 01:23:22,1,2,10,male,1,protodog,7.0,90,American Staffordshire Terrier-Dogo Argentino Mix,Cross Breed,,20,0.10491106238
-fd6be38e-7144-11e5-ba71-058fbc01cf0b,2014-10-07 22:11:33,22,3,10,female,1,protodog,2.0,50,German Shepherd Dog-Keeshond Mix,Cross Breed,,20,0.21843932749
-fd6bf766-7144-11e5-ba71-058fbc01cf0b,2014-10-06 01:54:49,1,2,10,male,1,,6.0,50,Australian Shepherd,Pure Breed,Herding,14,1.8472961182
-fd6ca486-7144-11e5-ba71-058fbc01cf0b,2014-10-07 00:35:23,0,3,10,female,1,maverick,7.0,20,French Bulldog,Pure Breed,Non-Sporting,20,0.73865801657
-fd6caaa8-7144-11e5-ba71-058fbc01cf0b,2014-10-06 16:16:59,16,2,10,female,1,renaissance-dog,0.0,30,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.43684393275
-fd6cae9a-7144-11e5-ba71-058fbc01cf0b,2014-10-08 02:27:06,2,4,10,female,1,stargazer,12.0,40,Mixed,Mixed Breed/ Other/ I Don't Know,,20,1.421521077
-fd6cc268-7144-11e5-ba71-058fbc01cf0b,2014-10-06 04:56:16,4,2,10,male,1,ace,0.0,40,German Shorthaired Pointer,Pure Breed,Sporting,20,0.082545077974
-fd6cec84-7144-11e5-ba71-058fbc01cf0b,2014-10-11 03:09:35,3,7,10,female,1,renaissance-dog,8.0,20,Cockapoo,Popular Hybrid,,20,0.4273373538
-fd6cfd96-7144-11e5-ba71-058fbc01cf0b,2014-10-10 01:01:21,1,6,10,male,1,,5.0,60,Mixed,Mixed Breed/ Other/ I Don't Know,,4,0.16030478396
-fd6d0cfa-7144-11e5-ba71-058fbc01cf0b,2014-10-06 17:55:48,17,2,10,female,1,socialite,10.0,20,Cockapoo,Popular Hybrid,,20,0.17166544835
-fd6d1182-7144-11e5-ba71-058fbc01cf0b,2014-10-10 13:22:58,13,6,10,male,1,,3.0,60,Portuguese Water Dog,Pure Breed,Working,3,0.0046238425997
-fd6d165a-7144-11e5-ba71-058fbc01cf0b,2014-10-06 13:43:08,13,2,10,male,1,ace,6.0,50,Poodle,Pure Breed,Non-Sporting,25,2.1362205826
-fd6d1b1e-7144-11e5-ba71-058fbc01cf0b,2014-10-06 14:01:20,14,2,10,male,0,protodog,1.0,50,Belgian Malinois,Pure Breed,Herding,20,0.0030604288484
-fd6d1ea2-7144-11e5-ba71-058fbc01cf0b,2014-10-06 15:28:42,15,2,10,female,1,,6.0,50,Labrador Retriever,Pure Breed,Sporting,7,2.8675501543
-fd6d6718-7144-11e5-ba71-058fbc01cf0b,2014-10-06 17:27:41,17,2,10,male,1,,7.0,70,Golden Retriever,Pure Breed,Sporting,14,4.9491470798
-fd6d8c70-7144-11e5-ba71-058fbc01cf0b,2014-10-06 17:29:37,17,2,10,male,1,protodog,0.0,40,Boxer,Pure Breed,Working,20,3.8491209795
-fd6dbcfe-7144-11e5-ba71-058fbc01cf0b,2014-10-06 18:29:40,18,2,10,female,1,renaissance-dog,6.0,50,Labrador Retriever-German Shepherd Dog Mix,Cross Breed,,20,0.43521076998
-fd6df8f4-7144-11e5-ba71-058fbc01cf0b,2014-10-06 20:36:21,20,2,10,female,1,ace,6.0,80,Golden Retriever,Pure Breed,Sporting,20,0.38084125244
-fd6e0286-7144-11e5-ba71-058fbc01cf0b,2014-10-09 05:29:07,5,5,10,male,0,,0.0,50,Poodle,Pure Breed,Non-Sporting,16,1.6602407407
-fd6e28e2-7144-11e5-ba71-058fbc01cf0b,2014-10-21 02:05:28,2,3,10,male,1,,8.0,30,Other,Mixed Breed/ Other/ I Don't Know,,2,0.0046527776845
-fd6e94d0-7144-11e5-ba71-058fbc01cf0b,2014-10-07 02:04:42,2,3,10,female,1,,6.0,70,Labrador Retriever,Pure Breed,Sporting,9,2.0001157407
-fd6eb9a6-7144-11e5-ba71-058fbc01cf0b,2014-10-07 01:46:40,1,3,10,male,1,charmer,5.0,10,Miniature Pinscher-Basenji Mix,Cross Breed,,20,0.36764985381
-fd6ef2cc-7144-11e5-ba71-058fbc01cf0b,2014-10-07 13:07:18,13,3,10,male,1,,6.0,10,West Highland White Terrier,Pure Breed,Terrier,19,0.24269483024
-fd6efce0-7144-11e5-ba71-058fbc01cf0b,2014-10-12 18:09:00,18,1,10,female,1,,7.0,30,Brittany,Pure Breed,Sporting,11,8.4103773148
-fd6f505a-7144-11e5-ba71-058fbc01cf0b,2014-10-07 19:54:59,19,3,10,male,1,charmer,5.0,70,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.36415387427
-fd6f5c4e-7144-11e5-ba71-058fbc01cf0b,2014-10-07 16:58:19,16,3,10,female,0,,0.0,50,German Shepherd Dog,Pure Breed,Herding,4,0.31907021607
-fd6f6c84-7144-11e5-ba71-058fbc01cf0b,2014-10-16 20:42:50,20,5,10,female,1,,0.0,10,Miniature Schnauzer,Pure Breed,Terrier,6,0.97311111109
-fd6f7260-7144-11e5-ba71-058fbc01cf0b,2014-10-08 22:48:34,22,4,10,female,1,,6.0,10,Shih Tzu-Bichon Frise Mix,Cross Breed,,16,10.054863426
-fd6f790e-7144-11e5-ba71-058fbc01cf0b,2014-10-18 14:00:16,14,7,10,male,1,,14.0,30,Mixed,Mixed Breed/ Other/ I Don't Know,,16,0.46752469136
-fd6f8962-7144-11e5-ba71-058fbc01cf0b,2014-10-07 20:51:50,20,3,10,male,1,ace,2.0,10,Scottish Terrier,Pure Breed,Terrier,20,0.2588456384
-fd6fb46e-7144-11e5-ba71-058fbc01cf0b,2014-10-08 03:18:01,3,4,10,female,1,ace,7.0,30,Border Collie,Pure Breed,Herding,20,1.7214625975
-fd6fc878-7144-11e5-ba71-058fbc01cf0b,2014-10-07 23:50:23,23,3,10,male,1,charmer,13.0,90,Labrador Retriever,Pure Breed,Sporting,20,1.7234216618
-fd6fe920-7144-11e5-ba71-058fbc01cf0b,2014-10-08 12:41:53,12,4,10,male,1,ace,1.0,10,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.16196698343
-fd701fda-7144-11e5-ba71-058fbc01cf0b,2014-10-08 06:48:25,6,4,10,male,1,socialite,4.0,100,Chesapeake Bay Retriever-Labrador Retriever Mix,Cross Breed,,20,0.0027083333299
-fd702b7e-7144-11e5-ba71-058fbc01cf0b,2014-10-09 01:18:26,1,5,10,female,1,,5.0,10,Shih Tzu,Pure Breed,Toy,18,1.9420281863
-fd70338a-7144-11e5-ba71-058fbc01cf0b,2014-10-16 16:13:33,16,5,10,female,1,ace,2.0,20,Rat Terrier,Pure Breed,,20,6.3197807018
-fd7039a2-7144-11e5-ba71-058fbc01cf0b,2014-10-16 11:05:12,11,5,10,female,1,,4.0,60,Mixed,Mixed Breed/ Other/ I Don't Know,,11,0.91128935185
-fd7040a0-7144-11e5-ba71-058fbc01cf0b,2014-10-08 18:57:06,18,4,10,male,1,,2.0,40,Collie-Golden Retriever Mix,Cross Breed,,15,0.14708498677
-fd7042ee-7144-11e5-ba71-058fbc01cf0b,2014-10-08 19:06:37,19,4,10,male,1,maverick,5.0,30,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.0061951754432
-fd7059a0-7144-11e5-ba71-058fbc01cf0b,2014-10-10 19:46:26,19,6,10,female,1,ace,7.0,10,West Highland White Terrier,Pure Breed,Terrier,20,0.74200536062
-fd706490-7144-11e5-ba71-058fbc01cf0b,2014-10-08 22:51:00,22,4,10,male,1,protodog,1.0,50,Mixed,Mixed Breed/ Other/ I Don't Know,,22,8.2343022487
-fd7076d8-7144-11e5-ba71-058fbc01cf0b,2014-10-08 23:40:05,23,4,10,female,1,stargazer,6.0,40,Labrador Retriever,Pure Breed,Sporting,20,0.57845882066
-fd7095e6-7144-11e5-ba71-058fbc01cf0b,2014-10-10 02:45:56,2,6,10,female,0,expert,10.0,0,Pekingese,Pure Breed,Toy,20,0.0020120614023
-fd709b18-7144-11e5-ba71-058fbc01cf0b,2014-10-09 07:08:10,7,5,10,male,0,charmer,0.0,40,Border Collie,Pure Breed,Herding,20,0.36904544347
-fd70a7de-7144-11e5-ba71-058fbc01cf0b,2014-10-10 11:51:24,11,6,10,female,1,,5.0,40,Mixed,Mixed Breed/ Other/ I Don't Know,,18,3.0633258442
-fd70a96e-7144-11e5-ba71-058fbc01cf0b,2014-10-09 23:40:09,23,5,10,male,1,protodog,0.0,20,Basset Hound,Pure Breed,Hound,20,4.1467580409
-fd70a9d2-7144-11e5-ba71-058fbc01cf0b,2014-10-12 04:01:20,4,1,10,male,1,protodog,4.0,30,Border Collie,Pure Breed,Herding,20,0.9972959308
-fd70ad42-7144-11e5-ba71-058fbc01cf0b,2014-10-09 17:42:21,17,5,10,male,1,,2.0,190,Shih Tzu,Pure Breed,Toy,5,0.00099247685326
-fd70d1e6-7144-11e5-ba71-058fbc01cf0b,2014-10-10 01:16:33,1,6,10,male,1,socialite,2.0,50,Mixed,Mixed Breed/ Other/ I Don't Know,,31,7.5310771605
-fd70d2ae-7144-11e5-ba71-058fbc01cf0b,2014-10-09 21:19:05,21,5,10,female,1,socialite,5.0,30,Mixed,Mixed Breed/ Other/ I Don't Know,,20,1.265433114
-fd70d43e-7144-11e5-ba71-058fbc01cf0b,2014-10-18 22:55:21,22,7,10,female,1,,3.0,10,Bichon Frise-Poodle Mix,Cross Breed,,11,4.5009016204
-fd70d506-7144-11e5-ba71-058fbc01cf0b,2014-10-09 21:14:28,21,5,10,female,0,ace,2.0,80,Bullmastiff-Labrador Retriever Mix,Cross Breed,,20,2.9057364766
-fd70df6a-7144-11e5-ba71-058fbc01cf0b,2014-10-11 19:19:22,19,7,10,male,1,protodog,3.0,80,Labrador Retriever-Border Collie Mix,Cross Breed,,20,3.0040978314
-fd70e924-7144-11e5-ba71-058fbc01cf0b,2014-10-13 23:45:26,23,2,10,female,1,,1.0,30,Mixed,Mixed Breed/ Other/ I Don't Know,,7,28.577957176
-fd70ea64-7144-11e5-ba71-058fbc01cf0b,2014-10-10 00:14:26,0,6,10,female,1,charmer,5.0,10,Miniature Schnauzer,Pure Breed,Terrier,21,1.9018975694
-fd70f770-7144-11e5-ba71-058fbc01cf0b,2014-10-10 03:14:02,3,6,10,male,1,charmer,4.0,40,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.032508528264
-fd70fd2e-7144-11e5-ba71-058fbc01cf0b,2014-10-12 06:24:53,6,1,10,female,1,,3.0,40,Australian Shepherd-Australian Cattle Dog Mix,Cross Breed,,7,2.0095659722
-fd713528-7144-11e5-ba71-058fbc01cf0b,2014-10-10 19:30:28,19,6,10,female,1,ace,5.0,10,Mixed,Mixed Breed/ Other/ I Don't Know,,21,0.011174189817
-fd714d88-7144-11e5-ba71-058fbc01cf0b,2014-10-11 00:00:29,0,7,10,male,1,charmer,6.0,80,Boxer-Labrador Retriever Mix,Cross Breed,,20,2.3163980263
-fd719e14-7144-11e5-ba71-058fbc01cf0b,2014-10-11 18:27:25,18,7,10,female,1,,6.0,10,Shih Tzu,Pure Breed,Toy,7,0.007617669762
-fd71a292-7144-11e5-ba71-058fbc01cf0b,2014-10-11 18:52:21,18,7,10,male,1,,7.0,50,Norwegian Elkhound,Pure Breed,Hound,11,0.81247916666
-fd71adaa-7144-11e5-ba71-058fbc01cf0b,2014-10-11 20:46:32,20,7,10,female,1,socialite,5.0,80,Bouvier des Flandres,Pure Breed,Herding,33,3.8818746383
-fd71c39e-7144-11e5-ba71-058fbc01cf0b,2014-10-15 17:45:02,17,4,10,female,1,ace,7.0,50,Australian Shepherd,Pure Breed,Herding,20,2.4349262914
-fd71d5f0-7144-11e5-ba71-058fbc01cf0b,2014-10-12 05:45:19,5,1,10,male,1,ace,3.0,10,Shetland Sheepdog,Pure Breed,Herding,20,12.514624147
-fd7200e8-7144-11e5-ba71-058fbc01cf0b,2014-10-12 16:07:21,16,1,10,male,1,,0.0,50,Golden Doodle,Popular Hybrid,,16,1.3367021605
-fd720796-7144-11e5-ba71-058fbc01cf0b,2014-10-12 17:50:05,17,1,10,male,1,renaissance-dog,1.0,10,Havanese,Pure Breed,Toy,20,0.53435246102
-fd7209ee-7144-11e5-ba71-058fbc01cf0b,2014-10-12 18:00:27,18,1,10,male,1,,5.0,10,Miniature Schnauzer,Pure Breed,Terrier,11,1.0240243056
-fd72237a-7144-11e5-ba71-058fbc01cf0b,2014-10-12 22:23:00,22,1,10,male,1,charmer,0.0,10,Australian Shepherd,Pure Breed,Herding,20,1.7809478557
-fd722ae6-7144-11e5-ba71-058fbc01cf0b,2014-10-12 23:37:23,23,1,10,male,1,,8.0,160,Chow Chow-Labrador Retriever Mix,Cross Breed,,4,1.2232253087
-fd723b1c-7144-11e5-ba71-058fbc01cf0b,2014-10-13 03:38:41,3,2,10,female,1,ace,8.0,60,Labradoodle,Popular Hybrid,,20,1.9980074318
-fd724670-7144-11e5-ba71-058fbc01cf0b,2014-10-13 15:30:26,15,2,10,female,1,,8.0,50,Golden Retriever,Pure Breed,Sporting,7,0.25619212963
-fd725dae-7144-11e5-ba71-058fbc01cf0b,2014-10-13 09:14:20,9,2,10,female,1,maverick,7.0,40,Labradoodle,Popular Hybrid,,20,0.0037146686135
-fd7265ba-7144-11e5-ba71-058fbc01cf0b,2014-10-13 17:54:56,17,2,10,male,1,renaissance-dog,1.0,20,Havanese,Pure Breed,Toy,36,10.143623347
-fd726f92-7144-11e5-ba71-058fbc01cf0b,2014-10-18 20:53:39,20,7,10,female,1,einstein,6.0,70,Mixed,Mixed Breed/ Other/ I Don't Know,,25,4.3730473573
-fd72776c-7144-11e5-ba71-058fbc01cf0b,2014-10-15 21:17:24,21,4,10,male,1,renaissance-dog,9.0,10,Cockapoo,Popular Hybrid,,20,0.63172149123
-fd728108-7144-11e5-ba71-058fbc01cf0b,2014-10-14 01:12:16,1,3,10,male,1,ace,4.0,10,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.77455409357
-fd7285ae-7144-11e5-ba71-058fbc01cf0b,2014-10-15 02:19:55,2,4,10,male,1,socialite,4.0,80,German Shepherd Dog-Border Collie Mix,Cross Breed,,20,1.3021546053
-fd728b76-7144-11e5-ba71-058fbc01cf0b,2014-10-14 11:42:36,11,3,10,female,0,ace,5.0,10,Field Spaniel,Pure Breed,Sporting,20,0.11111111111
-fd72ae44-7144-11e5-ba71-058fbc01cf0b,2014-10-14 23:43:11,23,3,10,male,0,charmer,2.0,70,Labrador Retriever,Pure Breed,Sporting,20,0.26706566764
-fd72c582-7144-11e5-ba71-058fbc01cf0b,2014-10-15 23:34:04,23,4,10,female,1,renaissance-dog,2.0,50,Mixed,Mixed Breed/ Other/ I Don't Know,,20,15.108564206
-fd72d252-7144-11e5-ba71-058fbc01cf0b,2014-10-15 22:08:30,22,4,10,female,1,maverick,3.0,50,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.5239047271
-fd72d7a2-7144-11e5-ba71-058fbc01cf0b,2014-11-18 01:57:24,1,3,11,female,1,ace,3.0,20,Mixed,Mixed Breed/ Other/ I Don't Know,,20,2.7222605994
-fd72dc20-7144-11e5-ba71-058fbc01cf0b,2014-10-16 13:52:40,13,5,10,male,0,,0.0,0,Mixed,Mixed Breed/ Other/ I Don't Know,,7,10.71951196
-fd72dff4-7144-11e5-ba71-058fbc01cf0b,2014-10-16 03:53:32,3,5,10,female,1,charmer,3.0,50,Poodle,Pure Breed,Non-Sporting,20,0.19838084795
-fd72e3c8-7144-11e5-ba71-058fbc01cf0b,2014-10-16 17:35:57,17,5,10,male,1,ace,5.0,50,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.67435977096
-fd72e4f4-7144-11e5-ba71-058fbc01cf0b,2014-10-16 12:49:57,12,5,10,female,1,maverick,3.0,10,Mixed,Mixed Breed/ Other/ I Don't Know,,20,1.5349932992
-fd72e79c-7144-11e5-ba71-058fbc01cf0b,2014-10-16 16:53:38,16,5,10,male,1,,4.0,10,Shetland Sheepdog,Pure Breed,Herding,16,0.13463194444
-fd72f048-7144-11e5-ba71-058fbc01cf0b,2014-11-10 21:57:08,21,2,11,male,1,,6.0,40,Brittany,Pure Breed,Sporting,16,11.601287037
-fd730d94-7144-11e5-ba71-058fbc01cf0b,2014-10-17 03:59:18,3,6,10,male,0,,2.0,60,Flat-Coated Retriever,Pure Breed,Sporting,11,0.14218981481
-fd732072-7144-11e5-ba71-058fbc01cf0b,2014-10-17 16:11:42,16,6,10,male,1,socialite,2.0,20,Mixed,Mixed Breed/ Other/ I Don't Know,,23,4.547014415
-fd734db8-7144-11e5-ba71-058fbc01cf0b,2014-11-26 15:13:40,15,4,11,female,0,stargazer,9.0,40,Border Collie,Pure Breed,Herding,28,11.235794753
-fd737b44-7144-11e5-ba71-058fbc01cf0b,2014-10-21 00:17:03,0,3,10,male,1,,3.0,60,American Staffordshire Terrier,Pure Breed,Terrier,15,2.8372247024
-fd738314-7144-11e5-ba71-058fbc01cf0b,2014-10-19 16:49:46,16,1,10,male,1,renaissance-dog,1.0,10,Yorkshire Terrier,Pure Breed,Toy,20,0.26587414717
-fd738710-7144-11e5-ba71-058fbc01cf0b,2014-10-19 18:52:08,18,1,10,male,0,,0.0,30,Rottweiler,Pure Breed,Working,7,0.19584490741
-fd738a30-7144-11e5-ba71-058fbc01cf0b,2014-10-19 23:28:07,23,1,10,female,1,maverick,3.0,0,Rat Terrier-Chihuahua Mix,Cross Breed,,28,4.255160751
-fd73b53c-7144-11e5-ba71-058fbc01cf0b,2014-10-21 19:24:18,19,3,10,male,0,,2.0,190,Shih Tzu,Pure Breed,Toy,7,0.0010628857996
-fd73fbfa-7144-11e5-ba71-058fbc01cf0b,2014-10-27 21:24:56,21,2,10,female,1,,3.0,50,Ibizan Hound-Greyhound Mix,Cross Breed,,13,1.0837606096
-fd744fe2-7144-11e5-ba71-058fbc01cf0b,2014-10-26 18:47:56,18,1,10,male,1,,8.0,40,Mixed,Mixed Breed/ Other/ I Don't Know,,11,19.709519676
-fd7451ae-7144-11e5-ba71-058fbc01cf0b,2014-10-26 19:27:27,19,1,10,female,1,protodog,13.0,20,Welsh Terrier,Pure Breed,Terrier,20,3.636690424
-fd746c70-7144-11e5-ba71-058fbc01cf0b,2014-10-27 23:38:00,23,2,10,male,1,expert,7.0,60,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.37434819688
-fd747dfa-7144-11e5-ba71-058fbc01cf0b,2014-10-29 20:26:15,20,4,10,male,1,charmer,3.0,20,French Bulldog,Pure Breed,Non-Sporting,20,17.05764559
-fd74b84c-7144-11e5-ba71-058fbc01cf0b,2014-11-01 08:54:40,8,7,11,male,0,,3.0,90,German Shepherd Dog,Pure Breed,Herding,7,15.97277392
-fd74b8ba-7144-11e5-ba71-058fbc01cf0b,2014-11-01 17:07:06,17,7,11,female,0,ace,0.0,20,Flat-Coated Retriever-Irish Water Spaniel Mix,Cross Breed,,20,0.79957967837
-fd74c602-7144-11e5-ba71-058fbc01cf0b,2015-01-29 03:23:32,3,5,1,female,1,,2.0,100,German Shepherd Dog,Pure Breed,Herding,11,1.1993472222
-fd74d6d8-7144-11e5-ba71-058fbc01cf0b,2014-11-02 23:50:17,23,1,11,male,1,ace,5.0,10,Bichon Frise-Shih Tzu Mix,Cross Breed,,20,5.0522630361
-fd74e452-7144-11e5-ba71-058fbc01cf0b,2014-11-03 23:53:41,23,2,11,female,1,stargazer,2.0,40,Labrador Retriever-Poodle Mix,Cross Breed,,20,0.42198769493
-fd74e934-7144-11e5-ba71-058fbc01cf0b,2014-11-04 02:29:05,2,3,11,female,1,charmer,2.0,20,Dachshund,Pure Breed,Hound,20,3.4779702729
-fd74fb40-7144-11e5-ba71-058fbc01cf0b,2014-11-07 15:38:57,15,6,11,male,1,expert,2.0,10,Russell Terrier-Japanese Chin Mix,Cross Breed,,28,4.22708762
-fd754cd0-7144-11e5-ba71-058fbc01cf0b,2014-11-10 00:12:10,0,2,11,female,1,,9.0,30,Mixed,Mixed Breed/ Other/ I Don't Know,,3,6.9500405092
-fd75c55c-7144-11e5-ba71-058fbc01cf0b,2014-11-12 02:11:45,2,4,11,female,1,,10.0,40,American Staffordshire Terrier-Whippet Mix,Cross Breed,,4,2.866871142
-fd75e6f4-7144-11e5-ba71-058fbc01cf0b,2014-11-12 20:14:21,20,4,11,male,1,stargazer,6.0,50,American Staffordshire Terrier,Pure Breed,Terrier,20,1.9466173246
-fd76286c-7144-11e5-ba71-058fbc01cf0b,2014-11-16 00:29:35,0,1,11,male,1,,5.0,30,Australian Shepherd-Border Collie Mix,Cross Breed,,4,5.9478356482
-fd764ad6-7144-11e5-ba71-058fbc01cf0b,2014-11-21 05:13:23,5,6,11,female,0,socialite,2.0,60,Golden Retriever,Pure Breed,Sporting,20,0.51084795322
-fd7666ba-7144-11e5-ba71-058fbc01cf0b,2014-11-24 02:02:19,2,2,11,female,1,socialite,10.0,20,Boston Terrier,Pure Breed,Non-Sporting,23,3.0453188131
-fd766728-7144-11e5-ba71-058fbc01cf0b,2014-11-24 02:25:24,2,2,11,female,1,maverick,7.0,20,Boston Terrier,Pure Breed,Non-Sporting,23,3.0445291456
-fd76832a-7144-11e5-ba71-058fbc01cf0b,2014-11-24 00:18:01,0,2,11,female,1,socialite,3.0,60,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.20474841618
-fd768da2-7144-11e5-ba71-058fbc01cf0b,2014-11-25 09:59:10,9,3,11,female,1,expert,1.0,30,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.40018518519
-fd76a558-7144-11e5-ba71-058fbc01cf0b,2014-11-24 23:59:50,23,2,11,male,0,socialite,1.0,70,Golden Retriever,Pure Breed,Sporting,20,0.37191398635
-fd76aa6c-7144-11e5-ba71-058fbc01cf0b,2014-11-25 01:22:03,1,3,11,female,1,socialite,3.0,40,Mixed,Mixed Breed/ Other/ I Don't Know,,21,12.841233218
-fd76b4b2-7144-11e5-ba71-058fbc01cf0b,2014-11-26 03:00:20,3,4,11,female,1,socialite,3.0,30,Australian Cattle Dog,Pure Breed,Herding,20,0.83702180799
-fd76b8ea-7144-11e5-ba71-058fbc01cf0b,2014-11-26 07:19:13,7,4,11,female,1,charmer,4.0,70,Rhodesian Ridgeback,Pure Breed,Hound,20,0.34846308479
-fd76bef8-7144-11e5-ba71-058fbc01cf0b,2014-11-27 16:58:49,16,5,11,male,1,,1.0,60,Mixed,Mixed Breed/ Other/ I Don't Know,,3,0.0025000000028
-fd76c27c-7144-11e5-ba71-058fbc01cf0b,2014-11-27 02:00:54,2,5,11,male,1,,3.0,80,Rottweiler-Labrador Retriever Mix,Cross Breed,,4,0.20891589504
-fd76cf2e-7144-11e5-ba71-058fbc01cf0b,2014-11-28 13:54:42,13,6,11,male,1,charmer,1.0,30,English Springer Spaniel,Pure Breed,Sporting,20,0.0028581871333
-fd76d35c-7144-11e5-ba71-058fbc01cf0b,2014-11-30 04:58:36,4,1,11,male,1,,5.0,40,Australian Shepherd,Pure Breed,Herding,11,1.0482685185
-fd76e8a6-7144-11e5-ba71-058fbc01cf0b,2015-03-05 16:35:44,16,5,3,female,1,ace,9.0,30,Vizsla,Pure Breed,Sporting,20,2.219122807
-fd7710b0-7144-11e5-ba71-058fbc01cf0b,2014-11-30 23:17:20,23,1,11,female,1,,4.0,60,Redbone Coonhound,Pure Breed,Hound,4,0.32632330246
-fd771542-7144-11e5-ba71-058fbc01cf0b,2014-12-01 13:15:43,13,2,12,male,1,,2.0,40,Border Collie,Pure Breed,Herding,4,0.0039236110942
-fd77186c-7144-11e5-ba71-058fbc01cf0b,2014-12-02 02:45:21,2,3,12,female,1,socialite,1.0,0,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.25547149123
-fd771ace-7144-11e5-ba71-058fbc01cf0b,2014-12-05 04:46:30,4,6,12,female,1,ace,13.0,40,Brittany-Basset Hound Mix,Cross Breed,,20,4.7177528021
-fd772e60-7144-11e5-ba71-058fbc01cf0b,2014-12-05 19:10:26,19,6,12,female,1,socialite,10.0,40,Australian Shepherd,Pure Breed,Herding,20,0.58825231481
-fd7764c0-7144-11e5-ba71-058fbc01cf0b,2014-12-05 00:11:06,0,6,12,male,1,socialite,4.0,60,American Pit Bull Terrier,Pure Breed,,20,0.51329982944
-fd77edf0-7144-11e5-ba71-058fbc01cf0b,2014-12-10 02:13:27,2,4,12,female,1,ace,4.0,60,Golden Retriever,Pure Breed,Sporting,25,11.12328559
-fd780312-7144-11e5-ba71-058fbc01cf0b,2014-12-15 01:11:06,1,2,12,male,1,expert,0.0,0,Pomapoo,Popular Hybrid,,20,0.057245979533
-fd780c4a-7144-11e5-ba71-058fbc01cf0b,2014-12-13 13:39:44,13,7,12,male,1,ace,5.0,90,Labrador Retriever,Pure Breed,Sporting,20,1.8475365497
-fd783382-7144-11e5-ba71-058fbc01cf0b,2014-12-26 23:35:51,23,6,12,male,1,renaissance-dog,1.0,50,Siberian Husky-Australian Shepherd Mix,Cross Breed,,20,0.83603192007
-fd78685c-7144-11e5-ba71-058fbc01cf0b,2014-12-22 21:07:06,21,2,12,female,1,socialite,2.0,10,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.79769736842
-fd788f58-7144-11e5-ba71-058fbc01cf0b,2015-02-03 10:59:29,10,3,2,male,1,protodog,7.0,50,Mixed,Mixed Breed/ Other/ I Don't Know,,25,0.0048051697523
-fd78a290-7144-11e5-ba71-058fbc01cf0b,2014-12-27 02:54:31,2,7,12,female,1,charmer,2.0,20,Brittany,Pure Breed,Sporting,20,2.8959167885
-fd78ada8-7144-11e5-ba71-058fbc01cf0b,2014-12-26 05:41:05,5,6,12,male,1,einstein,4.0,90,Labrador Retriever,Pure Breed,Sporting,20,0.42388767057
-fd78ebb0-7144-11e5-ba71-058fbc01cf0b,2014-12-26 18:14:54,18,6,12,male,0,ace,3.0,60,Flat-Coated Retriever,Pure Breed,Sporting,23,0.10298137626
-fd78f362-7144-11e5-ba71-058fbc01cf0b,2014-12-26 15:16:10,15,6,12,male,0,renaissance-dog,3.0,70,German Shepherd Dog,Pure Breed,Herding,20,0.0029513888907
-fd794b6e-7144-11e5-ba71-058fbc01cf0b,2014-12-28 23:00:10,23,1,12,male,1,socialite,3.0,30,I Don't Know,Mixed Breed/ Other/ I Don't Know,,20,0.20891934698
-fd795f6e-7144-11e5-ba71-058fbc01cf0b,2014-12-29 21:19:12,21,2,12,female,1,charmer,7.0,90,Rhodesian Ridgeback,Pure Breed,Hound,20,0.37529483431
-fd79c01c-7144-11e5-ba71-058fbc01cf0b,2015-01-02 19:01:37,19,6,1,male,1,stargazer,0.0,30,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.32635477583
-fd79f74e-7144-11e5-ba71-058fbc01cf0b,2015-01-05 23:06:37,23,2,1,male,1,ace,3.0,10,Pomeranian-Boston Terrier Mix,Cross Breed,,20,0.53086196393
-fd7a241c-7144-11e5-ba71-058fbc01cf0b,2015-01-08 22:52:05,22,5,1,female,1,socialite,7.0,40,Shetland Sheepdog,Pure Breed,Herding,35,7.1767657271
-fd7a27f0-7144-11e5-ba71-058fbc01cf0b,2015-01-09 12:41:20,12,6,1,female,1,charmer,8.0,10,West Highland White Terrier,Pure Breed,Terrier,20,0.0072691276805
-fd7a2b88-7144-11e5-ba71-058fbc01cf0b,2015-07-19 00:57:31,0,1,7,male,1,protodog,3.0,80,Doberman Pinscher,Pure Breed,Working,20,0.30807931287
-fd7a401e-7144-11e5-ba71-058fbc01cf0b,2015-01-12 21:34:02,21,2,1,female,1,stargazer,1.0,30,Mixed,Mixed Breed/ Other/ I Don't Know,,20,13.684582724
-fd7a9cc6-7144-11e5-ba71-058fbc01cf0b,2015-01-25 10:36:45,10,1,1,male,1,socialite,6.0,60,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.2736957846
-fd7ae654-7144-11e5-ba71-058fbc01cf0b,2015-02-05 23:44:15,23,5,2,male,1,expert,11.0,0,Poodle,Pure Breed,Non-Sporting,20,0.21144005848
-fd7afc84-7144-11e5-ba71-058fbc01cf0b,2015-02-12 03:06:21,3,5,2,male,1,maverick,2.0,0,Chihuahua,Pure Breed,Toy,20,3.5748075049
-fd7b0c38-7144-11e5-ba71-058fbc01cf0b,2015-02-16 20:00:04,20,2,2,male,1,,7.0,20,Shih Tzu,Pure Breed,Toy,4,0.80797067902
-fd7b2c18-7144-11e5-ba71-058fbc01cf0b,2015-02-20 21:40:28,21,6,2,male,1,charmer,1.0,70,Labrador Retriever,Pure Breed,Sporting,20,3.8836854289
-fd7b3f46-7144-11e5-ba71-058fbc01cf0b,2015-02-24 21:11:49,21,3,2,male,1,expert,10.0,190,Other,Mixed Breed/ Other/ I Don't Know,,20,0.31632066277
-fd7b400e-7144-11e5-ba71-058fbc01cf0b,2015-02-28 17:22:23,17,7,2,female,,socialite,3.0,90,Bernese Mountain Dog,Pure Breed,Working,22,5.0578797399
-fd7b5904-7144-11e5-ba71-058fbc01cf0b,2015-03-05 04:09:41,4,5,3,female,,ace,15.0,10,Chihuahua,Pure Breed,Toy,20,0.10177083333
-fd7b6048-7144-11e5-ba71-058fbc01cf0b,2015-03-10 01:10:33,1,3,3,male,,protodog,1.0,70,Labrador Retriever,Pure Breed,Sporting,20,2.5154038743
-fd7b60ac-7144-11e5-ba71-058fbc01cf0b,2015-03-19 00:26:18,0,5,3,female,0,stargazer,0.0,40,Labrador Retriever,Pure Breed,Sporting,20,1.1917592593
-fd7b6110-7144-11e5-ba71-058fbc01cf0b,2015-03-10 00:57:14,0,3,3,female,0,charmer,0.0,10,Mixed,Mixed Breed/ Other/ I Don't Know,,20,2.0330135234
-fd7b6174-7144-11e5-ba71-058fbc01cf0b,2015-03-10 00:42:23,0,3,3,female,0,socialite,0.0,40,Labrador Retriever,Pure Breed,Sporting,20,2.0349238548
-fd7b61ce-7144-11e5-ba71-058fbc01cf0b,2015-03-19 00:39:45,0,5,3,male,0,maverick,0.0,60,Labrador Retriever,Pure Breed,Sporting,20,3.778102461
-fd7b6660-7144-11e5-ba71-058fbc01cf0b,2015-03-22 23:10:18,23,1,3,female,1,protodog,6.0,20,Shetland Sheepdog,Pure Breed,Herding,20,0.31356542398
-fd7b766e-7144-11e5-ba71-058fbc01cf0b,2015-03-19 22:24:56,22,5,3,male,0,stargazer,5.0,30,Border Collie,Pure Breed,Herding,20,0.30864887914
-fd7bc394-7144-11e5-ba71-058fbc01cf0b,2015-04-06 21:46:33,21,2,4,female,0,socialite,0.0,0,Coton de Tulear,Pure Breed,,33,5.6853255208
-fd7bd096-7144-11e5-ba71-058fbc01cf0b,2015-04-15 10:38:36,10,4,4,male,0,charmer,1.0,100,Rottweiler,Pure Breed,Working,20,0.004966496104
-fd7be112-7144-11e5-ba71-058fbc01cf0b,2015-05-02 18:47:29,18,7,5,male,,protodog,12.0,20,Bichon Frise,Pure Breed,Non-Sporting,20,0.17963754873
-fd7c6448-7144-11e5-ba71-058fbc01cf0b,2015-05-12 13:25:00,13,3,5,male,1,protodog,3.0,10,Pug,Pure Breed,Toy,23,0.50313131313
-fd7d1820-7144-11e5-ba71-058fbc01cf0b,2015-05-14 03:29:21,3,5,5,male,1,socialite,1.0,50,Australian Shepherd,Pure Breed,Herding,20,0.0025871101351
-fd7e0f32-7144-11e5-ba71-058fbc01cf0b,2015-05-26 16:07:21,16,3,5,male,1,,4.0,70,Doberman Pinscher-Rottweiler Mix,Cross Breed,,1,NaN
-fd7e281e-7144-11e5-ba71-058fbc01cf0b,2015-05-15 23:28:29,23,6,5,male,1,charmer,4.0,20,Cocker Spaniel,Pure Breed,Sporting,20,0.94378654971
-fd7e71de-7144-11e5-ba71-058fbc01cf0b,2015-05-16 16:32:40,16,7,5,female,0,socialite,9.0,50,Collie,Pure Breed,Herding,36,4.2297423942
-fd7e8232-7144-11e5-ba71-058fbc01cf0b,2015-05-16 13:32:49,13,7,5,male,1,protodog,6.0,70,I Don't Know,Mixed Breed/ Other/ I Don't Know,,21,0.011073495372
-fd7e9362-7144-11e5-ba71-058fbc01cf0b,2015-05-16 15:52:19,15,7,5,male,0,socialite,0.0,50,Golden Retriever,Pure Breed,Sporting,20,0.32568347953
-fd7ea564-7144-11e5-ba71-058fbc01cf0b,2015-05-16 21:24:04,21,7,5,female,1,,2.0,40,English Springer Spaniel,Pure Breed,Sporting,12,0.0031134259187
-fd7ebf86-7144-11e5-ba71-058fbc01cf0b,2015-05-16 18:33:46,18,7,5,female,1,charmer,0.0,70,Komondor,Pure Breed,Working,20,0.43273513645
-fd7ec580-7144-11e5-ba71-058fbc01cf0b,2015-05-16 19:36:27,19,7,5,male,1,ace,10.0,100,German Shepherd Dog,Pure Breed,Herding,20,0.37297149123
-fd7ec652-7144-11e5-ba71-058fbc01cf0b,2015-05-19 00:17:23,0,3,5,male,0,protodog,5.0,70,Bouvier des Flandres,Pure Breed,Herding,20,0.26164351852
-fd7ed66a-7144-11e5-ba71-058fbc01cf0b,2015-05-24 21:41:04,21,1,5,male,0,protodog,0.0,60,Golden Retriever,Pure Breed,Sporting,20,0.058759137424
-fd7f0770-7144-11e5-ba71-058fbc01cf0b,2015-05-17 16:08:37,16,1,5,female,1,charmer,2.0,50,Gordon Setter,Pure Breed,Sporting,20,0.59819870858
-fd7f3862-7144-11e5-ba71-058fbc01cf0b,2015-05-18 00:18:04,0,2,5,male,1,socialite,9.0,10,Cairn Terrier,Pure Breed,Terrier,22,1.2402733686
-fd7f3c7c-7144-11e5-ba71-058fbc01cf0b,2015-05-18 01:01:42,1,2,5,female,1,protodog,7.0,10,Cairn Terrier,Pure Breed,Terrier,22,1.2391154101
-fd7fedd4-7144-11e5-ba71-058fbc01cf0b,2015-05-19 23:54:36,23,3,5,male,1,einstein,4.0,80,Labrador Retriever,Pure Breed,Sporting,20,0.78828460039
-fd7ffbb2-7144-11e5-ba71-058fbc01cf0b,2015-05-18 17:05:27,17,2,5,male,1,socialite,3.0,20,French Bulldog,Pure Breed,Non-Sporting,20,0.049242202732
-fd80012a-7144-11e5-ba71-058fbc01cf0b,2015-05-18 17:43:31,17,2,5,female,1,charmer,12.0,20,Australian Shepherd-German Shepherd Dog Mix,Cross Breed,Sporting,20,0.0034880604238
-fd800ae4-7144-11e5-ba71-058fbc01cf0b,2015-05-18 20:06:06,20,2,5,male,1,charmer,6.0,20,American Eskimo Dog,Pure Breed,Non-Sporting,20,0.10400645712
-fd802254-7144-11e5-ba71-058fbc01cf0b,2015-05-19 01:27:30,1,3,5,female,1,charmer,7.0,100,Mastiff,Pure Breed,Working,23,0.003490635522
-fd805940-7144-11e5-ba71-058fbc01cf0b,2015-05-25 17:21:09,17,2,5,female,1,expert,1.0,10,Dachshund,Pure Breed,Hound,20,0.0059807504845
-fd80bb10-7144-11e5-ba71-058fbc01cf0b,2015-05-19 23:31:34,23,3,5,male,1,socialite,8.0,80,Labrador Retriever,Pure Breed,Sporting,20,0.78885538499
-fd80ccfe-7144-11e5-ba71-058fbc01cf0b,2015-05-20 00:40:57,0,4,5,female,1,stargazer,12.0,10,Bichon Frise,Pure Breed,Non-Sporting,20,0.0071600877165
-fd80dafa-7144-11e5-ba71-058fbc01cf0b,2015-05-20 01:17:25,1,4,5,female,1,socialite,14.0,40,Norwegian Buhund,Pure Breed,Herding,20,0.0059387183221
-fd80e450-7144-11e5-ba71-058fbc01cf0b,2015-05-20 01:49:24,1,4,5,male,1,charmer,10.0,20,Pug,Pure Breed,Toy,20,0.056665448343
-fd8164ac-7144-11e5-ba71-058fbc01cf0b,2015-05-20 16:10:31,16,4,5,female,1,protodog,1.0,80,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.012431164713
-fd8193c8-7144-11e5-ba71-058fbc01cf0b,2015-07-01 17:17:51,17,4,7,male,1,,2.0,100,Mixed,Mixed Breed/ Other/ I Don't Know,,11,0.0030960648205
-fd82c306-7144-11e5-ba71-058fbc01cf0b,2015-05-22 17:36:11,17,6,5,male,1,einstein,12.0,20,Bichon Frise,Pure Breed,Non-Sporting,20,0.0053508771939
-fd82cdd8-7144-11e5-ba71-058fbc01cf0b,2015-06-04 16:39:11,16,5,6,male,1,maverick,6.0,110,German Shepherd Dog,Pure Breed,Herding,23,2.5179550716
-fd82cf0e-7144-11e5-ba71-058fbc01cf0b,2015-05-22 23:08:59,23,6,5,female,1,socialite,4.0,90,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.10787707115
-fd82d742-7144-11e5-ba71-058fbc01cf0b,2015-05-23 00:24:12,0,7,5,female,1,charmer,1.0,50,Labrador Retriever,Pure Breed,Sporting,20,0.043276072124
-fd82dc06-7144-11e5-ba71-058fbc01cf0b,2015-05-23 02:30:11,2,7,5,male,1,expert,3.0,70,Keeshond-German Shepherd Dog Mix,Cross Breed,,20,0.091948099416
-fd83d78c-7144-11e5-ba71-058fbc01cf0b,2015-05-25 16:31:14,16,2,5,male,1,expert,1.0,20,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.7005914961
-fd840e1e-7144-11e5-ba71-058fbc01cf0b,2015-05-26 20:13:07,20,3,5,male,1,renaissance-dog,2.0,100,I Don't Know,Mixed Breed/ Other/ I Don't Know,,20,0.0032705896668
-fd84115c-7144-11e5-ba71-058fbc01cf0b,2015-05-26 20:22:14,20,3,5,female,1,renaissance-dog,11.0,50,Australian Labradoodle,Pure Breed,,20,0.0025688352824
-fd88aee2-7144-11e5-ba71-058fbc01cf0b,2015-05-27 03:22:53,3,4,5,male,1,charmer,2.0,80,Golden Retriever,Pure Breed,Sporting,20,0.0046558235896
-fd88ead8-7144-11e5-ba71-058fbc01cf0b,2015-05-28 04:05:35,4,5,5,male,1,renaissance-dog,5.0,60,Labrador Retriever-Australian Cattle Dog Mix,Cross Breed,,20,0.29771259746
-fd890f86-7144-11e5-ba71-058fbc01cf0b,2015-05-30 15:39:05,15,7,5,male,1,ace,3.0,30,Golden Retriever-Labrador Retriever Mix,Cross Breed,,20,1.7973008041
-fd891468-7144-11e5-ba71-058fbc01cf0b,2015-05-28 18:58:28,18,5,5,male,1,ace,1.0,60,Standard Poodle,Pure Breed,Non-Sporting,20,0.046337110137
-fd892246-7144-11e5-ba71-058fbc01cf0b,2015-05-28 21:17:38,21,5,5,female,1,charmer,4.0,0,Chihuahua,Pure Breed,Toy,20,0.0036762914202
-fd8942a8-7144-11e5-ba71-058fbc01cf0b,2015-05-29 13:45:39,13,6,5,male,1,,0.0,70,Labrador Retriever-Poodle Mix,Cross Breed,,4,0.031959876573
-fd896bca-7144-11e5-ba71-058fbc01cf0b,2015-05-30 20:11:46,20,7,5,male,1,socialite,7.0,10,Chihuahua-Yorkshire Terrier Mix,Cross Breed,,20,0.0091453460045
-fd8978fe-7144-11e5-ba71-058fbc01cf0b,2015-05-30 12:21:37,12,7,5,male,1,charmer,2.0,60,Labrador Retriever,Pure Breed,Sporting,20,0.045349658871
-fd8a2966-7144-11e5-ba71-058fbc01cf0b,2015-06-02 17:58:10,17,3,6,male,,ace,6.0,90,Golden Retriever,Pure Breed,Sporting,20,0.20290874756
-fda60b40-7144-11e5-ba71-058fbc01cf0b,2015-06-04 17:53:07,17,5,6,male,1,renaissance-dog,4.0,70,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.3172624269
-fda99508-7144-11e5-ba71-058fbc01cf0b,2015-06-14 01:50:27,1,1,6,female,1,,8.0,50,Mixed,Mixed Breed/ Other/ I Don't Know,,2,0.0024421295364
-fda9dac2-7144-11e5-ba71-058fbc01cf0b,2015-06-28 17:43:10,17,1,6,male,1,,7.0,30,I Don't Know,Mixed Breed/ Other/ I Don't Know,,14,1.480715812
-fdaab834-7144-11e5-ba71-058fbc01cf0b,2015-06-16 23:47:21,23,3,6,male,1,,3.0,40,Mixed,Mixed Breed/ Other/ I Don't Know,,2,1.9869675926
-fdab0b40-7144-11e5-ba71-058fbc01cf0b,2015-06-15 01:34:01,1,2,6,male,0,expert,3.0,40,Australian Cattle Dog,Pure Breed,Herding,20,0.0035635964933
-fdab1de2-7144-11e5-ba71-058fbc01cf0b,2015-06-15 00:33:58,0,2,6,male,1,maverick,7.0,30,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.99861903021
-fdabbefa-7144-11e5-ba71-058fbc01cf0b,2015-07-07 03:18:50,3,3,7,female,1,,0.0,20,Australian Labradoodle,Pure Breed,,6,0.0044699074238
-fdabc4fe-7144-11e5-ba71-058fbc01cf0b,2015-06-15 04:24:16,4,2,6,male,1,charmer,2.0,40,Border Collie,Pure Breed,Herding,20,0.5550718811
-fdabcb20-7144-11e5-ba71-058fbc01cf0b,2015-06-15 17:40:49,17,2,6,female,1,socialite,4.0,40,Australian Shepherd,Pure Breed,Herding,31,3.0444903549
-fdabe1dc-7144-11e5-ba71-058fbc01cf0b,2015-06-15 20:09:59,20,2,6,female,1,charmer,0.0,80,German Shepherd Dog,Pure Breed,Herding,20,0.15138036062
-fdac2d40-7144-11e5-ba71-058fbc01cf0b,2015-06-20 04:10:25,4,7,6,female,1,ace,6.0,50,Border Collie-German Shepherd Dog Mix,Cross Breed,,22,1.7586513448
-fdac479e-7144-11e5-ba71-058fbc01cf0b,2015-06-15 21:47:09,21,2,6,male,1,protodog,7.0,60,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.21151742203
-fdac8d58-7144-11e5-ba71-058fbc01cf0b,2015-06-16 00:52:07,0,3,6,male,1,socialite,3.0,40,English Setter,Pure Breed,Sporting,20,0.041073343079
-fdacf8f6-7144-11e5-ba71-058fbc01cf0b,2015-06-16 21:28:19,21,3,6,male,0,renaissance-dog,2.0,190,Mastiff,Pure Breed,Working,20,0.67494883041
-fdad8122-7144-11e5-ba71-058fbc01cf0b,2015-06-18 01:12:46,1,5,6,female,1,expert,6.0,60,German Shepherd Dog,Pure Breed,Herding,20,0.60868055556
-fdadfad0-7144-11e5-ba71-058fbc01cf0b,2015-06-20 14:43:54,14,7,6,female,1,,0.0,20,Golden Doodle,Popular Hybrid,,10,5.7259542181
-fdae85b8-7144-11e5-ba71-058fbc01cf0b,2015-06-24 14:40:03,14,4,6,male,1,,1.0,10,Bichon Frise,Pure Breed,Non-Sporting,4,0.0023688271953
-fdaf0ede-7144-11e5-ba71-058fbc01cf0b,2015-08-25 15:56:33,15,3,8,male,1,protodog,3.0,80,Labrador Retriever-Great Dane Mix,Cross Breed,,20,2.4745291179
-fdaff920-7144-11e5-ba71-058fbc01cf0b,2015-06-24 04:58:46,4,4,6,female,1,socialite,2.0,50,Labrador Retriever,Pure Breed,Sporting,20,0.31060489766
-fdb08110-7144-11e5-ba71-058fbc01cf0b,2015-06-26 06:36:31,6,6,6,male,0,expert,4.0,10,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.0047630360596
-fdb0c422-7144-11e5-ba71-058fbc01cf0b,2015-06-27 19:16:47,19,7,6,male,1,ace,3.0,20,English Cocker Spaniel,Pure Breed,Sporting,20,0.0017227095515
-fdb1ab6c-7144-11e5-ba71-058fbc01cf0b,2015-07-01 18:38:42,18,4,7,male,1,ace,5.0,40,Mixed,Mixed Breed/ Other/ I Don't Know,,20,2.8402491472
-fdb1c638-7144-11e5-ba71-058fbc01cf0b,2015-07-06 20:15:40,20,2,7,female,1,maverick,2.0,30,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.67352948343
-fdb23988-7144-11e5-ba71-058fbc01cf0b,2015-07-09 11:14:39,11,5,7,male,1,protodog,3.0,60,Alaskan Malamute-Siberian Husky Mix,Cross Breed,,20,0.91381700779
-fdb249dc-7144-11e5-ba71-058fbc01cf0b,2015-07-05 20:51:45,20,1,7,female,1,renaissance-dog,5.0,30,Border Collie,Pure Breed,Herding,20,0.0056907894752
-fdb28eec-7144-11e5-ba71-058fbc01cf0b,2015-07-07 01:07:29,1,3,7,male,1,ace,3.0,90,Doberman Pinscher,Pure Breed,Working,20,0.34946576511
-fdb30796-7144-11e5-ba71-058fbc01cf0b,2015-07-09 20:57:42,20,5,7,female,1,ace,3.0,50,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.051991959059
-fdb4eaca-7144-11e5-ba71-058fbc01cf0b,2015-07-26 22:21:24,22,1,7,male,0,renaissance-dog,6.0,70,Bouvier des Flandres,Pure Breed,Herding,20,0.0030720029209
-fdb4fcb8-7144-11e5-ba71-058fbc01cf0b,2015-07-29 19:20:08,19,4,7,female,1,renaissance-dog,10.0,30,Soft Coated Wheaten Terrier,Pure Breed,Terrier,20,2.5244243421
-fdb6fcde-7144-11e5-ba71-058fbc01cf0b,2015-08-12 14:31:08,14,4,8,male,1,ace,8.0,70,Doberman Pinscher,Pure Breed,Working,20,0.0065411793399
-fdb806ba-7144-11e5-ba71-058fbc01cf0b,2015-08-27 20:37:10,20,5,8,female,1,stargazer,4.0,60,American Pit Bull Terrier,Pure Breed,,20,0.21772295322
-fdb80a98-7144-11e5-ba71-058fbc01cf0b,2015-08-27 18:47:41,18,5,8,female,1,stargazer,5.0,20,Border Collie,Pure Breed,Herding,20,0.0035270467815
-fdb84ddc-7144-11e5-ba71-058fbc01cf0b,2015-08-30 13:05:53,13,1,8,female,1,charmer,9.0,20,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.075942982454
-fdb8561a-7144-11e5-ba71-058fbc01cf0b,2015-08-30 22:21:57,22,1,8,male,0,ace,1.0,70,Golden Retriever,Pure Breed,Sporting,20,0.0044645467821
-fdb922c0-7144-11e5-ba71-058fbc01cf0b,2015-09-03 15:07:41,15,5,9,male,0,renaissance-dog,1.0,30,Miniature American Shepherd,Pure Breed,,20,0.0032754629592
-fdb92464-7144-11e5-ba71-058fbc01cf0b,2015-09-03 16:23:37,16,5,9,female,1,socialite,0.0,40,Australian Shepherd,Pure Breed,Herding,20,0.026397417159
-fdb98954-7144-11e5-ba71-058fbc01cf0b,2015-09-05 17:47:55,17,7,9,female,1,socialite,4.0,50,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.061299951269
-fdbc43f6-7144-11e5-ba71-058fbc01cf0b,2015-09-21 00:40:23,0,2,9,male,1,ace,7.0,50,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.098278508773
-fdbdfd72-7144-11e5-ba71-058fbc01cf0b,2015-09-21 20:27:26,20,2,9,male,1,socialite,14.0,30,Mixed,Mixed Breed/ Other/ I Don't Know,,20,0.25452546296
-fdbe6848-7144-11e5-ba71-058fbc01cf0b,2015-09-21 19:46:55,19,2,9,female,1,charmer,11.0,10,Lhasa Apso-Poodle Mix,Cross Breed,,20,0.73892909357
-fdbe923c-7144-11e5-ba71-058fbc01cf0b,2015-09-21 23:34:56,23,2,9,female,1,charmer,9.0,30,Beagle,Pure Breed,Hound,20,0.6321539961
-fdbeedc2-7144-11e5-ba71-058fbc01cf0b,2015-09-22 17:04:11,17,3,9,female,1,charmer,8.0,50,Eurasier,Pure Breed,,20,0.24956444932
-fdbef330-7144-11e5-ba71-058fbc01cf0b,2015-09-22 17:15:15,17,3,9,female,1,maverick,4.0,20,Havanese,Pure Breed,Toy,20,0.31685307018
+"","X","dog_guid","MIN.c.created_at.","hour","day","month","gender","neutered","personality","age","weight","breed","btype","bgroup","ntests","mid","PC1","PC2"
+"1",1,"fd27b86c-7144-11e5-ba71-058fbc01cf0b","2013-02-05 18:26:54",18,3,2,"female",0,"einstein",4,190,"Shih Tzu","Pure Breed","Toy",31,7.7342542438,-1.57465070297639,-0.517542056261089
+"2",2,"fd27ba1a-7144-11e5-ba71-058fbc01cf0b","2013-02-05 20:35:47",20,3,2,"male",1,"maverick",32,190,"Shih Tzu","Pure Breed","Toy",27,6.1905898326,-0.30888853066941,-2.30633542563915
+"3",3,"fd27d770-7144-11e5-ba71-058fbc01cf0b","2013-02-10 15:10:37",15,1,2,"female",1,"socialite",3,60,"Bouvier des Flandres","Pure Breed","Herding",25,3.8906365741,-1.21895986702461,1.1881525770669
+"4",4,"fd27d9fa-7144-11e5-ba71-058fbc01cf0b","2014-09-24 15:10:03",15,4,9,"female",1,"einstein",8,90,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.013653752437,-0.654246236126484,-0.839698382750946
+"5",5,"fd27e9a4-7144-11e5-ba71-058fbc01cf0b","2013-03-22 16:13:32",16,6,3,"male",0,"protodog",2,190,"Shih Tzu","Pure Breed","Toy",22,5.5305561067,-1.73776502751097,0.863774779254856
+"6",6,"fd27ed46-7144-11e5-ba71-058fbc01cf0b","2013-02-06 20:14:43",20,4,2,"female",0,"maverick",2,190,"Shih Tzu","Pure Breed","Toy",25,4.3253255208,-1.76532771422326,0.550440648140469
+"7",7,"fd3ccf2c-7144-11e5-ba71-058fbc01cf0b","2013-10-10 18:47:21",18,5,10,"female",1,"einstein",7,190,"Shih Tzu","Pure Breed","Toy",22,13.520467372,-0.945678991064789,0.0891258524222693
+"8",8,"fd3d0f00-7144-11e5-ba71-058fbc01cf0b","2013-02-08 15:12:24",15,6,2,"male",0,"expert",6,10,"Labradoodle","Popular Hybrid","",20,0.0073531920117,-1.71938990303611,1.07266419999778
+"9",9,"fd3d1b44-7144-11e5-ba71-058fbc01cf0b","2013-05-13 16:17:04",16,2,5,"male",1,"einstein",5,190,"Shih Tzu","Pure Breed","Toy",20,3.055451998,-0.900048620797936,-0.398383940578163
+"10",10,"fd3d2f9e-7144-11e5-ba71-058fbc01cf0b","2013-02-09 21:48:46",21,7,2,"female",1,"socialite",8,40,"Poodle","Pure Breed","Non-Sporting",20,0.0026522904488,-0.0807073385597636,-1.86943208115411
+"11",11,"fd3d3688-7144-11e5-ba71-058fbc01cf0b","2013-02-10 19:39:00",19,1,2,"female",1,"ace",5,60,"Mixed","Mixed Breed/ Other/ I Don't Know","",34,26.732909652,0.963179103362563,-1.06044232518207
+"12",12,"fd3d587a-7144-11e5-ba71-058fbc01cf0b","2013-02-22 17:00:49",17,6,2,"male",1,"stargazer",3,190,"Shih Tzu","Pure Breed","Toy",22,1.8643253968,-1.81969915573479,1.01087959331245
+"13",13,"fd3f8aa0-7144-11e5-ba71-058fbc01cf0b","2013-02-13 06:22:47",6,4,2,"male",1,"renaissance-dog",6,30,"Beagle","Pure Breed","Hound",23,6.3134048822,2.11916794471383,1.1392065009359
+"14",14,"fd3fc0ce-7144-11e5-ba71-058fbc01cf0b","2013-02-14 17:44:23",17,5,2,"female",1,"stargazer",2,190,"Shih Tzu","Pure Breed","Toy",20,0.00084307991995,-1.71938990303611,1.07266419999778
+"15",15,"fd3fcc40-7144-11e5-ba71-058fbc01cf0b","2013-02-15 05:09:23",5,6,2,"female",1,"protodog",4,10,"Chihuahua-Dachshund Mix","Cross Breed","",20,0.010620126709,1.17573813706918,1.94403361501572
+"16",17,"fd3fea04-7144-11e5-ba71-058fbc01cf0b","2014-01-09 18:23:32",18,5,1,"female",1,"ace",10,20,"Boston Terrier","Pure Breed","Non-Sporting",21,0.15459548612,-0.991170311259183,-0.355723836892031
+"17",18,"fd3fea9a-7144-11e5-ba71-058fbc01cf0b","2013-02-18 21:06:28",21,2,2,"male",1,"einstein",2,190,"Shih Tzu","Pure Breed","Toy",35,12.480236588,-1.5840615107102,-0.660673697904057
+"18",19,"fd3fee14-7144-11e5-ba71-058fbc01cf0b","2013-02-23 18:47:46",18,7,2,"female",1,"protodog",3,30,"Mixed","Mixed Breed/ Other/ I Don't Know","",22,2.994804343,-1.9016332839586,1.15798440737004
+"19",20,"fd3ffecc-7144-11e5-ba71-058fbc01cf0b","2013-02-22 17:55:10",17,6,2,"male",1,"ace",11,40,"Mixed","Mixed Breed/ Other/ I Don't Know","",23,4.4533154461,-1.33719775320539,0.99485241218166
+"20",21,"fd401614-7144-11e5-ba71-058fbc01cf0b","2013-08-19 14:30:31",14,2,8,"female",1,"protodog",3,190,"Shih Tzu","Pure Breed","Toy",36,11.191646825,-0.954476501083319,-0.324491647428575
+"21",22,"fd404634-7144-11e5-ba71-058fbc01cf0b","2013-02-21 16:41:41",16,5,2,"female",1,"maverick",4,190,"Shih Tzu","Pure Breed","Toy",20,5.7324329922,-1.71938990303611,1.07266419999778
+"22",23,"fd404b02-7144-11e5-ba71-058fbc01cf0b","2013-02-28 01:44:54",1,5,2,"male",1,"ace",5,70,"Boxer","Pure Breed","Working",20,2.4086440058,-0.217151958367566,-0.329528839609798
+"23",24,"fd404d3c-7144-11e5-ba71-058fbc01cf0b","2013-02-21 19:01:12",19,5,2,"female",1,"maverick",8,20,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,5.8291246345,-0.654246236126484,-0.839698382750946
+"24",25,"fd4054ee-7144-11e5-ba71-058fbc01cf0b","2013-06-06 13:35:50",13,5,6,"female",1,"protodog",2,190,"Shih Tzu","Pure Breed","Toy",45,9.3910051031,-3.26002501055294,0.815223465632731
+"25",26,"fd405732-7144-11e5-ba71-058fbc01cf0b","2013-02-25 20:03:44",20,2,2,"female",1,"socialite",7,40,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,2.5366240253,1.14864136649317,-0.19181863767307
+"26",27,"fd405b88-7144-11e5-ba71-058fbc01cf0b","2013-02-22 11:25:02",11,6,2,"female",1,"protodog",3,0,"Mixed","Mixed Breed/ Other/ I Don't Know","",31,4.6610760031,-1.28479850753094,2.47266972170593
+"27",28,"fd406466-7144-11e5-ba71-058fbc01cf0b","2013-06-09 15:51:00",15,1,6,"male",1,"socialite",3,20,"Miniature Schnauzer-Poodle Mix","Cross Breed","",20,0.11003411306,-1.71938990303611,1.07266419999778
+"28",29,"fd40bd62-7144-11e5-ba71-058fbc01cf0b","2013-03-03 22:10:22",22,1,3,"male",1,"stargazer",3,190,"Shih Tzu","Pure Breed","Toy",35,18.763468137,-1.11979618258321,-1.8179497820925
+"29",30,"fd40cb7c-7144-11e5-ba71-058fbc01cf0b","2013-02-28 20:19:45",20,5,2,"male",1,"ace",5,20,"Scottish Terrier","Pure Breed","Terrier",20,0.10449439571,-0.0807073385597636,-1.86943208115411
+"30",31,"fd40d4dc-7144-11e5-ba71-058fbc01cf0b","2013-03-03 23:39:20",23,1,3,"male",1,"expert",4,80,"Weimaraner","Pure Breed","Sporting",20,1.1547179581,-0.0807073385597636,-1.86943208115411
+"31",32,"fd40debe-7144-11e5-ba71-058fbc01cf0b","2013-02-27 15:21:06",15,4,2,"male",1,"charmer",10,50,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.023353435669,0.76631016659,0.818352632457783
+"32",33,"fd410a7e-7144-11e5-ba71-058fbc01cf0b","2013-03-02 21:36:30",21,7,3,"female",1,"stargazer",5,40,"Australian Cattle Dog-Border Collie Mix","Cross Breed","",20,1.526494883,0.137839800319696,-1.61434730958353
+"33",34,"fd4111f4-7144-11e5-ba71-058fbc01cf0b","2013-03-05 16:19:34",16,3,3,"male",1,"charmer",5,60,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,2.9640052388,-0.981982749021753,-0.251279126520568
+"34",35,"fd411b0e-7144-11e5-ba71-058fbc01cf0b","2013-03-02 17:22:59",17,7,3,"male",1,"charmer",6,90,"Golden Retriever","Pure Breed","Sporting",20,12.518426535,0.247281760607265,0.45528790337423
+"35",36,"fd413080-7144-11e5-ba71-058fbc01cf0b","2013-03-02 21:40:48",21,7,3,"male",1,"renaissance-dog",5,30,"Labradoodle","Popular Hybrid","",20,0.041263401557,-0.818114492574119,-0.545488754635757
+"36",37,"fd414674-7144-11e5-ba71-058fbc01cf0b","2013-03-02 21:10:09",21,7,3,"female",1,"charmer",4,10,"Shetland Sheepdog","Pure Breed","Herding",20,0.22011634991,0.902754786397802,-0.721550609086525
+"37",38,"fd4146f6-7144-11e5-ba71-058fbc01cf0b","2013-03-02 21:27:15",21,7,3,"male",1,"protodog",5,10,"Shetland Sheepdog","Pure Breed","Herding",20,0.22084064327,1.33984906415672,-0.211381065945378
+"38",39,"fd415a7e-7144-11e5-ba71-058fbc01cf0b","2013-03-03 21:09:43",21,1,3,"male",1,"protodog",9,50,"German Shepherd Dog-Beagle Mix","Cross Breed","",20,22.429475512,0.793481216958073,-0.849092994871812
+"39",40,"fd418a8a-7144-11e5-ba71-058fbc01cf0b","2013-03-06 01:05:47",1,4,3,"female",1,"ace",3,20,"Shiba Inu","Pure Breed","Non-Sporting",27,2.8291751246,1.02981793924718,0.469866817213407
+"40",41,"fd419598-7144-11e5-ba71-058fbc01cf0b","2013-03-14 22:43:46",22,5,3,"female",0,"ace",3,50,"German Shepherd Dog","Pure Breed","Herding",20,2.2125201023,-0.0807073385597636,-1.86943208115411
+"41",42,"fd41bca8-7144-11e5-ba71-058fbc01cf0b","2013-03-08 19:55:54",19,6,3,"male",1,"stargazer",5,190,"Labrador Retriever","Pure Breed","Sporting",39,20.94169682,-1.32960225021799,-2.04596370583463
+"42",43,"fd41e106-7144-11e5-ba71-058fbc01cf0b","2013-03-14 16:41:54",16,5,3,"male",1,"protodog",7,30,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.27051352339,-0.408443851455032,-1.28101282492373
+"43",44,"fd41f056-7144-11e5-ba71-058fbc01cf0b","2014-10-09 17:19:01",17,5,10,"male",0,"maverick",3,190,"Shih Tzu","Pure Breed","Toy",20,5.0525213207,-1.71938990303611,1.07266419999778
+"44",45,"fd420276-7144-11e5-ba71-058fbc01cf0b","2013-03-17 19:14:14",19,1,3,"male",0,"charmer",6,60,"Golden Doodle","Popular Hybrid","",37,11.71638696,-0.0456040035086115,-2.69350817215504
+"45",46,"fd4212ca-7144-11e5-ba71-058fbc01cf0b","2013-03-16 06:43:06",6,7,3,"male",1,"charmer",12,30,"Shetland Sheepdog","Pure Breed","Herding",20,0.041185428854,0.329215888831082,0.308183089316636
+"46",47,"fd421838-7144-11e5-ba71-058fbc01cf0b","2015-05-16 20:48:46",20,7,5,"male",1,"ace",9,50,"Alaskan Malamute-Collie Mix","Cross Breed","",20,0.35759868421,-0.408443851455032,-1.28101282492373
+"47",48,"fd421d7e-7144-11e5-ba71-058fbc01cf0b","2013-03-18 23:04:53",23,2,3,"female",0,"ace",5,50,"Weimaraner","Pure Breed","Sporting",20,0.0018250487291,-0.0807073385597636,-1.86943208115411
+"48",49,"fd422210-7144-11e5-ba71-058fbc01cf0b","2013-03-19 17:24:15",17,3,3,"male",1,"stargazer",1,190,"Shih Tzu","Pure Breed","Toy",20,0.00069078947666,-1.71938990303611,1.07266419999778
+"49",50,"fd42226a-7144-11e5-ba71-058fbc01cf0b","2013-03-19 17:59:41",17,3,3,"male",1,"ace",2,190,"Shih Tzu","Pure Breed","Toy",20,0.0010483674461,-1.71938990303611,1.07266419999778
+"50",51,"fd422332-7144-11e5-ba71-058fbc01cf0b","2013-03-19 18:42:39",18,3,3,"male",1,"socialite",2,190,"Shih Tzu","Pure Breed","Toy",20,0.0010971003885,-1.30971926191702,0.337140129709809
+"51",52,"fd422e0e-7144-11e5-ba71-058fbc01cf0b","2013-03-20 19:42:14",19,4,3,"male",1,"renaissance-dog",1,190,"Shih Tzu","Pure Breed","Toy",45,8.4542703072,-0.993432106998349,-3.6170454590943
+"52",53,"fd423714-7144-11e5-ba71-058fbc01cf0b","2013-03-21 19:35:27",19,5,3,"male",1,"maverick",2,190,"Shih Tzu","Pure Breed","Toy",31,26.794221451,-1.73851895942402,-0.2233324281459
+"53",54,"fd4275a8-7144-11e5-ba71-058fbc01cf0b","2013-03-27 22:13:44",22,4,3,"male",0,"renaissance-dog",1,40,"Golden Retriever","Pure Breed","Sporting",20,0.035179702724,-1.55552164658847,0.778454571882592
+"54",55,"fd428d68-7144-11e5-ba71-058fbc01cf0b","2013-03-30 12:38:35",12,7,3,"male",1,"einstein",8,50,"Australian Shepherd","Pure Breed","Herding",20,1.7138730507,0.480456039462109,1.20685047260058
+"55",56,"fd42913c-7144-11e5-ba71-058fbc01cf0b","2013-05-08 13:57:34",13,4,5,"male",1,"stargazer",2,190,"Shih Tzu","Pure Breed","Toy",27,16.814351852,-1.13741737514501,-0.939731995434673
+"56",57,"fd4298c6-7144-11e5-ba71-058fbc01cf0b","2013-04-01 06:25:55",6,2,4,"female",1,"charmer",3,130,"Great Dane","Pure Breed","Working",20,0.29707541423,1.12130192527726,-0.466465837515951
+"57",58,"fd429de4-7144-11e5-ba71-058fbc01cf0b","2013-04-02 14:40:47",14,3,4,"male",1,"expert",3,190,"Shih Tzu","Pure Breed","Toy",20,0.00069688109221,-1.71938990303611,1.07266419999778
+"58",59,"fd42ad20-7144-11e5-ba71-058fbc01cf0b","2014-07-14 14:09:08",14,2,7,"male",1,"einstein",2,190,"Shih Tzu","Pure Breed","Toy",20,22.850757188,-2.0838766648811,1.24330461474231
+"59",60,"fd42b78e-7144-11e5-ba71-058fbc01cf0b","2013-04-11 02:31:02",2,5,4,"male",1,"socialite",4,90,"German Shepherd Dog","Pure Breed","Herding",20,5.8471284113,0.76631016659,0.818352632457783
+"60",61,"fd42cd96-7144-11e5-ba71-058fbc01cf0b","2013-05-14 22:29:01",22,3,5,"female",1,"ace",5,190,"Shih Tzu","Pure Breed","Toy",24,0.039759460548,-0.117457587509485,-2.28721092263996
+"61",62,"fd42d930-7144-11e5-ba71-058fbc01cf0b","2013-04-14 06:34:18",6,1,4,"female",1,"charmer",2,30,"Belgian Tervuren","Pure Breed","Herding",20,0.3055914961,1.96183698667088,0.875664554623028
+"62",63,"fd42e33a-7144-11e5-ba71-058fbc01cf0b","2013-04-16 21:39:40",21,3,4,"female",1,"stargazer",2,190,"Shih Tzu","Pure Breed","Toy",22,2.3722437169,-0.262950719482259,-1.78411187378184
+"63",64,"fd42e542-7144-11e5-ba71-058fbc01cf0b","2013-04-20 22:02:13",22,7,4,"female",0,"ace",3,30,"Border Collie","Pure Breed","Herding",20,0.053977217347,0.028566230879966,-1.74188969536882
+"64",65,"fd42f7ee-7144-11e5-ba71-058fbc01cf0b","2013-04-18 18:55:50",18,5,4,"male",1,"stargazer",5,20,"Mixed","Mixed Breed/ Other/ I Don't Know","Toy",20,0.0013072612132,-0.244575595007398,-1.57522245303892
+"65",66,"fd42f85c-7144-11e5-ba71-058fbc01cf0b","2013-04-18 19:46:16",19,5,4,"female",1,"stargazer",8,190,"Shih Tzu","Pure Breed","Toy",20,20.011507066,0.30179225219125,-0.937510524112483
+"66",67,"fd433632-7144-11e5-ba71-058fbc01cf0b","2013-04-23 22:19:23",22,3,4,"male",1,"protodog",1,60,"Golden Retriever","Pure Breed","Sporting",20,1.0494109405,-0.0260284561279389,-1.32013768146834
+"67",68,"fd435608-7144-11e5-ba71-058fbc01cf0b","2013-04-27 17:33:10",17,7,4,"female",1,"expert",3,70,"Chesapeake Bay Retriever","Pure Breed","Sporting",26,2.2375449074,-1.41943932234951,0.13222388138151
+"68",69,"fd4373e0-7144-11e5-ba71-058fbc01cf0b","2013-04-24 21:06:53",21,4,4,"female",1,"stargazer",3,60,"German Shepherd Dog","Pure Breed","Herding",20,4.4726894493,0.520339391070709,-0.68242575254191
+"69",70,"fd43a202-7144-11e5-ba71-058fbc01cf0b","2013-04-25 02:05:40",2,5,4,"female",1,"socialite",6,20,"American Eskimo Dog-Russell Terrier Mix","Cross Breed","",20,21.102933723,0.0559898675197981,-0.4961960819397
+"70",71,"fd43a4c8-7144-11e5-ba71-058fbc01cf0b","2013-04-25 21:06:43",21,5,4,"female",1,"renaissance-dog",1,60,"Labrador Retriever","Pure Breed","Sporting",30,10.239994013,-0.855227037092677,-0.0695950450783808
+"71",72,"fd43aef0-7144-11e5-ba71-058fbc01cf0b","2013-04-26 00:11:31",0,6,4,"female",1,"protodog",5,50,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.0038243177358,2.10476405023483,0.68141563455163
+"72",73,"fd43b936-7144-11e5-ba71-058fbc01cf0b","2013-04-26 11:21:41",11,6,4,"male",0,"expert",5,80,"Cocker Spaniel","Pure Breed","Sporting",20,0.010480019497,-1.12066907362824,1.46047435881474
+"73",74,"fd440d6e-7144-11e5-ba71-058fbc01cf0b","2013-05-09 15:33:51",15,5,5,"female",0,"stargazer",31,190,"Shih Tzu","Pure Breed","Toy",20,0.05071028265,-1.71938990303611,1.07266419999778
+"74",75,"fd441034-7144-11e5-ba71-058fbc01cf0b","2013-05-03 21:03:36",21,6,5,"male",1,"ace",2,30,"Australian Cattle Dog-Border Collie Mix","Cross Breed","",25,1.5473480903,0.146580871564369,-1.58727646175508
+"75",76,"fd4415b6-7144-11e5-ba71-058fbc01cf0b","2013-06-10 14:26:03",14,2,6,"female",1,"stargazer",3,10,"Afghan Hound","Pure Breed","Hound",20,0.0024738060371,-1.71938990303611,1.07266419999778
+"76",77,"fd4458aa-7144-11e5-ba71-058fbc01cf0b","2013-06-11 13:56:48",13,3,6,"female",1,"protodog",9,40,"Portuguese Water Dog","Pure Breed","Working",20,0.70560550682,-0.0806231431358437,-0.898385667567868
+"77",78,"fd4469da-7144-11e5-ba71-058fbc01cf0b","2013-05-26 17:34:41",17,1,5,"female",1,"ace",8,90,"Labrador Retriever","Pure Breed","Sporting",20,0.0015655458096,-1.71938990303611,1.07266419999778
+"78",79,"fd448dac-7144-11e5-ba71-058fbc01cf0b","2013-06-28 17:24:32",17,6,6,"female",1,"renaissance-dog",10,20,"Cocker Spaniel","Pure Breed","Sporting",23,14.36111532,-1.50115020507695,0.318015626710611
+"79",80,"fd44e57c-7144-11e5-ba71-058fbc01cf0b","2013-05-15 17:07:14",17,4,5,"female",1,"charmer",6,20,"German Shepherd Dog","Pure Breed","Herding",23,0.0049884259246,-1.7469525897484,0.759330068883394
+"80",81,"fd44f68e-7144-11e5-ba71-058fbc01cf0b","2013-06-04 18:58:44",18,3,6,"male",1,"stargazer",1,190,"Shih Tzu","Pure Breed","Toy",20,0.021543006823,0.274452810975337,-1.21215772395536
+"81",82,"fd452fa0-7144-11e5-ba71-058fbc01cf0b","2013-05-21 16:53:42",16,3,5,"female",1,"stargazer",3,10,"Akita","Pure Breed","Working",23,0.0015588173411,-1.99275497441985,1.20064451105618
+"82",83,"fd453496-7144-11e5-ba71-058fbc01cf0b","2013-05-22 00:23:03",0,4,5,"female",1,"ace",2,30,"Puggle","Popular Hybrid","",20,0.042435428851,1.12130192527726,-0.466465837515951
+"83",84,"fd453b6c-7144-11e5-ba71-058fbc01cf0b","2013-05-23 18:52:19",18,5,5,"male",1,"stargazer",2,190,"Shih Tzu","Pure Breed","Toy",28,0.47895833333,-0.891614990473561,-1.38104643760746
+"84",85,"fd455250-7144-11e5-ba71-058fbc01cf0b","2013-05-26 12:40:01",12,1,5,"female",1,"socialite",7,20,"Cocker Spaniel","Pure Breed","Sporting",20,0.0073403996097,-1.24041323950981,1.38291232705135
+"85",86,"fd4560f6-7144-11e5-ba71-058fbc01cf0b","2013-06-02 14:29:47",14,1,6,"male",1,"renaissance-dog",14,10,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,2.1547636452,-0.521948244220368,1.8482845176317
+"86",87,"fd456e16-7144-11e5-ba71-058fbc01cf0b","2013-05-28 17:35:19",17,3,5,"female",0,"maverick",2,50,"Labrador Retriever-Golden Retriever Mix","Cross Breed","",20,3.628919347,-0.462954343039018,0.111785602562985
+"87",88,"fd458964-7144-11e5-ba71-058fbc01cf0b","2013-05-29 18:25:56",18,4,5,"female",1,"charmer",3,40,"American Pit Bull Terrier-Boston Terrier Mix","Cross Breed","",20,0.094918981483,-0.900048620797936,-0.398383940578163
+"88",89,"fd45ae08-7144-11e5-ba71-058fbc01cf0b","2013-06-04 18:53:41",18,3,6,"male",0,"ace",31,180,"Shih Tzu","Pure Breed","Toy",32,11.575051897,-1.17416762409473,-1.35751083692052
+"89",90,"fd45aeda-7144-11e5-ba71-058fbc01cf0b","2013-06-04 18:51:18",18,3,6,"male",0,"stargazer",2,190,"Shih Tzu","Pure Breed","Toy",21,0.80292939815,-0.253763157244828,-1.67966716341038
+"90",91,"fd45b452-7144-11e5-ba71-058fbc01cf0b","2013-06-05 16:52:08",16,4,6,"male",1,"stargazer",2,20,"Cockapoo","Popular Hybrid","",20,0.0016678849935,-1.71938990303611,1.07266419999778
+"91",92,"fd45c104-7144-11e5-ba71-058fbc01cf0b","2013-06-06 16:58:48",16,5,6,"male",1,"expert",4,0,"Yorkshire Terrier-Maltese Mix","Cross Breed","",20,0.024376218324,0.76631016659,0.818352632457783
+"92",93,"fd45ea44-7144-11e5-ba71-058fbc01cf0b","2013-06-08 23:44:06",23,7,6,"male",1,"einstein",1,10,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,5.6341684941,0.793481216958073,-0.849092994871812
+"93",94,"fd45f462-7144-11e5-ba71-058fbc01cf0b","2013-06-10 15:21:50",15,2,6,"male",1,"stargazer",1,190,"Shih Tzu","Pure Breed","Toy",20,0.0016800682306,-1.71938990303611,1.07266419999778
+"94",95,"fd45f5f2-7144-11e5-ba71-058fbc01cf0b","2013-06-11 03:12:36",3,3,6,"male",1,"socialite",3,30,"Pembroke Welsh Corgi","Pure Breed","Herding",20,0.055583576996,2.10476405023483,0.68141563455163
+"95",96,"fd4615dc-7144-11e5-ba71-058fbc01cf0b","2013-06-15 17:22:11",17,7,6,"male",1,"socialite",5,10,"Dachshund","Pure Breed","Hound",20,0.053212719302,-1.71938990303611,1.07266419999778
+"96",97,"fd462086-7144-11e5-ba71-058fbc01cf0b","2013-06-30 14:17:38",14,1,6,"female",1,"expert",8,10,"Poodle","Pure Breed","Non-Sporting",43,7.3335146605,-2.17650621916846,-0.888249696373071
+"97",98,"fd4647fa-7144-11e5-ba71-058fbc01cf0b","2013-06-18 15:53:02",15,3,6,"male",1,"stargazer",6,100,"Shih Tzu","Pure Breed","Toy",33,1.1601555266,-2.90397187903233,1.6272455479175
+"98",99,"fd46539e-7144-11e5-ba71-058fbc01cf0b","2013-06-23 11:57:47",11,1,6,"female",1,"socialite",10,60,"Boxer","Pure Breed","Working",20,5.6548659844,0.0705328120712635,-0.970764697870163
+"99",100,"fd4658b2-7144-11e5-ba71-058fbc01cf0b","2013-06-21 17:12:18",17,6,6,"female",1,"ace",3,10,"Miniature Schnauzer-Poodle Mix","Cross Breed","",21,26.048071759,0.401962454817469,0.0566335648875789
+"100",101,"fd46856c-7144-11e5-ba71-058fbc01cf0b","2013-06-26 13:22:15",13,4,6,"male",0,"protodog",32,190,"Shih Tzu","Pure Breed","Toy",20,0.00095090156079,-1.71938990303611,1.07266419999778
+"101",102,"fd46ae84-7144-11e5-ba71-058fbc01cf0b","2013-06-27 16:16:01",16,5,6,"female",0,"protodog",32,190,"Shih Tzu","Pure Breed","Toy",20,0.0012701023371,-1.71938990303611,1.07266419999778
+"102",103,"fd46d3fa-7144-11e5-ba71-058fbc01cf0b","2013-07-01 10:10:46",10,2,7,"female",0,"socialite",8,40,"English Setter","Pure Breed","Sporting",23,1.4574047769,1.06848302693176,1.60595405416793
+"103",104,"fd473f2a-7144-11e5-ba71-058fbc01cf0b","2013-07-09 03:41:10",3,3,7,"male",1,"expert",7,20,"Bichon Frise","Pure Breed","Non-Sporting",20,0.031316398637,0.383894771262907,0.857477489002398
+"104",105,"fd479182-7144-11e5-ba71-058fbc01cf0b","2013-07-11 20:31:08",20,5,7,"male",0,"socialite",2,50,"Afghan Hound","Pure Breed","Hound",20,0.002555433722,-0.0807073385597636,-1.86943208115411
+"105",106,"fd47fca8-7144-11e5-ba71-058fbc01cf0b","2013-07-17 04:43:54",4,4,7,"female",0,"renaissance-dog",2,60,"Golden Retriever-Labrador Retriever Mix","Cross Breed","",20,1.4751163499,1.39452794658855,0.337913333740385
+"106",107,"fd47ffe6-7144-11e5-ba71-058fbc01cf0b","2013-07-20 22:03:11",22,7,7,"female",0,"protodog",1,50,"Labrador Retriever-Golden Retriever Mix","Cross Breed","",20,1.2599409113,-0.463038538462937,-0.859260811023253
+"107",108,"fd480bbc-7144-11e5-ba71-058fbc01cf0b","2013-07-19 19:19:34",19,6,7,"female",1,"socialite",2,60,"Golden Retriever-Labrador Retriever Mix","Cross Breed","",20,1.4387682749,0.356386939199155,-1.35926253801296
+"108",109,"fd484046-7144-11e5-ba71-058fbc01cf0b","2013-07-18 13:39:56",13,5,7,"female",0,"protodog",2,60,"Labrador Retriever","Pure Breed","Sporting",20,0.80680433723,-0.981982749021753,-0.251279126520568
+"109",110,"fd484172-7144-11e5-ba71-058fbc01cf0b","2013-07-21 15:16:33",15,1,7,"male",1,"socialite",2,50,"Labrador Retriever-Golden Retriever Mix","Cross Breed","",20,0.91862329434,0.00147937593581306,0.896602345547013
+"110",111,"fd486a1c-7144-11e5-ba71-058fbc01cf0b","2013-07-19 23:12:09",23,6,7,"female",1,"charmer",8,100,"St. Bernard-Labrador Retriever Mix","Cross Breed","",20,3.6163791423,-1.14585100546939,0.0429305015946205
+"111",112,"fd48b738-7144-11e5-ba71-058fbc01cf0b","2013-07-23 20:40:29",20,3,7,"male",0,"socialite",2,70,"Labrador Retriever","Pure Breed","Sporting",20,1.1098324805,-0.49037797967885,-1.13390801086613
+"112",113,"fd48f75c-7144-11e5-ba71-058fbc01cf0b","2013-08-07 15:01:09",15,4,8,"male",1,"protodog",3,70,"Labrador Retriever","Pure Breed","Sporting",20,1.3228137183,0.432175405362508,1.03216398080149
+"113",114,"fd491caa-7144-11e5-ba71-058fbc01cf0b","2013-08-07 16:23:04",16,4,8,"female",0,"stargazer",2,60,"Golden Retriever","Pure Breed","Sporting",20,0.44158930312,0.438489458270811,0.435725475101922
+"114",115,"fd4a33a6-7144-11e5-ba71-058fbc01cf0b","2013-08-04 17:38:35",17,1,8,"female",1,"protodog",4,20,"Icelandic Sheepdog","Pure Breed","Herding",28,7.4821626372,-2.44836342672609,1.41394502948684
+"115",116,"fd4a3c84-7144-11e5-ba71-058fbc01cf0b","2013-09-02 02:17:16",2,2,9,"male",1,"charmer",2,50,"Rottweiler","Pure Breed","Working",20,0.18293189571,1.36503099599787,1.20616279127474
+"116",117,"fd4a6b6e-7144-11e5-ba71-058fbc01cf0b","2013-08-07 21:58:45",21,4,8,"male",0,"stargazer",1,0,"Affenpinscher","Pure Breed","Toy",20,0.004853192006,0.247113369759425,-1.48680492379825
+"117",118,"fd4a7712-7144-11e5-ba71-058fbc01cf0b","2013-09-20 19:16:33",19,6,9,"male",1,"protodog",5,30,"German Shepherd Dog","Pure Breed","Herding",20,0.14745065789,-0.408443851455032,-1.28101282492373
+"118",119,"fd4ae90e-7144-11e5-ba71-058fbc01cf0b","2013-08-08 19:58:02",19,5,8,"female",1,"ace",5,60,"Labrador Retriever","Pure Breed","Sporting",20,3.3760897904,-0.408443851455032,-1.28101282492373
+"119",120,"fd4b24fa-7144-11e5-ba71-058fbc01cf0b","2013-08-17 03:35:44",3,7,8,"male",1,"charmer",2,60,"Mixed","Mixed Breed/ Other/ I Don't Know","",23,13.895530829,0.984465669125241,-0.907342354415625
+"120",121,"fd4bc1da-7144-11e5-ba71-058fbc01cf0b","2013-08-21 02:19:56",2,4,8,"female",1,"stargazer",13,30,"Poodle","Pure Breed","Non-Sporting",20,1.2562164961,1.12130192527726,-0.466465837515951
+"121",122,"fd50e192-7144-11e5-ba71-058fbc01cf0b","2013-09-01 18:12:42",18,1,9,"female",1,"ace",4,40,"Poodle","Pure Breed","Non-Sporting",20,0.85374451755,0.356471134623074,-0.388216124426721
+"122",123,"fd515b68-7144-11e5-ba71-058fbc01cf0b","2013-09-20 21:10:35",21,6,9,"male",1,"einstein",3,50,"Poodle","Pure Breed","Non-Sporting",20,0.26796661793,-0.162641466783581,-1.72232726709651
+"123",124,"fd51a5aa-7144-11e5-ba71-058fbc01cf0b","2013-08-28 21:17:57",21,4,8,"female",1,"socialite",4,50,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.14250426413,-0.0531995064960116,0.347307945861251
+"124",125,"fd51daac-7144-11e5-ba71-058fbc01cf0b","2014-10-21 18:53:02",18,3,10,"male",1,"",6,10,"Dachshund","Pure Breed","Hound",3,0.0059317129785,-0.0883870369710835,0.200337623275944
+"125",126,"fd52059a-7144-11e5-ba71-058fbc01cf0b","2013-09-03 14:08:04",14,3,9,"female",1,"ace",4,60,"Mixed","Mixed Breed/ Other/ I Don't Know","",26,6.9281782407,-2.18418591757978,1.18152000805698
+"126",127,"fd520720-7144-11e5-ba71-058fbc01cf0b","2013-09-06 13:10:59",13,6,9,"male",1,"protodog",6,60,"Boxer","Pure Breed","Working",20,0.0048976608147,-1.71938990303611,1.07266419999778
+"127",128,"fd5273b8-7144-11e5-ba71-058fbc01cf0b","2013-12-01 16:18:16",16,1,12,"female",1,"charmer",8,30,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.0070845516594,-1.14585100546939,0.0429305015946205
+"128",129,"fd52a90a-7144-11e5-ba71-058fbc01cf0b","2013-09-12 00:31:24",0,5,9,"male",1,"protodog",9,40,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,11.149381092,0.507627089830182,-0.460595154729015
+"129",130,"fd52b300-7144-11e5-ba71-058fbc01cf0b","2013-09-13 16:30:06",16,6,9,"female",1,"ace",8,60,"Labradoodle","Popular Hybrid","",20,1.3788943713,-1.30971926191702,0.337140129709809
+"130",131,"fd52c8cc-7144-11e5-ba71-058fbc01cf0b","2013-09-24 00:04:02",0,3,9,"male",1,"ace",3,130,"Black Russian Terrier","Pure Breed","Working",20,1.1923099415,0.886054332471574,0.895914664221174
+"131",132,"fd538fa0-7144-11e5-ba71-058fbc01cf0b","2013-09-20 16:34:56",16,6,9,"female",1,"maverick",8,60,"German Shepherd Dog-Rottweiler Mix","Cross Breed","",20,0.0015405701705,-1.71938990303611,1.07266419999778
+"132",133,"fd539b8a-7144-11e5-ba71-058fbc01cf0b","2013-10-12 20:11:35",20,7,10,"female",1,"expert",7,70,"Greyhound","Pure Breed","Hound",20,0.057015107216,-0.818114492574119,-0.545488754635757
+"133",134,"fd539c5c-7144-11e5-ba71-058fbc01cf0b","2013-10-21 12:36:39",12,2,10,"male",1,"charmer",5,30,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,2.190082846,1.81890992310694,1.06991347469443
+"134",135,"fd53cf92-7144-11e5-ba71-058fbc01cf0b","2013-09-20 20:13:44",20,6,9,"female",1,"protodog",5,60,"Golden Retriever-Chow Chow Mix","Cross Breed","",20,0.32024488304,-0.0807073385597636,-1.86943208115411
+"135",136,"fd53f044-7144-11e5-ba71-058fbc01cf0b","2013-09-18 01:25:17",1,4,9,"female",1,"protodog",3,30,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.019989035092,1.46159226419707,1.55553577487292
+"136",137,"fd58eb76-7144-11e5-ba71-058fbc01cf0b","2013-10-05 20:46:33",20,7,10,"male",1,"ace",3,90,"German Shepherd Dog","Pure Breed","Herding",25,13.989423708,0.0373073021246393,-1.71481884754037
+"137",138,"fd591768-7144-11e5-ba71-058fbc01cf0b","2013-10-14 16:27:24",16,2,10,"male",1,"einstein",7,30,"I Don't Know","Mixed Breed/ Other/ I Don't Know","",20,0.058450292398,-1.30971926191702,0.337140129709809
+"138",139,"fd59188a-7144-11e5-ba71-058fbc01cf0b","2013-10-18 19:45:54",19,6,10,"female",1,"ace",9,40,"Border Collie","Pure Breed","Herding",20,0.10655397174,-1.30971926191702,0.337140129709809
+"139",140,"fd596966-7144-11e5-ba71-058fbc01cf0b","2013-10-10 17:30:35",17,5,10,"male",1,"einstein",8,70,"Labrador Retriever","Pure Breed","Sporting",20,0.067424463942,-0.353680773599288,0.239327988348272
+"140",141,"fd5b15cc-7144-11e5-ba71-058fbc01cf0b","2013-11-03 16:07:52",16,1,11,"male",1,"socialite",2,60,"Labrador Retriever-Golden Retriever Mix","Cross Breed","",20,5.3881572856,-0.572143717054827,0.955289630363936
+"141",142,"fd5b36b0-7144-11e5-ba71-058fbc01cf0b","2013-10-13 16:29:31",16,1,10,"male",1,"einstein",4,60,"German Shepherd Dog","Pure Breed","Herding",20,0.056588084798,-0.435614901823105,0.386432802405866
+"142",143,"fd5b4092-7144-11e5-ba71-058fbc01cf0b","2013-10-14 20:25:31",20,2,10,"male",1,"renaissance-dog",7,10,"Havanese","Pure Breed","Toy",20,0.096899975637,-0.288699685573458,-1.20345079316034
+"143",144,"fd5b56d6-7144-11e5-ba71-058fbc01cf0b","2013-10-21 15:14:25",15,2,10,"female",1,"stargazer",2,40,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,3.8999829435,-1.63745577481229,0.925559385940187
+"144",145,"fd5c0e8c-7144-11e5-ba71-058fbc01cf0b","2013-10-22 13:50:31",13,3,10,"male",1,"stargazer",2,50,"Golden Doodle","Popular Hybrid","",20,2.6932535331,-1.30971926191702,0.337140129709809
+"145",146,"fd5c2f66-7144-11e5-ba71-058fbc01cf0b","2013-10-30 21:13:14",21,4,10,"male",1,"ace",10,80,"Labrador Retriever","Pure Breed","Sporting",20,1.5805921053,-0.38110441023912,-1.00636562508085
+"146",147,"fd5c77d2-7144-11e5-ba71-058fbc01cf0b","2013-10-30 23:52:59",23,4,10,"male",1,"socialite",2,50,"Labrador Retriever-Golden Retriever Mix","Cross Breed","",20,0.2128076267,0.684207647518343,-0.976635380657099
+"147",148,"fd5c7e62-7144-11e5-ba71-058fbc01cf0b","2013-11-01 20:12:33",20,6,11,"female",0,"socialite",1,50,"Labrador Retriever-Golden Retriever Mix","Cross Breed","",20,0.5272417154,-0.0807073385597636,-1.86943208115411
+"148",149,"fd5d21a0-7144-11e5-ba71-058fbc01cf0b","2013-11-09 11:56:14",11,7,11,"female",1,"renaissance-dog",4,60,"Beauceron","Pure Breed","Herding",20,0.01729836745,0.171334819227927,0.896112850991928
+"149",150,"fd5d27fe-7144-11e5-ba71-058fbc01cf0b","2013-11-10 11:46:23",11,1,11,"male",1,"stargazer",2,70,"Other","Mixed Breed/ Other/ I Don't Know","",20,0.053545930803,0.675493414595372,2.62390483526561
+"150",151,"fd5d4d24-7144-11e5-ba71-058fbc01cf0b","2013-12-25 03:53:46",3,4,12,"female",1,"socialite",14,50,"Pointer","Pure Breed","Sporting",20,4.2682395224,1.10427460528721,2.04115807505142
+"151",152,"fd5e0a2a-7144-11e5-ba71-058fbc01cf0b","2013-11-19 21:59:37",21,3,11,"female",1,"ace",1,20,"Cockapoo","Popular Hybrid","",23,14.773922559,1.2030128080047,-0.652257582845052
+"152",153,"fd5e203c-7144-11e5-ba71-058fbc01cf0b","2013-11-22 17:27:59",17,6,11,"female",1,"charmer",2,0,"Chihuahua","Pure Breed","Toy",25,2.9277464313,-1.35565707310417,-0.185083422147503
+"153",154,"fd646406-7144-11e5-ba71-058fbc01cf0b","2013-11-27 17:11:21",17,4,11,"male",1,"protodog",11,10,"Bichon Frise","Pure Breed","Non-Sporting",20,0.0031499756304,-1.71938990303611,1.07266419999778
+"154",155,"fd646820-7144-11e5-ba71-058fbc01cf0b","2013-11-28 11:52:13",11,5,11,"male",1,"renaissance-dog",6,30,"German Shepherd Dog","Pure Breed","Herding",20,0.002237451269,0.675493414595372,2.62390483526561
+"155",156,"fd64757c-7144-11e5-ba71-058fbc01cf0b","2013-11-29 20:29:48",20,6,11,"female",1,"socialite",3,10,"Poodle","Pure Breed","Non-Sporting",20,7.0067050439,-0.0807073385597636,-1.86943208115411
+"156",157,"fd64ae20-7144-11e5-ba71-058fbc01cf0b","2013-12-06 18:47:59",18,6,12,"male",1,"socialite",4,50,"Australian Shepherd","Pure Breed","Herding",20,0.10264498051,-1.55552164658847,0.778454571882592
+"157",158,"fd6512b6-7144-11e5-ba71-058fbc01cf0b","2013-12-10 00:00:34",0,3,12,"female",1,"protodog",10,10,"Shih Tzu","Pure Breed","Toy",20,0.0021156189093,2.10476405023483,0.68141563455163
+"158",159,"fd652116-7144-11e5-ba71-058fbc01cf0b","2013-12-25 01:43:52",1,4,12,"male",1,"ace",2,60,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.0027284356704,2.10476405023483,0.68141563455163
+"159",160,"fd65343a-7144-11e5-ba71-058fbc01cf0b","2013-12-17 21:09:57",21,3,12,"male",1,"stargazer",11,60,"I Don't Know","Mixed Breed/ Other/ I Don't Know","",20,4.4883741472,1.44912263359645,-0.0838386801600907
+"160",161,"fd659b82-7144-11e5-ba71-058fbc01cf0b","2013-12-24 16:28:43",16,3,12,"male",1,"expert",4,140,"Great Dane","Pure Breed","Working",20,0.31831079435,-1.71938990303611,1.07266419999778
+"161",162,"fd65b20c-7144-11e5-ba71-058fbc01cf0b","2014-01-17 04:47:23",4,6,1,"male",1,"renaissance-dog",2,70,"German Shepherd Dog","Pure Breed","Herding",38,13.512659222,3.22341551744584,1.02831869103211
+"162",163,"fd65d71e-7144-11e5-ba71-058fbc01cf0b","2013-12-28 18:33:38",18,7,12,"male",1,"socialite",5,70,"I Don't Know","Mixed Breed/ Other/ I Don't Know","",20,0.052149122808,-1.47358751836466,0.631349757824998
+"163",164,"fd65fcd0-7144-11e5-ba71-058fbc01cf0b","2013-12-31 04:56:32",4,3,12,"male",1,"ace",8,70,"Rottweiler-Border Collie Mix","Cross Breed","",20,3.843079922,2.10476405023483,0.68141563455163
+"164",165,"fd660072-7144-11e5-ba71-058fbc01cf0b","2014-01-04 15:01:56",15,7,1,"female",1,"renaissance-dog",3,60,"German Shepherd Dog","Pure Breed","Herding",20,0.59364522417,-0.818030297150199,0.425557658950481
+"165",166,"fd662bb0-7144-11e5-ba71-058fbc01cf0b","2014-01-06 21:44:23",21,2,1,"male",0,"einstein",9,50,"I Don't Know","Mixed Breed/ Other/ I Don't Know","",20,0.091839059452,-0.818114492574119,-0.545488754635757
+"166",167,"fd662e76-7144-11e5-ba71-058fbc01cf0b","2014-01-07 18:31:39",18,3,1,"female",0,"protodog",2,10,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.0042013888871,-0.49037797967885,-1.13390801086613
+"167",168,"fd666670-7144-11e5-ba71-058fbc01cf0b","2014-01-12 17:58:21",17,1,1,"male",1,"charmer",5,60,"Golden Retriever","Pure Breed","Sporting",20,0.0081432748487,-0.736180364350301,-0.692593568693351
+"168",169,"fd6673d6-7144-11e5-ba71-058fbc01cf0b","2014-01-17 19:11:30",19,6,1,"male",1,"protodog",10,70,"Labrador Retriever","Pure Breed","Sporting",20,1.2083601365,-0.900048620797936,-0.398383940578163
+"169",170,"fd667476-7144-11e5-ba71-058fbc01cf0b","2014-02-22 21:08:35",21,7,2,"male",1,"stargazer",13,10,"I Don't Know","Mixed Breed/ Other/ I Don't Know","",20,0.62588754873,-0.818114492574119,-0.545488754635757
+"170",171,"fd667fde-7144-11e5-ba71-058fbc01cf0b","2014-01-30 20:59:57",20,5,1,"female",1,"charmer",3,60,"Labrador Retriever","Pure Breed","Sporting",23,16.596052189,-0.135441075640127,-0.515320584938899
+"171",172,"fd669d52-7144-11e5-ba71-058fbc01cf0b","2014-01-25 00:13:18",0,7,1,"male",1,"protodog",5,70,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,1.3279507797,2.10476405023483,0.68141563455163
+"172",173,"fd66c692-7144-11e5-ba71-058fbc01cf0b","2014-01-30 20:47:22",20,5,1,"female",1,"renaissance-dog",0,40,"Mixed","Mixed Breed/ Other/ I Don't Know","",28,2.0641435185,-1.13741737514501,-0.939731995434673
+"173",174,"fd66c98a-7144-11e5-ba71-058fbc01cf0b","2014-01-31 20:55:00",20,6,1,"female",1,"socialite",2,20,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,4.4709052144,-0.49037797967885,-1.13390801086613
+"174",175,"fd66d664-7144-11e5-ba71-058fbc01cf0b","2014-02-02 18:51:50",18,1,2,"male",1,"renaissance-dog",6,120,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.0029148391791,-0.326509723231215,-1.42811763898132
+"175",176,"fd66dad8-7144-11e5-ba71-058fbc01cf0b","2014-03-14 17:03:11",17,6,3,"male",1,"socialite",7,50,"Golden Retriever","Pure Breed","Sporting",20,0.0095547027273,-1.14585100546939,0.0429305015946205
+"176",177,"fd66dd62-7144-11e5-ba71-058fbc01cf0b","2014-03-06 02:03:55",2,5,3,"male",0,"stargazer",0,70,"Labrador Retriever","Pure Breed","Sporting",20,0.82046905458,0.383894771262907,0.857477489002398
+"177",178,"fd66e370-7144-11e5-ba71-058fbc01cf0b","2014-02-04 01:51:53",1,3,2,"male",1,"maverick",0,10,"Miniature Schnauzer","Pure Breed","Terrier",20,0.012176535086,1.46159226419707,1.55553577487292
+"178",179,"fd66e654-7144-11e5-ba71-058fbc01cf0b","2014-02-23 10:16:21",10,1,2,"male",0,"socialite",1,80,"German Shepherd Dog","Pure Breed","Herding",20,0.17670199805,-0.0826964570866868,1.21555740339561
+"179",180,"fd66e794-7144-11e5-ba71-058fbc01cf0b","2014-03-14 17:43:34",17,6,3,"male",0,"protodog",7,60,"Bearded Collie","Pure Breed","Herding",20,0.11147660819,0.465744704062804,-0.260673738641434
+"180",181,"fd66ea0a-7144-11e5-ba71-058fbc01cf0b","2014-02-05 06:36:37",6,4,2,"male",0,"protodog",3,20,"I Don't Know","Mixed Breed/ Other/ I Don't Know","",20,3.4530677388,-1.44624807714874,0.905996957667879
+"181",182,"fd66ec8a-7144-11e5-ba71-058fbc01cf0b","2014-02-05 20:40:49",20,4,2,"female",1,"charmer",5,70,"Doberman Pinscher","Pure Breed","Working",20,0.27388036062,1.33984906415672,-0.211381065945378
+"182",183,"fd66edc0-7144-11e5-ba71-058fbc01cf0b","2014-02-16 21:45:09",21,1,2,"male",1,"protodog",4,80,"Greyhound","Pure Breed","Hound",20,1.4138791423,-0.736180364350301,-0.692593568693351
+"183",184,"fd6708fa-7144-11e5-ba71-058fbc01cf0b","2014-02-14 02:12:42",2,6,2,"female",1,"protodog",13,70,"German Shepherd Dog","Pure Breed","Herding",20,0.15105019493,0.442561806380432,0.0111372131933556
+"184",185,"fd6718a4-7144-11e5-ba71-058fbc01cf0b","2014-02-14 18:11:35",18,6,2,"male",0,"einstein",1,190,"Shih Tzu","Pure Breed","Toy",20,0.00067982456259,-1.71938990303611,1.07266419999778
+"185",186,"fd672db2-7144-11e5-ba71-058fbc01cf0b","2014-02-18 14:07:19",14,3,2,"male",1,"stargazer",0,40,"I Don't Know","Mixed Breed/ Other/ I Don't Know","",20,0.01157772905,-1.30971926191702,0.337140129709809
+"186",187,"fd672ee8-7144-11e5-ba71-058fbc01cf0b","2014-02-19 23:44:59",23,4,2,"female",1,"stargazer",1,90,"Great Dane","Pure Breed","Working",20,0.0588170078,1.12130192527726,-0.466465837515951
+"187",188,"fd672f4c-7144-11e5-ba71-058fbc01cf0b","2014-03-10 19:22:33",19,2,3,"male",1,"socialite",8,40,"Labrador Retriever-Poodle Mix","Cross Breed","",20,0.15710648148,-0.299086086591383,-0.182424025552204
+"188",189,"fd674b94-7144-11e5-ba71-058fbc01cf0b","2014-03-13 18:38:38",18,5,3,"male",1,"stargazer",6,10,"West Highland White Terrier","Pure Breed","Terrier",20,0.0031980994145,-0.408443851455032,-1.28101282492373
+"189",190,"fd674cca-7144-11e5-ba71-058fbc01cf0b","2014-03-13 17:28:09",17,5,3,"male",1,"socialite",5,50,"German Shepherd Dog","Pure Breed","Herding",20,0.16988974171,-0.408443851455032,-1.28101282492373
+"190",191,"fd674e5a-7144-11e5-ba71-058fbc01cf0b","2014-03-11 23:34:15",23,3,3,"male",1,"einstein",2,40,"Golden Retriever-Poodle Mix","Cross Breed","",20,0.0023732943471,1.23057549471699,-0.338923451730664
+"191",192,"fd674ebe-7144-11e5-ba71-058fbc01cf0b","2014-03-05 22:54:47",22,4,3,"male",1,"renaissance-dog",2,60,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.77016386452,1.23065969014091,0.632122961855574
+"192",193,"fd674f90-7144-11e5-ba71-058fbc01cf0b","2014-03-14 11:21:02",11,6,3,"male",1,"ace",5,40,"Border Collie","Pure Breed","Herding",23,0.27329650674,0.830909533903466,2.16913838610981
+"193",194,"fd675544-7144-11e5-ba71-058fbc01cf0b","2014-03-09 15:56:41",15,1,3,"female",0,"stargazer",7,10,"Shiba Inu","Pure Breed","Non-Sporting",20,0.0038827972695,-1.71938990303611,1.07266419999778
+"194",195,"fd675616-7144-11e5-ba71-058fbc01cf0b","2014-03-08 18:52:35",18,7,3,"male",1,"renaissance-dog",5,80,"Giant Schnauzer","Pure Breed","Working",20,0.27599780702,0.547678832286621,-0.407778552699029
+"195",196,"fd675db4-7144-11e5-ba71-058fbc01cf0b","2014-03-19 16:43:57",16,4,3,"male",1,"charmer",4,90,"Beauceron","Pure Breed","Herding",20,0.53347770468,-1.10804096781163,0.267597347415606
+"196",197,"fd676674-7144-11e5-ba71-058fbc01cf0b","2014-03-12 20:16:53",20,4,3,"female",1,"protodog",1,30,"Boxer","Pure Breed","Working",20,0.107270346,-0.408443851455032,-1.28101282492373
+"197",198,"fd6778d0-7144-11e5-ba71-058fbc01cf0b","2014-03-16 02:58:22",2,1,3,"male",1,"stargazer",4,20,"Maltese-Poodle Mix","Cross Breed","Toy",20,0.0021089181291,2.10476405023483,0.68141563455163
+"198",199,"fd67883e-7144-11e5-ba71-058fbc01cf0b","2014-03-15 22:45:36",22,7,3,"male",1,"ace",10,20,"Wire Fox Terrier","Pure Breed","Terrier",20,0.0059594298208,0.902754786397802,-0.721550609086525
+"199",200,"fd6797d4-7144-11e5-ba71-058fbc01cf0b","2014-03-20 20:52:02",20,5,3,"male",1,"stargazer",6,20,"Russell Terrier","Pure Breed","Terrier",20,1.7473135965,1.24304512531761,1.30045100330235
+"200",201,"fd67a472-7144-11e5-ba71-058fbc01cf0b","2014-03-24 11:54:54",11,2,3,"female",1,"charmer",6,30,"Border Collie","Pure Breed","Herding",27,13.558428152,0.523174968441144,0.775130129576629
+"201",202,"fd67ae40-7144-11e5-ba71-058fbc01cf0b","2014-03-29 22:33:21",22,7,3,"female",1,"charmer",7,10,"Mixed","Mixed Breed/ Other/ I Don't Know","",31,7.2100752315,1.89442729618337,-0.595018565319743
+"202",203,"fd67b098-7144-11e5-ba71-058fbc01cf0b","2014-03-30 17:31:17",17,1,3,"male",0,"charmer",0,50,"Australian Shepherd","Pure Breed","Herding",20,0.49155519006,-0.544888471262835,0.258890416620579
+"203",204,"fd67f738-7144-11e5-ba71-058fbc01cf0b","2014-04-18 19:17:05",19,6,4,"female",1,"expert",5,30,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.48019980507,-0.654246236126484,-0.839698382750946
+"204",205,"fd67fc24-7144-11e5-ba71-058fbc01cf0b","2014-04-19 17:59:06",17,7,4,"male",1,"charmer",10,40,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.19578642787,0.371182470022379,1.07930808681529
+"205",206,"fd680124-7144-11e5-ba71-058fbc01cf0b","2014-11-10 21:21:06",21,2,11,"female",1,"",8,70,"Belgian Tervuren","Pure Breed","Herding",13,2.9301138117,0.420699874861167,-0.628149565412722
+"206",207,"fd681344-7144-11e5-ba71-058fbc01cf0b","2014-04-28 05:43:40",5,2,4,"male",1,"protodog",8,50,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.0016873781629,2.10476405023483,0.68141563455163
+"207",208,"fd6816be-7144-11e5-ba71-058fbc01cf0b","2014-04-29 21:33:31",21,3,4,"female",1,"maverick",2,80,"German Shepherd Dog","Pure Breed","Herding",28,1.9169491598,-2.038692785607,0.678420959198865
+"208",209,"fd684d5a-7144-11e5-ba71-058fbc01cf0b","2014-05-09 23:10:38",23,6,5,"male",0,"socialite",6,50,"Belgian Tervuren","Pure Breed","Herding",20,24.317203338,-1.14585100546939,0.0429305015946205
+"209",210,"fd685084-7144-11e5-ba71-058fbc01cf0b","2014-06-13 21:51:56",21,6,6,"female",1,"charmer",1,60,"Golden Retriever-Labrador Retriever Mix","Cross Breed","",20,0.40864217836,-0.799246613641273,1.46849360828393
+"210",211,"fd6852dc-7144-11e5-ba71-058fbc01cf0b","2014-05-09 18:59:40",18,6,5,"male",1,"socialite",1,60,"Labrador Retriever-Golden Retriever Mix","Cross Breed","",20,0.58859344542,-0.572312107902667,-0.98680319680854
+"211",212,"fd6858c2-7144-11e5-ba71-058fbc01cf0b","2014-05-13 23:30:47",23,3,5,"female",0,"socialite",6,20,"English Cocker Spaniel","Pure Breed","Sporting",20,1.0051449805,1.23057549471699,-0.338923451730664
+"212",213,"fd68598a-7144-11e5-ba71-058fbc01cf0b","2014-05-17 15:51:57",15,7,5,"female",0,"socialite",0,40,"Golden Retriever-Labrador Retriever Mix","Cross Breed","",20,2.6319937865,-1.47358751836466,0.631349757824998
+"213",214,"fd686f9c-7144-11e5-ba71-058fbc01cf0b","2014-06-01 22:55:01",22,1,6,"male",1,"renaissance-dog",5,40,"Soft Coated Wheaten Terrier","Pure Breed","Terrier",20,0.6445711501,1.33984906415672,-0.211381065945378
+"214",215,"fd6872c6-7144-11e5-ba71-058fbc01cf0b","2014-05-18 19:59:11",19,1,5,"male",0,"socialite",1,90,"Labrador Retriever","Pure Breed","Sporting",20,1.1153782895,-0.3810202148152,-0.0353192114946097
+"215",216,"fd68732a-7144-11e5-ba71-058fbc01cf0b","2014-05-19 08:49:02",8,2,5,"male",1,"renaissance-dog",1,20,"Labradoodle","Popular Hybrid","",20,0.14707236842,1.81890992310694,1.06991347469443
+"216",217,"fd6875e6-7144-11e5-ba71-058fbc01cf0b","2014-05-29 12:00:50",12,5,5,"male",0,"renaissance-dog",7,0,"Chihuahua-Yorkshire Terrier Mix","Cross Breed","",20,0.22000913743,0.194601912334218,1.59534831274338
+"217",218,"fd688478-7144-11e5-ba71-058fbc01cf0b","2014-05-25 11:52:28",11,1,5,"female",0,"renaissance-dog",0,50,"Labrador Retriever-Golden Retriever Mix","Cross Breed","",20,0.74931225633,-0.307641844298369,0.585864723938361
+"218",219,"fd689710-7144-11e5-ba71-058fbc01cf0b","2014-05-28 02:03:54",2,4,5,"male",0,"renaissance-dog",6,150,"Irish Wolfhound","Pure Breed","Hound",20,0.21283199318,2.10476405023483,0.68141563455163
+"219",220,"fd68bca4-7144-11e5-ba71-058fbc01cf0b","2014-06-07 10:28:48",10,7,6,"male",1,"einstein",5,20,"Mixed","Mixed Breed/ Other/ I Don't Know","",42,0.10873419151,-0.795369754377967,1.5897181766677
+"220",221,"fd68cd48-7144-11e5-ba71-058fbc01cf0b","2014-06-13 21:36:49",21,6,6,"female",1,"renaissance-dog",0,0,"Maltese-Poodle Mix","Cross Breed","",20,0.091566154972,1.03305374414514,0.277077482241209
+"221",222,"fd68d2ac-7144-11e5-ba71-058fbc01cf0b","2014-06-16 21:54:02",21,2,6,"male",1,"ace",6,70,"Other","Mixed Breed/ Other/ I Don't Know","",22,1.8152441578,-0.208271837050434,-1.23481747409608
+"222",223,"fd68d4a0-7144-11e5-ba71-058fbc01cf0b","2014-06-17 17:58:54",17,3,6,"female",1,"maverick",2,190,"Shih Tzu","Pure Breed","Toy",20,0.0011744639396,-1.71938990303611,1.07266419999778
+"223",224,"fd68d55e-7144-11e5-ba71-058fbc01cf0b","2014-06-17 20:19:29",20,3,6,"male",0,"stargazer",1,190,"Shih Tzu","Pure Breed","Toy",20,0.0022283138427,-0.0807073385597636,-1.86943208115411
+"224",226,"fd68f6ce-7144-11e5-ba71-058fbc01cf0b","2014-06-30 23:06:49",23,2,6,"female",1,"ace",8,50,"Siberian Husky","Pure Breed","Working",28,13.260423954,0.501433580179172,-1.93973544941408
+"225",227,"fd68fa20-7144-11e5-ba71-058fbc01cf0b","2014-06-29 16:15:21",16,1,6,"female",1,"socialite",7,10,"Shetland Sheepdog","Pure Breed","Herding",20,3.0178782895,0.629612960510438,-0.554883366756623
+"226",228,"fd68fe62-7144-11e5-ba71-058fbc01cf0b","2014-06-29 16:45:32",16,1,6,"female",1,"renaissance-dog",7,10,"Shetland Sheepdog","Pure Breed","Herding",19,0.0091782407382,-1.21859757145577,0.294480026023677
+"227",229,"fd690ef2-7144-11e5-ba71-058fbc01cf0b","2014-06-30 22:29:10",22,2,6,"male",1,"maverick",10,50,"Border Collie-Belgian Sheepdog Mix","Cross Breed","",20,0.0065777290454,0.465660508638884,-1.23172015222767
+"228",230,"fd691a3c-7144-11e5-ba71-058fbc01cf0b","2014-07-10 10:10:28",10,5,7,"male",1,"ace",5,10,"Parson Russell Terrier","Pure Breed","Terrier",20,0.2062627924,1.03281107350524,2.13828253508712
+"229",233,"fd693dbe-7144-11e5-ba71-058fbc01cf0b","2014-08-05 15:33:02",15,3,8,"male",1,"charmer",2,0,"Shorkie","Popular Hybrid","",20,0.33179215399,-0.445194100404753,-1.69879166640958
+"230",234,"fd696dd4-7144-11e5-ba71-058fbc01cf0b","2014-08-15 22:13:05",22,6,8,"male",1,"protodog",6,10,"Other","Mixed Breed/ Other/ I Don't Know","",23,0.9076288931,-0.706005345763954,1.03960951326807
+"231",235,"fd696e38-7144-11e5-ba71-058fbc01cf0b","2014-08-15 21:43:51",21,6,8,"male",1,"socialite",7,10,"Other","Mixed Breed/ Other/ I Don't Know","",23,0.91009364478,-1.3648446353416,-0.289528132518965
+"232",236,"fd6986ca-7144-11e5-ba71-058fbc01cf0b","2014-09-01 01:46:19",1,2,9,"female",0,"socialite",0,40,"Belgian Malinois","Pure Breed","Herding",20,2.4669657651,1.2579149359329,-0.0642762518877832
+"233",237,"fd699516-7144-11e5-ba71-058fbc01cf0b","2014-09-05 08:02:19",8,6,9,"male",0,"protodog",5,10,"Poodle","Pure Breed","Non-Sporting",20,1.5687426901,2.13338652565515,0.801637770001154
+"234",238,"fd6998a4-7144-11e5-ba71-058fbc01cf0b","2014-09-05 07:53:49",7,6,9,"male",0,"protodog",2,0,"Poodle","Pure Breed","Non-Sporting",20,1.5142336745,0.828994695168608,1.45082999064114
+"235",239,"fd699908-7144-11e5-ba71-058fbc01cf0b","2014-09-12 13:16:13",13,6,9,"male",0,"protodog",2,50,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,1.1973148148,1.38821389368024,0.934351839439951
+"236",240,"fd699c28-7144-11e5-ba71-058fbc01cf0b","2014-09-19 17:42:37",17,6,9,"male",0,"",0,20,"Pembroke Welsh Corgi","Pure Breed","Herding",4,1.0036574074,-0.261442855656148,0.39010254101967
+"237",241,"fd699c8c-7144-11e5-ba71-058fbc01cf0b","2014-10-08 08:54:34",8,4,10,"male",1,"protodog",4,0,"Pomeranian","Pure Breed","Toy",20,0.0085916179355,0.675493414595372,2.62390483526561
+"238",242,"fd69a682-7144-11e5-ba71-058fbc01cf0b","2014-09-08 18:25:59",18,2,9,"male",1,"stargazer",2,10,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,5.9459265351,-1.72857746527354,0.968219489626319
+"239",243,"fd69b186-7144-11e5-ba71-058fbc01cf0b","2014-09-10 11:53:47",11,4,9,"male",0,"protodog",8,10,"Bichon Frise-Poodle Mix","Cross Breed","",20,1.0415612817,1.81890992310694,1.06991347469443
+"240",244,"fd69d634-7144-11e5-ba71-058fbc01cf0b","2014-09-12 03:18:36",3,6,9,"female",1,"socialite",2,60,"I Don't Know","Mixed Breed/ Other/ I Don't Know","",20,4.8418019006,2.295748502402,0.623166275007817
+"241",245,"fd69dba2-7144-11e5-ba71-058fbc01cf0b","2014-09-13 16:51:44",16,7,9,"female",1,"protodog",4,40,"American Staffordshire Terrier-Labrador Retriever Mix","Cross Breed","",20,7.0552570663,-2.35724173626484,1.3712849258007
+"242",246,"fd69f68c-7144-11e5-ba71-058fbc01cf0b","2014-09-13 15:51:25",15,7,9,"female",1,"ace",9,10,"Poodle","Pure Breed","Non-Sporting",20,0.52782955653,0.356247889126696,-0.426903055698227
+"243",247,"fd69f862-7144-11e5-ba71-058fbc01cf0b","2014-09-13 18:22:24",18,7,9,"male",1,"ace",4,30,"Pembroke Welsh Corgi","Pure Breed","Herding",20,5.8524567495,-1.00111180540967,-1.54727575466425
+"244",249,"fd6a1644-7144-11e5-ba71-058fbc01cf0b","2014-09-24 20:27:37",20,4,9,"female",1,"renaissance-dog",1,30,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,5.0488675682,-0.408443851455032,-1.28101282492373
+"245",250,"fd6a181a-7144-11e5-ba71-058fbc01cf0b","2014-10-06 04:40:15",4,2,10,"male",0,"stargazer",4,20,"I Don't Know","Mixed Breed/ Other/ I Don't Know","",20,0.071302387912,0.602115044078541,2.00272089983264
+"246",251,"fd6a3b2e-7144-11e5-ba71-058fbc01cf0b","2014-09-23 13:15:47",13,3,9,"female",0,"maverick",1,40,"Australian Shepherd","Pure Breed","Herding",20,0.10395163255,-0.150087640759039,0.888093601522739
+"247",252,"fd6a3ef8-7144-11e5-ba71-058fbc01cf0b","2014-09-25 10:49:33",10,5,9,"female",1,"stargazer",7,0,"Poodle","Pure Breed","Non-Sporting",20,0.94923976608,0.675493414595372,2.62390483526561
+"248",253,"fd6a41d2-7144-11e5-ba71-058fbc01cf0b","2014-09-25 18:06:06",18,5,9,"female",0,"ace",3,0,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,2.5342750975,0.711547088734256,-0.701988180814217
+"249",254,"fd6a4c18-7144-11e5-ba71-058fbc01cf0b","2014-10-04 00:50:19",0,7,10,"female",1,"socialite",2,70,"Labrador Retriever-Weimaraner Mix","Cross Breed","",31,11.298986883,2.95041274163094,0.262626451047275
+"250",255,"fd6a4c86-7144-11e5-ba71-058fbc01cf0b","2014-10-04 01:59:36",1,7,10,"male",1,"charmer",4,70,"Labrador Retriever-Weimaraner Mix","Cross Breed","",30,4.7936717752,2.65934228226147,0.297778135177265
+"251",256,"fd6a51ea-7144-11e5-ba71-058fbc01cf0b","2014-10-04 01:43:43",1,7,10,"male",1,"protodog",2,20,"Samoyed","Pure Breed","Working",20,0.012956871345,1.94761840572956,1.21323328555777
+"252",257,"fd6a5dc0-7144-11e5-ba71-058fbc01cf0b","2014-10-06 01:02:34",1,2,10,"female",1,"expert",5,70,"German Shepherd Dog","Pure Breed","Herding",20,0.37454861111,1.63122696444649,0.763200594782377
+"253",258,"fd6a68e2-7144-11e5-ba71-058fbc01cf0b","2014-10-06 00:59:40",0,2,10,"male",0,"ace",1,50,"German Shorthaired Pointer","Pure Breed","Sporting",20,0.47794651559,1.72234865490773,0.720540491096245
+"254",259,"fd6a7490-7144-11e5-ba71-058fbc01cf0b","2014-10-06 00:55:58",0,2,10,"male",1,"socialite",5,70,"Golden Retriever","Pure Breed","Sporting",20,1.6869724659,1.76775577967821,0.194343766824307
+"255",260,"fd6a7774-7144-11e5-ba71-058fbc01cf0b","2014-10-06 00:57:46",0,2,10,"female",1,"",4,0,"Chihuahua","Pure Breed","Toy",2,3.9153356481,0.193942351153711,0.138115091317504
+"256",261,"fd6acaee-7144-11e5-ba71-058fbc01cf0b","2014-10-07 23:06:18",23,3,10,"male",0,"renaissance-dog",2,120,"Newfoundland","Pure Breed","Working",20,2.0990478801,-0.408443851455032,-1.28101282492373
+"257",262,"fd6ade30-7144-11e5-ba71-058fbc01cf0b","2014-10-06 01:23:22",1,2,10,"male",1,"protodog",7,90,"American Staffordshire Terrier-Dogo Argentino Mix","Cross Breed","",20,0.10491106238,1.98630291855767,0.449428538394881
+"258",263,"fd6be38e-7144-11e5-ba71-058fbc01cf0b","2014-10-07 22:11:33",22,3,10,"female",1,"protodog",2,50,"German Shepherd Dog-Keeshond Mix","Cross Breed","",20,0.21843932749,0.656644960806053,-1.28996951177149
+"259",264,"fd6bf766-7144-11e5-ba71-058fbc01cf0b","2014-10-06 01:54:49",1,2,10,"male",1,"",6,50,"Australian Shepherd","Pure Breed","Herding",14,1.8472961182,1.3949744375813,0.415287196283397
+"260",265,"fd6ca486-7144-11e5-ba71-058fbc01cf0b","2014-10-07 00:35:23",0,3,10,"female",1,"maverick",7,20,"French Bulldog","Pure Breed","Non-Sporting",20,0.73865801657,1.88621691135537,0.426330862981056
+"261",266,"fd6caaa8-7144-11e5-ba71-058fbc01cf0b","2014-10-06 16:16:59",16,2,10,"female",1,"renaissance-dog",0,30,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.43684393275,-0.599874794614958,-1.30013732792293
+"262",267,"fd6cae9a-7144-11e5-ba71-058fbc01cf0b","2014-10-08 02:27:06",2,4,10,"female",1,"stargazer",12,40,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,1.421521077,1.80428278313155,0.573435677038651
+"263",268,"fd6cc268-7144-11e5-ba71-058fbc01cf0b","2014-10-06 04:56:16",4,2,10,"male",1,"ace",0,40,"German Shorthaired Pointer","Pure Breed","Sporting",20,0.082545077974,1.44001926678294,0.782763023054685
+"264",269,"fd6cec84-7144-11e5-ba71-058fbc01cf0b","2014-10-11 03:09:35",3,7,10,"female",1,"renaissance-dog",8,20,"Cockapoo","Popular Hybrid","",20,0.4273373538,1.91355635257128,0.700978062823938
+"265",270,"fd6cfd96-7144-11e5-ba71-058fbc01cf0b","2014-10-10 01:01:21",1,6,10,"male",1,"",5,60,"Mixed","Mixed Breed/ Other/ I Don't Know","",4,0.16030478396,0.431924403216066,0.408977287966139
+"266",271,"fd6d0cfa-7144-11e5-ba71-058fbc01cf0b","2014-10-06 17:55:48",17,2,10,"female",1,"socialite",10,20,"Cockapoo","Popular Hybrid","",20,0.17166544835,0.119548871268755,-0.85219031674022
+"267",272,"fd6d1182-7144-11e5-ba71-058fbc01cf0b","2014-10-10 13:22:58",13,6,10,"male",1,"",3,60,"Portuguese Water Dog","Pure Breed","Working",3,0.0046238425997,-0.170321165194901,0.347442437333538
+"268",273,"fd6d165a-7144-11e5-ba71-058fbc01cf0b","2014-10-06 13:43:08",13,2,10,"male",1,"ace",6,50,"Poodle","Pure Breed","Non-Sporting",25,2.1362205826,-1.76532771422326,0.550440648140469
+"269",274,"fd6d1b1e-7144-11e5-ba71-058fbc01cf0b","2014-10-06 14:01:20",14,2,10,"male",0,"protodog",1,50,"Belgian Malinois","Pure Breed","Herding",20,0.0030604288484,-1.81051159349736,1.11532430368391
+"270",275,"fd6d1ea2-7144-11e5-ba71-058fbc01cf0b","2014-10-06 15:28:42",15,2,10,"female",1,"",6,50,"Labrador Retriever","Pure Breed","Sporting",7,2.8675501543,-0.370939670592256,0.223873223962877
+"271",276,"fd6d6718-7144-11e5-ba71-058fbc01cf0b","2014-10-06 17:27:41",17,2,10,"male",1,"",7,70,"Golden Retriever","Pure Breed","Sporting",14,4.9491470798,0.68473833393502,0.0717848954721515
+"272",277,"fd6d8c70-7144-11e5-ba71-058fbc01cf0b","2014-10-06 17:29:37",17,2,10,"male",1,"protodog",0,40,"Boxer","Pure Breed","Working",20,3.8491209795,-1.09147956395786,-0.417508443577361
+"273",278,"fd6dbcfe-7144-11e5-ba71-058fbc01cf0b","2014-10-06 18:29:40",18,2,10,"female",1,"renaissance-dog",6,50,"Labrador Retriever-German Shepherd Dog Mix","Cross Breed","",20,0.43521076998,-0.954559112381921,0.994414486908551
+"274",279,"fd6df8f4-7144-11e5-ba71-058fbc01cf0b","2014-10-06 20:36:21",20,2,10,"female",1,"ace",6,80,"Golden Retriever","Pure Breed","Sporting",20,0.38084125244,0.601519587381471,-1.91663777400026
+"275",280,"fd6e0286-7144-11e5-ba71-058fbc01cf0b","2014-10-09 05:29:07",5,5,10,"male",0,"",0,50,"Poodle","Pure Breed","Non-Sporting",16,1.6602407407,1.70442002142563,0.589024932896333
+"276",281,"fd6e28e2-7144-11e5-ba71-058fbc01cf0b","2014-10-21 02:05:28",2,3,10,"male",1,"",8,30,"Other","Mixed Breed/ Other/ I Don't Know","",2,0.0046527776845,0.30321592059344,0.265657477102791
+"277",282,"fd6e94d0-7144-11e5-ba71-058fbc01cf0b","2014-10-07 02:04:42",2,3,10,"female",1,"",6,70,"Labrador Retriever","Pure Breed","Sporting",9,2.0001157407,1.03244044642986,0.547563340449085
+"278",283,"fd6eb9a6-7144-11e5-ba71-058fbc01cf0b","2014-10-07 01:46:40",1,3,10,"male",1,"charmer",5,10,"Miniature Pinscher-Basenji Mix","Cross Breed","",20,0.36764985381,0.383894771262907,0.857477489002398
+"279",284,"fd6ef2cc-7144-11e5-ba71-058fbc01cf0b","2014-10-07 13:07:18",13,3,10,"male",1,"",6,10,"West Highland White Terrier","Pure Breed","Terrier",19,0.24269483024,-0.972795186784323,-0.146834416149106
+"280",285,"fd6efce0-7144-11e5-ba71-058fbc01cf0b","2014-10-12 18:09:00",18,1,10,"female",1,"",7,30,"Brittany","Pure Breed","Sporting",11,8.4103773148,0.165933173448663,-0.252592902339895
+"281",286,"fd6f505a-7144-11e5-ba71-058fbc01cf0b","2014-10-07 19:54:59",19,3,10,"male",1,"charmer",5,70,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.36415387427,-1.2277851336932,0.190035315652215
+"282",287,"fd6f5c4e-7144-11e5-ba71-058fbc01cf0b","2014-10-07 16:58:19",16,3,10,"female",0,"",0,50,"German Shepherd Dog","Pure Breed","Herding",4,0.31907021607,-0.261442855656148,0.39010254101967
+"283",288,"fd6f6c84-7144-11e5-ba71-058fbc01cf0b","2014-10-16 20:42:50",20,5,10,"female",1,"",0,10,"Miniature Schnauzer","Pure Breed","Terrier",6,0.97311111109,-0.197883851907191,0.0341083062191505
+"284",289,"fd6f7260-7144-11e5-ba71-058fbc01cf0b","2014-10-08 22:48:34",22,4,10,"female",1,"",6,10,"Shih Tzu-Bichon Frise Mix","Cross Breed","",16,10.054863426,-0.763212364645915,0.0424925763215114
+"285",290,"fd6f790e-7144-11e5-ba71-058fbc01cf0b","2014-10-18 14:00:16",14,7,10,"male",1,"",14,30,"Mixed","Mixed Breed/ Other/ I Don't Know","",16,0.46752469136,-1.35490314119112,0.902023785253253
+"286",291,"fd6f8962-7144-11e5-ba71-058fbc01cf0b","2014-10-07 20:51:50",20,3,10,"male",1,"ace",2,10,"Scottish Terrier","Pure Breed","Terrier",20,0.2588456384,-0.526820787708272,-0.54195350749424
+"287",292,"fd6fb46e-7144-11e5-ba71-058fbc01cf0b","2014-10-08 03:18:01",3,4,10,"female",1,"ace",7,30,"Border Collie","Pure Breed","Herding",20,1.7214625975,-0.107878388927836,-0.201986453824512
+"288",293,"fd6fc878-7144-11e5-ba71-058fbc01cf0b","2014-10-07 23:50:23",23,3,10,"male",1,"charmer",13,90,"Labrador Retriever","Pure Breed","Sporting",20,1.7234216618,0.984773110045539,0.102390990442119
+"289",294,"fd6fe920-7144-11e5-ba71-058fbc01cf0b","2014-10-08 12:41:53",12,4,10,"male",1,"ace",1,10,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.16196698343,-1.17685423576086,1.02691809225083
+"290",295,"fd701fda-7144-11e5-ba71-058fbc01cf0b","2014-10-08 06:48:25",6,4,10,"male",1,"socialite",4,100,"Chesapeake Bay Retriever-Labrador Retriever Mix","Cross Breed","",20,0.0027083333299,0.97575143620227,2.69319786150709
+"291",296,"fd702b7e-7144-11e5-ba71-058fbc01cf0b","2014-10-09 01:18:26",1,5,10,"female",1,"",5,10,"Shih Tzu","Pure Breed","Toy",18,1.9420281863,0.584205835739964,-0.028686642484685
+"292",297,"fd70338a-7144-11e5-ba71-058fbc01cf0b","2014-10-16 16:13:33",16,5,10,"female",1,"ace",2,20,"Rat Terrier","Pure Breed","",20,6.3197807018,-1.81051159349736,1.11532430368391
+"293",298,"fd7039a2-7144-11e5-ba71-058fbc01cf0b","2014-10-16 11:05:12",11,5,10,"female",1,"",4,60,"Mixed","Mixed Breed/ Other/ I Don't Know","",11,0.91128935185,-0.271951384056684,1.19675556108907
+"294",299,"fd7040a0-7144-11e5-ba71-058fbc01cf0b","2014-10-08 18:57:06",18,4,10,"male",1,"",2,40,"Collie-Golden Retriever Mix","Cross Breed","",15,0.14708498677,-0.11670365559643,-1.2001037152392
+"295",300,"fd7042ee-7144-11e5-ba71-058fbc01cf0b","2014-10-08 19:06:37",19,4,10,"male",1,"maverick",5,30,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.0061951754432,-0.0807073385597636,-1.86943208115411
+"296",301,"fd7059a0-7144-11e5-ba71-058fbc01cf0b","2014-10-10 19:46:26",19,6,10,"female",1,"ace",7,10,"West Highland White Terrier","Pure Breed","Terrier",20,0.74200536062,-0.326509723231215,-1.42811763898132
+"297",302,"fd706490-7144-11e5-ba71-058fbc01cf0b","2014-10-08 22:51:00",22,4,10,"male",1,"protodog",1,50,"Mixed","Mixed Breed/ Other/ I Don't Know","",22,8.2343022487,0.219550683047134,-1.80013905491263
+"298",303,"fd7076d8-7144-11e5-ba71-058fbc01cf0b","2014-10-08 23:40:05",23,4,10,"female",1,"stargazer",6,40,"Labrador Retriever","Pure Breed","Sporting",20,0.57845882066,0.793481216958073,-0.849092994871812
+"299",304,"fd7095e6-7144-11e5-ba71-058fbc01cf0b","2014-10-10 02:45:56",2,6,10,"female",0,"expert",10,0,"Pekingese","Pure Breed","Toy",20,0.0020120614023,2.10476405023483,0.68141563455163
+"300",305,"fd709b18-7144-11e5-ba71-058fbc01cf0b","2014-10-09 07:08:10",7,5,10,"male",0,"charmer",0,40,"Border Collie","Pure Breed","Herding",20,0.36904544347,1.423967540077,2.12622852637095
+"301",306,"fd70a7de-7144-11e5-ba71-058fbc01cf0b","2014-10-10 11:51:24",11,6,10,"female",1,"",5,40,"Mixed","Mixed Breed/ Other/ I Don't Know","",18,3.0633258442,-0.909803217285416,1.495376286892
+"302",307,"fd70a96e-7144-11e5-ba71-058fbc01cf0b","2014-10-09 23:40:09",23,5,10,"male",1,"protodog",0,20,"Basset Hound","Pure Breed","Hound",20,4.1467580409,0.811717291360475,0.292155908185845
+"303",308,"fd70a9d2-7144-11e5-ba71-058fbc01cf0b","2014-10-12 04:01:20",4,1,10,"male",1,"protodog",4,30,"Border Collie","Pure Breed","Herding",20,0.9972959308,1.35777769763882,-0.0798655077454649
+"304",309,"fd70ad42-7144-11e5-ba71-058fbc01cf0b","2014-10-09 17:42:21",17,5,10,"male",1,"",2,190,"Shih Tzu","Pure Breed","Toy",5,0.00099247685326,-0.352564546117396,0.432762644705802
+"305",310,"fd70d1e6-7144-11e5-ba71-058fbc01cf0b","2014-10-10 01:16:33",1,6,10,"male",1,"socialite",2,50,"Mixed","Mixed Breed/ Other/ I Don't Know","",31,7.5310771605,1.33904027759513,0.604917622554836
+"306",311,"fd70d2ae-7144-11e5-ba71-058fbc01cf0b","2014-10-09 21:19:05",21,5,10,"female",1,"socialite",5,30,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,1.265433114,1.44912263359645,-0.0838386801600907
+"307",312,"fd70d43e-7144-11e5-ba71-058fbc01cf0b","2014-10-18 22:55:21",22,7,10,"female",1,"",3,10,"Bichon Frise-Poodle Mix","Cross Breed","",11,4.5009016204,0.320613867658867,-0.651247240826546
+"308",313,"fd70d506-7144-11e5-ba71-058fbc01cf0b","2014-10-09 21:14:28",21,5,10,"female",0,"ace",2,80,"Bullmastiff-Labrador Retriever Mix","Cross Breed","",20,2.9057364766,1.44912263359645,-0.0838386801600907
+"309",314,"fd70df6a-7144-11e5-ba71-058fbc01cf0b","2014-10-11 19:19:22",19,7,10,"male",1,"protodog",3,80,"Labrador Retriever-Border Collie Mix","Cross Breed","",20,3.0040978314,-0.0990824630346241,-2.07832150189703
+"310",315,"fd70e924-7144-11e5-ba71-058fbc01cf0b","2014-10-13 23:45:26",23,2,10,"female",1,"",1,30,"Mixed","Mixed Breed/ Other/ I Don't Know","",7,28.577957176,0.395174154266345,-0.00880155351971085
+"311",316,"fd70ea64-7144-11e5-ba71-058fbc01cf0b","2014-10-10 00:14:26",0,6,10,"female",1,"charmer",5,10,"Miniature Schnauzer","Pure Breed","Terrier",21,1.9018975694,2.20485005743713,0.704513309965455
+"312",317,"fd70f770-7144-11e5-ba71-058fbc01cf0b","2014-10-10 03:14:02",3,6,10,"male",1,"charmer",4,40,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.032508528264,0.00147937593581306,0.896602345547013
+"313",318,"fd70fd2e-7144-11e5-ba71-058fbc01cf0b","2014-10-12 06:24:53",6,1,10,"female",1,"",3,40,"Australian Shepherd-Australian Cattle Dog Mix","Cross Breed","",7,2.0095659722,0.589255361259018,0.67251923427901
+"314",319,"fd713528-7144-11e5-ba71-058fbc01cf0b","2014-10-10 19:30:28",19,6,10,"female",1,"ace",5,10,"Mixed","Mixed Breed/ Other/ I Don't Know","",21,0.011174189817,0.347199376961724,-1.46370724838442
+"315",320,"fd714d88-7144-11e5-ba71-058fbc01cf0b","2014-10-11 00:00:29",0,7,10,"male",1,"charmer",6,80,"Boxer-Labrador Retriever Mix","Cross Breed","",20,2.3163980263,1.57654808201466,0.213906195096615
+"316",321,"fd719e14-7144-11e5-ba71-058fbc01cf0b","2014-10-11 18:27:25",18,7,10,"female",1,"",6,10,"Shih Tzu","Pure Breed","Toy",7,0.007617669762,-0.289005542368439,0.0767684099052825
+"317",322,"fd71a292-7144-11e5-ba71-058fbc01cf0b","2014-10-11 18:52:21",18,7,10,"male",1,"",7,50,"Norwegian Elkhound","Pure Breed","Hound",11,0.81247916666,-0.243821663094343,-0.488115245638161
+"318",323,"fd71adaa-7144-11e5-ba71-058fbc01cf0b","2014-10-11 20:46:32",20,7,10,"female",1,"socialite",5,80,"Bouvier des Flandres","Pure Breed","Herding",33,3.8818746383,0.00938231984351134,-1.13448042761153
+"319",324,"fd71c39e-7144-11e5-ba71-058fbc01cf0b","2014-10-15 17:45:02",17,4,10,"female",1,"ace",7,50,"Australian Shepherd","Pure Breed","Herding",20,2.4349262914,-0.171744833597091,-0.855725563881736
+"320",325,"fd71d5f0-7144-11e5-ba71-058fbc01cf0b","2014-10-12 05:45:19",5,1,10,"male",1,"ace",3,10,"Shetland Sheepdog","Pure Breed","Herding",20,12.514624147,1.23057549471699,-0.338923451730664
+"321",326,"fd7200e8-7144-11e5-ba71-058fbc01cf0b","2014-10-12 16:07:21",16,1,10,"male",1,"",0,50,"Golden Doodle","Popular Hybrid","",16,1.3367021605,-0.945232500072032,0.166499714965281
+"322",327,"fd720796-7144-11e5-ba71-058fbc01cf0b","2014-10-12 17:50:05",17,1,10,"male",1,"renaissance-dog",1,10,"Havanese","Pure Breed","Toy",20,0.53435246102,-0.736180364350301,-0.692593568693351
+"323",328,"fd7209ee-7144-11e5-ba71-058fbc01cf0b","2014-10-12 18:00:27",18,1,10,"male",1,"",5,10,"Miniature Schnauzer","Pure Breed","Terrier",11,1.0240243056,-0.225669784115861,-0.317912756166743
+"324",329,"fd72237a-7144-11e5-ba71-058fbc01cf0b","2014-10-12 22:23:00",22,1,10,"male",1,"charmer",0,10,"Australian Shepherd","Pure Breed","Herding",20,1.7809478557,-0.49037797967885,-1.13390801086613
+"325",330,"fd722ae6-7144-11e5-ba71-058fbc01cf0b","2014-10-12 23:37:23",23,1,10,"male",1,"",8,160,"Chow Chow-Labrador Retriever Mix","Cross Breed","",4,1.2232253087,-0.0432031576969874,-0.364546032267501
+"326",331,"fd723b1c-7144-11e5-ba71-058fbc01cf0b","2014-10-13 03:38:41",3,2,10,"female",1,"ace",8,60,"Labradoodle","Popular Hybrid","",20,1.9980074318,1.98630291855767,0.449428538394881
+"327",332,"fd724670-7144-11e5-ba71-058fbc01cf0b","2014-10-13 15:30:26",15,2,10,"female",1,"",8,50,"Golden Retriever","Pure Breed","Sporting",7,0.25619212963,0.0388151659507498,0.459395567261143
+"328",333,"fd725dae-7144-11e5-ba71-058fbc01cf0b","2014-10-13 09:14:20",9,2,10,"female",1,"maverick",7,40,"Labradoodle","Popular Hybrid","",20,0.0037146686135,0.732738365436025,2.86434910616466
+"329",334,"fd7265ba-7144-11e5-ba71-058fbc01cf0b","2014-10-13 17:54:56",17,2,10,"male",1,"renaissance-dog",1,20,"Havanese","Pure Breed","Toy",36,10.143623347,-0.48244569499577,-0.290538474537471
+"330",335,"fd726f92-7144-11e5-ba71-058fbc01cf0b","2014-10-18 20:53:39",20,7,10,"female",1,"einstein",6,70,"Mixed","Mixed Breed/ Other/ I Don't Know","",25,4.3730473573,0.938835298858388,-0.419832561415193
+"331",336,"fd72776c-7144-11e5-ba71-058fbc01cf0b","2014-10-15 21:17:24",21,4,10,"male",1,"renaissance-dog",9,10,"Cockapoo","Popular Hybrid","",20,0.63172149123,-0.0806231431358437,-0.898385667567868
+"332",337,"fd728108-7144-11e5-ba71-058fbc01cf0b","2014-10-14 01:12:16",1,3,10,"male",1,"ace",4,10,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.77455409357,-0.736096168926382,0.278452844892887
+"333",338,"fd7285ae-7144-11e5-ba71-058fbc01cf0b","2014-10-15 02:19:55",2,4,10,"male",1,"socialite",4,80,"German Shepherd Dog-Border Collie Mix","Cross Breed","",20,1.3021546053,0.939142739778686,0.589900783442551
+"334",339,"fd728b76-7144-11e5-ba71-058fbc01cf0b","2014-10-14 11:42:36",11,3,10,"female",0,"ace",5,10,"Field Spaniel","Pure Breed","Sporting",20,0.11111111111,-0.162715746575646,2.08097061292187
+"335",340,"fd72ae44-7144-11e5-ba71-058fbc01cf0b","2014-10-14 23:43:11",23,3,10,"male",0,"charmer",2,70,"Labrador Retriever","Pure Breed","Sporting",20,0.26706566764,0.329215888831082,0.308183089316636
+"336",341,"fd72c582-7144-11e5-ba71-058fbc01cf0b","2014-10-15 23:34:04",23,4,10,"female",1,"renaissance-dog",2,50,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,15.108564206,2.27715013243076,0.375589922993386
+"337",342,"fd72d252-7144-11e5-ba71-058fbc01cf0b","2014-10-15 22:08:30",22,4,10,"female",1,"maverick",3,50,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.5239047271,0.137839800319696,-1.61434730958353
+"338",343,"fd72d7a2-7144-11e5-ba71-058fbc01cf0b","2014-11-18 01:57:24",1,3,11,"female",1,"ace",3,20,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,2.7222605994,0.410619330638222,-0.887342000870209
+"339",344,"fd72dc20-7144-11e5-ba71-058fbc01cf0b","2014-10-16 13:52:40",13,5,10,"male",0,"",0,0,"Mixed","Mixed Breed/ Other/ I Don't Know","",7,10.71951196,-0.0977978447048922,0.057205981632975
+"340",345,"fd72dff4-7144-11e5-ba71-058fbc01cf0b","2014-10-16 03:53:32",3,5,10,"female",1,"charmer",3,50,"Poodle","Pure Breed","Non-Sporting",20,0.19838084795,1.76775577967821,0.194343766824307
+"341",346,"fd72e3c8-7144-11e5-ba71-058fbc01cf0b","2014-10-16 17:35:57",17,5,10,"male",1,"ace",5,50,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.67435977096,-0.798679579391222,-0.529711329557696
+"342",347,"fd72e4f4-7144-11e5-ba71-058fbc01cf0b","2014-10-16 12:49:57",12,5,10,"female",1,"maverick",3,10,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,1.5349932992,-1.25247431107637,0.577584400608856
+"343",348,"fd72e79c-7144-11e5-ba71-058fbc01cf0b","2014-10-16 16:53:38",16,5,10,"male",1,"",4,10,"Shetland Sheepdog","Pure Breed","Herding",16,0.13463194444,-1.35490314119112,0.902023785253253
+"344",349,"fd72f048-7144-11e5-ba71-058fbc01cf0b","2014-11-10 21:57:08",21,2,11,"male",1,"",6,40,"Brittany","Pure Breed","Sporting",16,11.601287037,-0.0439570896100425,-1.45165323966826
+"345",350,"fd730d94-7144-11e5-ba71-058fbc01cf0b","2014-10-17 03:59:18",3,6,10,"male",0,"",2,60,"Flat-Coated Retriever","Pure Breed","Sporting",11,0.14218981481,-0.225585588691941,0.653133657419495
+"346",351,"fd732072-7144-11e5-ba71-058fbc01cf0b","2014-10-17 16:11:42",16,6,10,"male",1,"socialite",2,20,"Mixed","Mixed Breed/ Other/ I Don't Know","",23,4.547014415,-2.0838766648811,1.24330461474231
+"347",352,"fd734db8-7144-11e5-ba71-058fbc01cf0b","2014-11-26 15:13:40",15,4,11,"female",0,"stargazer",9,40,"Border Collie","Pure Breed","Herding",28,11.235794753,-2.35746498176122,1.3325979945292
+"348",353,"fd737b44-7144-11e5-ba71-058fbc01cf0b","2014-10-21 00:17:03",0,3,10,"male",1,"",3,60,"American Staffordshire Terrier","Pure Breed","Terrier",15,2.8372247024,0.657259842646649,0.729497177944002
+"349",354,"fd738314-7144-11e5-ba71-058fbc01cf0b","2014-10-19 16:49:46",16,1,10,"male",1,"renaissance-dog",1,10,"Yorkshire Terrier","Pure Breed","Toy",20,0.26587414717,0.201651390340412,0.942797696374662
+"350",355,"fd738710-7144-11e5-ba71-058fbc01cf0b","2014-10-19 18:52:08",18,1,10,"male",0,"",0,30,"Rottweiler","Pure Breed","Working",7,0.19584490741,-0.380127232829686,0.119428513591414
+"351",356,"fd738a30-7144-11e5-ba71-058fbc01cf0b","2014-10-19 23:28:07",23,1,10,"female",1,"maverick",3,0,"Rat Terrier-Chihuahua Mix","Cross Breed","",28,4.255160751,-0.154123641035286,-1.73394335053957
+"352",357,"fd73b53c-7144-11e5-ba71-058fbc01cf0b","2014-10-21 19:24:18",19,3,10,"male",0,"",2,190,"Shih Tzu","Pure Breed","Toy",7,0.0010628857996,0.0203558460519693,-0.72054026706802
+"353",358,"fd73fbfa-7144-11e5-ba71-058fbc01cf0b","2014-10-27 21:24:56",21,2,10,"female",1,"",3,50,"Ibizan Hound-Greyhound Mix","Cross Breed","",13,1.0837606096,-0.0163944028977517,-1.13831910855387
+"354",359,"fd744fe2-7144-11e5-ba71-058fbc01cf0b","2014-10-26 18:47:56",18,1,10,"male",1,"",8,40,"Mixed","Mixed Breed/ Other/ I Don't Know","",11,19.709519676,-0.198637783820247,-1.05299890118161
+"355",360,"fd7451ae-7144-11e5-ba71-058fbc01cf0b","2014-10-26 19:27:27",19,1,10,"female",1,"protodog",13,20,"Welsh Terrier","Pure Breed","Terrier",20,3.636690424,-0.0990824630346241,-2.07832150189703
+"356",361,"fd746c70-7144-11e5-ba71-058fbc01cf0b","2014-10-27 23:38:00",23,2,10,"male",1,"expert",7,60,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.37434819688,1.66766977247591,0.171246091410483
+"357",362,"fd747dfa-7144-11e5-ba71-058fbc01cf0b","2014-10-29 20:26:15",20,4,10,"male",1,"charmer",3,20,"French Bulldog","Pure Breed","Non-Sporting",20,17.05764559,0.574934078078614,-1.10417776644239
+"358",363,"fd74b84c-7144-11e5-ba71-058fbc01cf0b","2014-11-01 08:54:40",8,7,11,"male",0,"",3,90,"German Shepherd Dog","Pure Breed","Herding",7,15.97277392,0.622908855383234,0.350727928422325
+"359",364,"fd74b8ba-7144-11e5-ba71-058fbc01cf0b","2014-11-01 17:07:06",17,7,11,"female",0,"ace",0,20,"Flat-Coated Retriever-Irish Water Spaniel Mix","Cross Breed","",20,0.79957967837,-0.301327791390066,-0.0105737817612048
+"360",365,"fd74c602-7144-11e5-ba71-058fbc01cf0b","2015-01-29 03:23:32",3,5,1,"female",1,"",2,100,"German Shepherd Dog","Pure Breed","Herding",11,1.1993472222,1.20398998541413,0.47353655582721
+"361",366,"fd74d6d8-7144-11e5-ba71-058fbc01cf0b","2014-11-02 23:50:17",23,1,11,"male",1,"ace",5,10,"Bichon Frise-Shih Tzu Mix","Cross Breed","",20,5.0522630361,-0.00818401806975508,-2.15966853685467
+"362",367,"fd74e452-7144-11e5-ba71-058fbc01cf0b","2014-11-03 23:53:41",23,2,11,"female",1,"stargazer",2,40,"Labrador Retriever-Poodle Mix","Cross Breed","",20,0.42198769493,1.78590765865669,0.364546256295726
+"363",368,"fd74e934-7144-11e5-ba71-058fbc01cf0b","2014-11-04 02:29:05",2,3,11,"female",1,"charmer",2,20,"Dachshund","Pure Breed","Hound",20,3.4779702729,1.55336518433229,0.485717146931405
+"364",369,"fd74fb40-7144-11e5-ba71-058fbc01cf0b","2014-11-07 15:38:57",15,6,11,"male",1,"expert",2,10,"Russell Terrier-Japanese Chin Mix","Cross Breed","",28,4.22708762,-2.15737716278054,0.407746931770609
+"365",370,"fd754cd0-7144-11e5-ba71-058fbc01cf0b","2014-11-10 00:12:10",0,2,11,"female",1,"",9,30,"Mixed","Mixed Breed/ Other/ I Don't Know","",3,6.9500405092,0.29402835835601,0.161212766731328
+"366",371,"fd75c55c-7144-11e5-ba71-058fbc01cf0b","2014-11-12 02:11:45",2,4,11,"female",1,"",10,40,"American Staffordshire Terrier-Whippet Mix","Cross Breed","",4,2.866871142,0.120972539670945,0.350977684475055
+"367",372,"fd75e6f4-7144-11e5-ba71-058fbc01cf0b","2014-11-12 20:14:21",20,4,11,"male",1,"stargazer",6,50,"American Staffordshire Terrier","Pure Breed","Terrier",20,1.9466173246,-0.154207836459206,-2.70498976412581
+"368",373,"fd76286c-7144-11e5-ba71-058fbc01cf0b","2014-11-16 00:29:35",0,1,11,"male",1,"",5,30,"Australian Shepherd-Border Collie Mix","Cross Breed","",4,5.9478356482,0.394114365558309,0.184310442145153
+"369",374,"fd764ad6-7144-11e5-ba71-058fbc01cf0b","2014-11-21 05:13:23",5,6,11,"female",0,"socialite",2,60,"Golden Retriever","Pure Breed","Sporting",20,0.51084795322,0.88572746640775,1.78607330348084
+"370",375,"fd7666ba-7144-11e5-ba71-058fbc01cf0b","2014-11-24 02:02:19",2,2,11,"female",1,"socialite",10,20,"Boston Terrier","Pure Breed","Non-Sporting",23,3.0453188131,2.34989669841714,0.124040398564329
+"371",376,"fd766728-7144-11e5-ba71-058fbc01cf0b","2014-11-24 02:25:24",2,2,11,"female",1,"maverick",7,20,"Boston Terrier","Pure Breed","Non-Sporting",23,3.0445291456,2.35908426065457,0.228485108935791
+"372",377,"fd76832a-7144-11e5-ba71-058fbc01cf0b","2014-11-24 00:18:01",0,2,11,"female",1,"socialite",3,60,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.20474841618,1.65848221023848,0.0668013810390205
+"373",378,"fd768da2-7144-11e5-ba71-058fbc01cf0b","2014-11-25 09:59:10",9,3,11,"female",1,"expert",1,30,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.40018518519,1.00196631842975,0.290018659311179
+"374",379,"fd76a558-7144-11e5-ba71-058fbc01cf0b","2014-11-24 23:59:50",23,2,11,"male",0,"socialite",1,70,"Golden Retriever","Pure Breed","Sporting",20,0.37191398635,1.9954904807951,0.553873248766343
+"375",380,"fd76aa6c-7144-11e5-ba71-058fbc01cf0b","2014-11-25 01:22:03",1,3,11,"female",1,"socialite",3,40,"Mixed","Mixed Breed/ Other/ I Don't Know","",21,12.841233218,0.337872764651835,-0.635792476441152
+"376",381,"fd76b4b2-7144-11e5-ba71-058fbc01cf0b","2014-11-26 03:00:20",3,4,11,"female",1,"socialite",3,30,"Australian Cattle Dog","Pure Breed","Herding",20,0.83702180799,0.948022861095818,-0.315387851043731
+"377",382,"fd76b8ea-7144-11e5-ba71-058fbc01cf0b","2014-11-26 07:19:13",7,4,11,"female",1,"charmer",4,70,"Rhodesian Ridgeback","Pure Breed","Hound",20,0.34846308479,0.593494516091161,-0.0999287483804446
+"378",383,"fd76bef8-7144-11e5-ba71-058fbc01cf0b","2014-11-27 16:58:49",16,5,11,"male",1,"",1,60,"Mixed","Mixed Breed/ Other/ I Don't Know","",3,0.0025000000028,-0.170321165194901,0.347442437333538
+"379",384,"fd76c27c-7144-11e5-ba71-058fbc01cf0b","2014-11-27 02:00:54",2,5,11,"male",1,"",3,80,"Rottweiler-Labrador Retriever Mix","Cross Breed","",4,0.20891589504,0.312180237334492,0.331415256202747
+"380",385,"fd76cf2e-7144-11e5-ba71-058fbc01cf0b","2014-11-28 13:54:42",13,6,11,"male",1,"charmer",1,30,"English Springer Spaniel","Pure Breed","Sporting",20,0.0028581871333,-1.9016332839586,1.15798440737004
+"381",386,"fd76d35c-7144-11e5-ba71-058fbc01cf0b","2014-11-30 04:58:36",4,1,11,"male",1,"",5,40,"Australian Shepherd","Pure Breed","Herding",11,1.0482685185,0.138677927656671,0.443806311403461
+"382",387,"fd76e8a6-7144-11e5-ba71-058fbc01cf0b","2015-03-05 16:35:44",16,5,3,"female",1,"ace",9,30,"Vizsla","Pure Breed","Sporting",20,2.219122807,-1.40084095237827,0.379800233395941
+"383",388,"fd7710b0-7144-11e5-ba71-058fbc01cf0b","2014-11-30 23:17:20",23,1,11,"female",1,"",4,60,"Redbone Coonhound","Pure Breed","Hound",4,0.32632330246,0.0662936572391207,-0.198316715210708
+"384",389,"fd771542-7144-11e5-ba71-058fbc01cf0b","2014-12-01 13:15:43",13,2,12,"male",1,"",2,40,"Border Collie","Pure Breed","Herding",4,0.0039236110942,-0.261442855656148,0.39010254101967
+"385",390,"fd77186c-7144-11e5-ba71-058fbc01cf0b","2014-12-02 02:45:21",2,3,12,"female",1,"socialite",1,0,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.25547149123,1.28525437714882,0.210370947955098
+"386",391,"fd771ace-7144-11e5-ba71-058fbc01cf0b","2014-12-05 04:46:30",4,6,12,"female",1,"ace",13,40,"Brittany-Basset Hound Mix","Cross Breed","",20,4.7177528021,1.85865422464308,0.112996731866669
+"387",392,"fd772e60-7144-11e5-ba71-058fbc01cf0b","2014-12-05 19:10:26",19,6,12,"female",1,"socialite",10,40,"Australian Shepherd","Pure Breed","Herding",20,0.58825231481,0.18333112051409,-1.16949762026923
+"388",393,"fd7764c0-7144-11e5-ba71-058fbc01cf0b","2014-12-05 00:11:06",0,6,12,"male",1,"socialite",4,60,"American Pit Bull Terrier","Pure Breed","",20,0.51329982944,0.538352219976732,0.420136219244241
+"389",394,"fd77edf0-7144-11e5-ba71-058fbc01cf0b","2014-12-10 02:13:27",2,4,12,"female",1,"ace",4,60,"Golden Retriever","Pure Breed","Sporting",25,11.12328559,1.38480969793444,-0.814951652760328
+"390",395,"fd780312-7144-11e5-ba71-058fbc01cf0b","2014-12-15 01:11:06",1,2,12,"male",1,"expert",0,0,"Pomapoo","Popular Hybrid","",20,0.057245979533,1.57654808201466,0.213906195096615
+"391",396,"fd780c4a-7144-11e5-ba71-058fbc01cf0b","2014-12-13 13:39:44",13,7,12,"male",1,"ace",5,90,"Labrador Retriever","Pure Breed","Sporting",20,1.8475365497,-0.370911913942193,0.808372985526721
+"392",397,"fd783382-7144-11e5-ba71-058fbc01cf0b","2014-12-26 23:35:51",23,6,12,"male",1,"renaissance-dog",1,50,"Siberian Husky-Australian Shepherd Mix","Cross Breed","",20,0.83603192007,0.447285384164024,-1.4406095729706
+"393",398,"fd78685c-7144-11e5-ba71-058fbc01cf0b","2014-12-22 21:07:06",21,2,12,"female",1,"socialite",2,10,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.79769736842,0.975278106887811,-1.01178706478709
+"394",399,"fd788f58-7144-11e5-ba71-058fbc01cf0b","2015-02-03 10:59:29",10,3,2,"male",1,"protodog",7,50,"Mixed","Mixed Breed/ Other/ I Don't Know","",25,0.0048051697523,-0.259091701237161,2.52695722664271
+"395",400,"fd78a290-7144-11e5-ba71-058fbc01cf0b","2014-12-27 02:54:31",2,7,12,"female",1,"charmer",2,20,"Brittany","Pure Breed","Sporting",20,2.8959167885,2.20485005743713,0.704513309965455
+"396",401,"fd78ada8-7144-11e5-ba71-058fbc01cf0b","2014-12-26 05:41:05",5,6,12,"male",1,"einstein",4,90,"Labrador Retriever","Pure Breed","Sporting",20,0.42388767057,2.10476405023483,0.68141563455163
+"397",402,"fd78ebb0-7144-11e5-ba71-058fbc01cf0b","2014-12-26 18:14:54",18,6,12,"male",0,"ace",3,60,"Flat-Coated Retriever","Pure Breed","Sporting",23,0.10298137626,1.51223514635265,-0.517206777503622
+"398",403,"fd78f362-7144-11e5-ba71-058fbc01cf0b","2014-12-26 15:16:10",15,6,12,"male",0,"renaissance-dog",3,70,"German Shepherd Dog","Pure Breed","Herding",20,0.0029513888907,-1.81051159349736,1.11532430368391
+"399",404,"fd794b6e-7144-11e5-ba71-058fbc01cf0b","2014-12-28 23:00:10",23,1,12,"male",1,"socialite",3,30,"I Don't Know","Mixed Breed/ Other/ I Don't Know","",20,0.20891934698,0.984465669125241,-0.907342354415625
+"400",405,"fd795f6e-7144-11e5-ba71-058fbc01cf0b","2014-12-29 21:19:12",21,2,12,"female",1,"charmer",7,90,"Rhodesian Ridgeback","Pure Breed","Hound",20,0.37529483431,1.43993507135902,-0.188283390531553
+"401",406,"fd79c01c-7144-11e5-ba71-058fbc01cf0b","2015-01-02 19:01:37",19,6,1,"male",1,"stargazer",0,30,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.32635477583,1.11211436303983,-0.570910547887414
+"402",407,"fd79f74e-7144-11e5-ba71-058fbc01cf0b","2015-01-05 23:06:37",23,2,1,"male",1,"ace",3,10,"Pomeranian-Boston Terrier Mix","Cross Breed","",20,0.53086196393,1.28578347944017,-1.03116132383902
+"403",408,"fd7a241c-7144-11e5-ba71-058fbc01cf0b","2015-01-08 22:52:05",22,5,1,"female",1,"socialite",7,40,"Shetland Sheepdog","Pure Breed","Herding",35,7.1767657271,0.937327435032278,-2.59404697621671
+"404",409,"fd7a27f0-7144-11e5-ba71-058fbc01cf0b","2015-01-09 12:41:20",12,6,1,"female",1,"charmer",8,10,"West Highland White Terrier","Pure Breed","Terrier",20,0.0072691276805,-1.42265662043231,1.46823253442361
+"405",410,"fd7a2b88-7144-11e5-ba71-058fbc01cf0b","2015-07-19 00:57:31",0,1,7,"male",1,"protodog",3,80,"Doberman Pinscher","Pure Breed","Working",20,0.30807931287,-0.0532837019199314,-0.623738467724987
+"406",411,"fd7a401e-7144-11e5-ba71-058fbc01cf0b","2015-01-12 21:34:02",21,2,1,"female",1,"stargazer",1,30,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,13.684582724,-0.818868424487174,-1.63259596203651
+"407",412,"fd7a9cc6-7144-11e5-ba71-058fbc01cf0b","2015-01-25 10:36:45",10,1,1,"male",1,"socialite",6,60,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.2736957846,-1.27954424333067,2.06934321167123
+"408",413,"fd7ae654-7144-11e5-ba71-058fbc01cf0b","2015-02-05 23:44:15",23,5,2,"male",1,"expert",11,0,"Poodle","Pure Breed","Non-Sporting",20,0.21144005848,0.574934078078614,-1.10417776644239
+"409",414,"fd7afc84-7144-11e5-ba71-058fbc01cf0b","2015-02-12 03:06:21",3,5,2,"male",1,"maverick",2,0,"Chihuahua","Pure Breed","Toy",20,3.5748075049,2.60519408624632,0.796904011620752
+"410",415,"fd7b0c38-7144-11e5-ba71-058fbc01cf0b","2015-02-16 20:00:04",20,2,2,"male",1,"",7,20,"Shih Tzu","Pure Breed","Toy",4,0.80797067902,0.17556722667885,-0.0707743294254208
+"411",416,"fd7b2c18-7144-11e5-ba71-058fbc01cf0b","2015-02-20 21:40:28",21,6,2,"male",1,"charmer",1,70,"Labrador Retriever","Pure Breed","Sporting",20,3.8836854289,-0.544888471262835,0.258890416620579
+"412",417,"fd7b3f46-7144-11e5-ba71-058fbc01cf0b","2015-02-24 21:11:49",21,3,2,"male",1,"expert",10,190,"Other","Mixed Breed/ Other/ I Don't Know","",20,0.31632066277,-0.126645149746915,-2.39165563301142
+"413",421,"fd7b60ac-7144-11e5-ba71-058fbc01cf0b","2015-03-19 00:26:18",0,5,3,"female",0,"stargazer",0,40,"Labrador Retriever","Pure Breed","Sporting",20,1.1917592593,-0.271885695447929,1.02458265660541
+"414",422,"fd7b6110-7144-11e5-ba71-058fbc01cf0b","2015-03-10 00:57:14",0,3,3,"female",0,"charmer",0,10,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,2.0330135234,-0.0806779977843827,1.0050202283331
+"415",423,"fd7b6174-7144-11e5-ba71-058fbc01cf0b","2015-03-10 00:42:23",0,3,3,"female",0,"socialite",0,40,"Labrador Retriever","Pure Breed","Sporting",20,2.0349238548,-0.354043069168125,1.1330005393915
+"416",424,"fd7b61ce-7144-11e5-ba71-058fbc01cf0b","2015-03-19 00:39:45",0,5,3,"male",0,"maverick",0,60,"Labrador Retriever","Pure Breed","Sporting",20,3.778102461,0.438266212774433,0.397038543830416
+"417",425,"fd7b6660-7144-11e5-ba71-058fbc01cf0b","2015-03-22 23:10:18",23,1,3,"female",1,"protodog",6,20,"Shetland Sheepdog","Pure Breed","Herding",20,0.31356542398,0.127675060672832,-2.84458615862726
+"418",426,"fd7b766e-7144-11e5-ba71-058fbc01cf0b","2015-03-19 22:24:56",22,5,3,"male",0,"stargazer",5,30,"Border Collie","Pure Breed","Herding",20,0.30864887914,-0.326509723231215,-1.42811763898132
+"419",427,"fd7bc394-7144-11e5-ba71-058fbc01cf0b","2015-04-06 21:46:33",21,2,4,"female",0,"socialite",0,0,"Coton de Tulear","Pure Breed","",33,5.6853255208,0.208408765990837,-4.15617204262862
+"420",428,"fd7bd096-7144-11e5-ba71-058fbc01cf0b","2015-04-15 10:38:36",10,4,4,"male",0,"charmer",1,100,"Rottweiler","Pure Breed","Working",20,0.004966496104,0.732738365436025,2.86434910616466
+"421",430,"fd7c6448-7144-11e5-ba71-058fbc01cf0b","2015-05-12 13:25:00",13,3,5,"male",1,"protodog",3,10,"Pug","Pure Breed","Toy",23,0.50313131313,-1.51033776731438,0.213570916339148
+"422",431,"fd7d1820-7144-11e5-ba71-058fbc01cf0b","2015-05-14 03:29:21",3,5,5,"male",1,"socialite",1,50,"Australian Shepherd","Pure Breed","Herding",20,0.0025871101351,2.40502207184173,0.750708660793103
+"423",433,"fd7e281e-7144-11e5-ba71-058fbc01cf0b","2015-05-15 23:28:29",23,6,5,"male",1,"charmer",4,20,"Cocker Spaniel","Pure Breed","Sporting",20,0.94378654971,-0.517856470967221,-0.476195728394284
+"424",434,"fd7e71de-7144-11e5-ba71-058fbc01cf0b","2015-05-16 16:32:40",16,7,5,"female",0,"socialite",9,50,"Collie","Pure Breed","Herding",36,4.2297423942,-0.901695534696505,-1.64023887306494
+"425",435,"fd7e8232-7144-11e5-ba71-058fbc01cf0b","2015-05-16 13:32:49",13,7,5,"male",1,"protodog",6,70,"I Don't Know","Mixed Breed/ Other/ I Don't Know","",21,0.011073495372,-1.9016332839586,1.15798440737004
+"426",436,"fd7e9362-7144-11e5-ba71-058fbc01cf0b","2015-05-16 15:52:19",15,7,5,"male",0,"socialite",0,50,"Golden Retriever","Pure Breed","Sporting",20,0.32568347953,-1.57389677106333,0.569565151139667
+"427",437,"fd7ea564-7144-11e5-ba71-058fbc01cf0b","2015-05-16 21:24:04",21,7,5,"female",1,"",2,40,"English Springer Spaniel","Pure Breed","Sporting",12,0.0031134259187,-0.00720684066032147,-1.03387439818241
+"428",438,"fd7ebf86-7144-11e5-ba71-058fbc01cf0b","2015-05-16 18:33:46",18,7,5,"female",1,"charmer",0,70,"Komondor","Pure Breed","Working",20,0.43273513645,0.083106063239332,-0.260235813368325
+"429",439,"fd7ec580-7144-11e5-ba71-058fbc01cf0b","2015-05-16 19:36:27",19,7,5,"male",1,"ace",10,100,"German Shepherd Dog","Pure Breed","Herding",20,0.37297149123,-1.24691419008112,-1.10596131249147
+"430",440,"fd7ec652-7144-11e5-ba71-058fbc01cf0b","2015-05-19 00:17:23",0,3,5,"male",0,"protodog",5,70,"Bouvier des Flandres","Pure Breed","Herding",20,0.26164351852,0.265349444161827,-0.345556020740589
+"431",441,"fd7ed66a-7144-11e5-ba71-058fbc01cf0b","2015-05-24 21:41:04",21,1,5,"male",0,"protodog",0,60,"Golden Retriever","Pure Breed","Sporting",20,0.058759137424,-0.681501481918477,-0.143299169007589
+"432",442,"fd7f0770-7144-11e5-ba71-058fbc01cf0b","2015-05-17 16:08:37",16,1,5,"female",1,"charmer",2,50,"Gordon Setter","Pure Breed","Sporting",20,0.59819870858,0.848244294813817,0.671247818400189
+"433",443,"fd7f3862-7144-11e5-ba71-058fbc01cf0b","2015-05-18 00:18:04",0,2,5,"male",1,"socialite",9,10,"Cairn Terrier","Pure Breed","Terrier",22,1.2402733686,1.97711535632024,0.344983828023419
+"434",444,"fd7f3c7c-7144-11e5-ba71-058fbc01cf0b","2015-05-18 01:01:42",1,2,5,"female",1,"protodog",7,10,"Cairn Terrier","Pure Breed","Terrier",22,1.2391154101,2.30493606463943,0.727610985379279
+"435",445,"fd7fedd4-7144-11e5-ba71-058fbc01cf0b","2015-05-19 23:54:36",23,3,5,"male",1,"einstein",4,80,"Labrador Retriever","Pure Breed","Sporting",20,0.78828460039,-0.72721604760925,-0.626835789593395
+"436",446,"fd7ffbb2-7144-11e5-ba71-058fbc01cf0b","2015-05-18 17:05:27",17,2,5,"male",1,"socialite",3,20,"French Bulldog","Pure Breed","Non-Sporting",20,0.049242202732,-2.81285018857108,1.58458544423136
+"437",447,"fd80012a-7144-11e5-ba71-058fbc01cf0b","2015-05-18 17:43:31",17,2,5,"female",1,"charmer",12,20,"Australian Shepherd-German Shepherd Dog Mix","Cross Breed","Sporting",20,0.0034880604238,-1.67420602376201,0.507780544454337
+"438",448,"fd800ae4-7144-11e5-ba71-058fbc01cf0b","2015-05-18 20:06:06",20,2,5,"male",1,"charmer",6,20,"American Eskimo Dog","Pure Breed","Non-Sporting",20,0.10400645712,0.729168281296061,-1.58020596747205
+"439",449,"fd802254-7144-11e5-ba71-058fbc01cf0b","2015-05-19 01:27:30",1,3,5,"female",1,"charmer",7,100,"Mastiff","Pure Breed","Working",23,0.003490635522,3.00553811505552,0.88929471327605
+"440",450,"fd805940-7144-11e5-ba71-058fbc01cf0b","2015-05-25 17:21:09",17,2,5,"female",1,"expert",1,10,"Dachshund","Pure Breed","Hound",20,0.0059807504845,-1.51033776731438,0.213570916339148
+"441",451,"fd80bb10-7144-11e5-ba71-058fbc01cf0b","2015-05-19 23:31:34",23,3,5,"male",1,"socialite",8,80,"Labrador Retriever","Pure Breed","Sporting",20,0.78885538499,-0.581499670140097,-1.09124790718
+"442",452,"fd80ccfe-7144-11e5-ba71-058fbc01cf0b","2015-05-20 00:40:57",0,4,5,"female",1,"stargazer",12,10,"Bichon Frise","Pure Breed","Non-Sporting",20,0.0071600877165,2.30493606463943,0.727610985379279
+"443",453,"fd80dafa-7144-11e5-ba71-058fbc01cf0b","2015-05-20 01:17:25",1,4,5,"female",1,"socialite",14,40,"Norwegian Buhund","Pure Breed","Herding",20,0.0059387183221,2.10476405023483,0.68141563455163
+"444",454,"fd80e450-7144-11e5-ba71-058fbc01cf0b","2015-05-20 01:49:24",1,4,5,"male",1,"charmer",10,20,"Pug","Pure Breed","Toy",20,0.056665448343,2.60519408624632,0.796904011620752
+"445",455,"fd8164ac-7144-11e5-ba71-058fbc01cf0b","2015-05-20 16:10:31",16,4,5,"female",1,"protodog",1,80,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.012431164713,-1.50190413699,-0.769091580690145
+"446",456,"fd8193c8-7144-11e5-ba71-058fbc01cf0b","2015-07-01 17:17:51",17,4,7,"male",1,"",2,100,"Mixed","Mixed Breed/ Other/ I Don't Know","",11,0.0030960648205,-1.17265976026862,0.816703577880989
+"447",457,"fd82c306-7144-11e5-ba71-058fbc01cf0b","2015-05-22 17:36:11",17,6,5,"male",1,"einstein",12,20,"Bichon Frise","Pure Breed","Non-Sporting",20,0.0053508771939,-1.31890682415445,0.232695419338347
+"448",458,"fd82cdd8-7144-11e5-ba71-058fbc01cf0b","2015-06-04 16:39:11",16,5,6,"male",1,"maverick",6,110,"German Shepherd Dog","Pure Breed","Herding",23,2.5179550716,0.0914848389151684,0.660507585503351
+"449",459,"fd82cf0e-7144-11e5-ba71-058fbc01cf0b","2015-05-22 23:08:59",23,6,5,"female",1,"socialite",4,90,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.10787707115,0.647457398568622,-1.39441422214295
+"450",460,"fd82d742-7144-11e5-ba71-058fbc01cf0b","2015-05-23 00:24:12",0,7,5,"female",1,"charmer",1,50,"Labrador Retriever","Pure Breed","Sporting",20,0.043276072124,0.619894711856331,-1.70774835325733
+"451",461,"fd82dc06-7144-11e5-ba71-058fbc01cf0b","2015-05-23 02:30:11",2,7,5,"male",1,"expert",3,70,"Keeshond-German Shepherd Dog Mix","Cross Breed","",20,0.091948099416,-0.180848200410602,0.0108761393330391
+"452",462,"fd83d78c-7144-11e5-ba71-058fbc01cf0b","2015-05-25 16:31:14",16,2,5,"male",1,"expert",1,20,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.7005914961,-0.463038538462937,-0.859260811023253
+"453",463,"fd840e1e-7144-11e5-ba71-058fbc01cf0b","2015-05-26 20:13:07",20,3,5,"male",1,"renaissance-dog",2,100,"I Don't Know","Mixed Breed/ Other/ I Don't Know","",20,0.0032705896668,-0.117457587509485,-2.28721092263996
+"454",464,"fd84115c-7144-11e5-ba71-058fbc01cf0b","2015-05-26 20:22:14",20,3,5,"female",1,"renaissance-dog",11,50,"Australian Labradoodle","Pure Breed","",20,0.0025688352824,-0.0807073385597636,-1.86943208115411
+"455",465,"fd88aee2-7144-11e5-ba71-058fbc01cf0b","2015-05-27 03:22:53",3,4,5,"male",1,"charmer",2,80,"Golden Retriever","Pure Breed","Sporting",20,0.0046558235896,2.40502207184173,0.750708660793103
+"456",466,"fd88ead8-7144-11e5-ba71-058fbc01cf0b","2015-05-28 04:05:35",4,5,5,"male",1,"renaissance-dog",5,60,"Labrador Retriever-Australian Cattle Dog Mix","Cross Breed","",20,0.29771259746,2.08638892575997,0.472526213808705
+"457",467,"fd890f86-7144-11e5-ba71-058fbc01cf0b","2015-05-30 15:39:05",15,7,5,"male",1,"ace",3,30,"Golden Retriever-Labrador Retriever Mix","Cross Breed","",20,1.7973008041,-0.754555488825162,-0.901482989436276
+"458",468,"fd891468-7144-11e5-ba71-058fbc01cf0b","2015-05-28 18:58:28",18,5,5,"male",1,"ace",1,60,"Standard Poodle","Pure Breed","Non-Sporting",20,0.046337110137,-0.900048620797936,-0.398383940578163
+"459",469,"fd892246-7144-11e5-ba71-058fbc01cf0b","2015-05-28 21:17:38",21,5,5,"female",1,"charmer",4,0,"Chihuahua","Pure Breed","Toy",20,0.0036762914202,-0.117457587509485,-2.28721092263996
+"460",470,"fd8942a8-7144-11e5-ba71-058fbc01cf0b","2015-05-29 13:45:39",13,6,5,"male",1,"",0,70,"Labrador Retriever-Poodle Mix","Cross Breed","",4,0.031959876573,-0.443686236578643,0.475422748391934
+"461",471,"fd896bca-7144-11e5-ba71-058fbc01cf0b","2015-05-30 20:11:46",20,7,5,"male",1,"socialite",7,10,"Chihuahua-Yorkshire Terrier Mix","Cross Breed","",20,0.0091453460045,0.438097821926593,-1.54505428334206
+"462",472,"fd8978fe-7144-11e5-ba71-058fbc01cf0b","2015-05-30 12:21:37",12,7,5,"male",1,"charmer",2,60,"Labrador Retriever","Pure Breed","Sporting",20,0.045349658871,0.584371724134125,2.66656493895174
+"463",474,"fda60b40-7144-11e5-ba71-058fbc01cf0b","2015-06-04 17:53:07",17,5,6,"male",1,"renaissance-dog",4,70,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.3172624269,-1.9016332839586,1.15798440737004
+"464",475,"fda99508-7144-11e5-ba71-058fbc01cf0b","2015-06-14 01:50:27",1,1,6,"female",1,"",8,50,"Mixed","Mixed Breed/ Other/ I Don't Know","",2,0.0024421295364,0.503387934998039,0.31185282793044
+"465",476,"fda9dac2-7144-11e5-ba71-058fbc01cf0b","2015-06-28 17:43:10",17,1,6,"male",1,"",7,30,"I Don't Know","Mixed Breed/ Other/ I Don't Know","",14,1.480715812,-0.599120862701903,-0.213030120522171
+"466",477,"fdaab834-7144-11e5-ba71-058fbc01cf0b","2015-06-16 23:47:21",23,3,6,"male",1,"",3,40,"Mixed","Mixed Breed/ Other/ I Don't Know","",2,1.9869675926,0.075481219476551,-0.0938720048392453
+"467",478,"fdab0b40-7144-11e5-ba71-058fbc01cf0b","2015-06-15 01:34:01",1,2,6,"male",0,"expert",3,40,"Australian Cattle Dog","Pure Breed","Herding",20,0.0035635964933,2.30493606463943,0.727610985379279
+"468",479,"fdab1de2-7144-11e5-ba71-058fbc01cf0b","2015-06-15 00:33:58",0,2,6,"male",1,"maverick",7,30,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.99861903021,0.410535135214303,-1.85838841445645
+"469",480,"fdabbefa-7144-11e5-ba71-058fbc01cf0b","2015-07-07 03:18:50",3,3,7,"female",1,"",0,20,"Australian Labradoodle","Pure Breed","",6,0.0044699074238,1.20398998541413,0.47353655582721
+"470",481,"fdabc4fe-7144-11e5-ba71-058fbc01cf0b","2015-06-15 04:24:16",4,2,6,"male",1,"charmer",2,40,"Border Collie","Pure Breed","Herding",20,0.5550718811,-0.363007385909177,1.06724276029154
+"471",482,"fdabcb20-7144-11e5-ba71-058fbc01cf0b","2015-06-15 17:40:49",17,2,6,"female",1,"socialite",4,40,"Australian Shepherd","Pure Breed","Herding",31,3.0444903549,0.865418996382866,-0.284343830800655
+"472",483,"fdabe1dc-7144-11e5-ba71-058fbc01cf0b","2015-06-15 20:09:59",20,2,6,"female",1,"charmer",0,80,"German Shepherd Dog","Pure Breed","Herding",20,0.15138036062,-1.20097637889397,-0.583737760634154
+"473",484,"fdac2d40-7144-11e5-ba71-058fbc01cf0b","2015-06-20 04:10:25",4,7,6,"female",1,"ace",6,50,"Border Collie-German Shepherd Dog Mix","Cross Breed","",22,1.7586513448,2.60519408624632,0.796904011620752
+"474",485,"fdac479e-7144-11e5-ba71-058fbc01cf0b","2015-06-15 21:47:09",21,2,6,"male",1,"protodog",7,60,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.21151742203,-0.108270025272054,-2.18276621226849
+"475",486,"fdac8d58-7144-11e5-ba71-058fbc01cf0b","2015-06-16 00:52:07",0,3,6,"male",1,"socialite",3,40,"English Setter","Pure Breed","Sporting",20,0.041073343079,2.21306044226512,-0.316836118335345
+"476",487,"fdacf8f6-7144-11e5-ba71-058fbc01cf0b","2015-06-16 21:28:19",21,3,6,"male",0,"renaissance-dog",2,190,"Mastiff","Pure Breed","Working",20,0.67494883041,-1.30971926191702,0.337140129709809
+"477",488,"fdad8122-7144-11e5-ba71-058fbc01cf0b","2015-06-18 01:12:46",1,5,6,"female",1,"expert",6,60,"German Shepherd Dog","Pure Breed","Herding",20,0.60868055556,-2.16603403860129,1.3517224975284
+"478",489,"fdadfad0-7144-11e5-ba71-058fbc01cf0b","2015-06-20 14:43:54",14,7,6,"female",1,"",0,20,"Golden Doodle","Popular Hybrid","",10,5.7259542181,-0.316707279153188,0.695793761105627
+"479",490,"fdae85b8-7144-11e5-ba71-058fbc01cf0b","2015-06-24 14:40:03",14,4,6,"male",1,"",1,10,"Bichon Frise","Pure Breed","Non-Sporting",4,0.0023688271953,-0.443686236578643,0.475422748391934
+"480",491,"fdaf0ede-7144-11e5-ba71-058fbc01cf0b","2015-08-25 15:56:33",15,3,8,"male",1,"protodog",3,80,"Labrador Retriever-Great Dane Mix","Cross Breed","",20,2.4745291179,-1.61064702001305,0.151786309653818
+"481",492,"fdaff920-7144-11e5-ba71-058fbc01cf0b","2015-06-24 04:58:46",4,4,6,"female",1,"socialite",2,50,"Labrador Retriever","Pure Breed","Sporting",20,0.31060489766,2.50510807904402,0.773806336206928
+"482",493,"fdb08110-7144-11e5-ba71-058fbc01cf0b","2015-06-26 06:36:31",6,6,6,"male",0,"expert",4,10,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.0047630360596,1.4191218349108,3.36360156499618
+"483",494,"fdb0c422-7144-11e5-ba71-058fbc01cf0b","2015-06-27 19:16:47",19,7,6,"male",1,"ace",3,20,"English Cocker Spaniel","Pure Breed","Sporting",20,0.0017227095515,-0.200145647646357,-3.22721331598312
+"484",495,"fdb1ab6c-7144-11e5-ba71-058fbc01cf0b","2015-07-01 18:38:42",18,4,7,"male",1,"ace",5,40,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,2.8402491472,-1.2277851336932,0.190035315652215
+"485",496,"fdb1c638-7144-11e5-ba71-058fbc01cf0b","2015-07-06 20:15:40",20,2,7,"female",1,"maverick",2,30,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.67352948343,-0.154244184292579,0.341635449845068
+"486",497,"fdb23988-7144-11e5-ba71-058fbc01cf0b","2015-07-09 11:14:39",11,5,7,"male",1,"protodog",3,60,"Alaskan Malamute-Siberian Husky Mix","Cross Breed","",20,0.91381700779,-1.03242089249612,0.716931039057578
+"487",498,"fdb249dc-7144-11e5-ba71-058fbc01cf0b","2015-07-05 20:51:45",20,1,7,"female",1,"renaissance-dog",5,30,"Border Collie","Pure Breed","Herding",20,0.0056907894752,-0.181770523171497,-3.01832389524019
+"488",499,"fdb28eec-7144-11e5-ba71-058fbc01cf0b","2015-07-07 01:07:29",1,3,7,"male",1,"ace",3,90,"Doberman Pinscher","Pure Breed","Working",20,0.34946576511,-0.854473105179621,1.01751216232238
+"489",500,"fdb30796-7144-11e5-ba71-058fbc01cf0b","2015-07-09 20:57:42",20,5,7,"female",1,"ace",3,50,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.051991959059,-0.0898949007971939,-1.97387679152557
+"490",501,"fdb4eaca-7144-11e5-ba71-058fbc01cf0b","2015-07-26 22:21:24",22,1,7,"male",0,"renaissance-dog",6,70,"Bouvier des Flandres","Pure Breed","Herding",20,0.0030720029209,-0.0807073385597636,-1.86943208115411
+"491",502,"fdb4fcb8-7144-11e5-ba71-058fbc01cf0b","2015-07-29 19:20:08",19,4,7,"female",1,"renaissance-dog",10,30,"Soft Coated Wheaten Terrier","Pure Breed","Terrier",20,2.5244243421,-1.69258114823687,0.298891123711412
+"492",503,"fdb6fcde-7144-11e5-ba71-058fbc01cf0b","2015-08-12 14:31:08",14,4,8,"male",1,"ace",8,70,"Doberman Pinscher","Pure Breed","Working",20,0.0065411793399,-1.71938990303611,1.07266419999778
+"493",504,"fdb806ba-7144-11e5-ba71-058fbc01cf0b","2015-08-27 20:37:10",20,5,8,"female",1,"stargazer",4,60,"American Pit Bull Terrier","Pure Breed","",20,0.21772295322,0.783316477311209,-2.07933184391554
+"494",505,"fdb80a98-7144-11e5-ba71-058fbc01cf0b","2015-08-27 18:47:41",18,5,8,"female",1,"stargazer",5,20,"Border Collie","Pure Breed","Herding",20,0.0035270467815,-0.408443851455032,-1.28101282492373
+"495",506,"fdb84ddc-7144-11e5-ba71-058fbc01cf0b","2015-08-30 13:05:53",13,1,8,"female",1,"charmer",9,20,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.075942982454,-0.435614901823105,0.386432802405866
+"496",507,"fdb8561a-7144-11e5-ba71-058fbc01cf0b","2015-08-30 22:21:57",22,1,8,"male",0,"ace",1,70,"Golden Retriever","Pure Breed","Sporting",20,0.0044645467821,0.610707149618901,-1.8121930636288
+"497",508,"fdb922c0-7144-11e5-ba71-058fbc01cf0b","2015-09-03 15:07:41",15,5,9,"male",0,"renaissance-dog",1,30,"Miniature American Shepherd","Pure Breed","",20,0.0032754629592,-1.71938990303611,1.07266419999778
+"498",509,"fdb92464-7144-11e5-ba71-058fbc01cf0b","2015-09-03 16:23:37",16,5,9,"female",1,"socialite",0,40,"Australian Shepherd","Pure Breed","Herding",20,0.026397417159,2.02260667651463,0.789833517337718
+"499",510,"fdb98954-7144-11e5-ba71-058fbc01cf0b","2015-09-05 17:47:55",17,7,9,"female",1,"socialite",4,50,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.061299951269,-1.26453538264293,-0.227743525833635
+"500",511,"fdbc43f6-7144-11e5-ba71-058fbc01cf0b","2015-09-21 00:40:23",0,2,9,"male",1,"ace",7,50,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.098278508773,1.02076942708221,-0.566937375472788
+"501",512,"fdbdfd72-7144-11e5-ba71-058fbc01cf0b","2015-09-21 20:27:26",20,2,9,"male",1,"socialite",14,30,"Mixed","Mixed Breed/ Other/ I Don't Know","",20,0.25452546296,-0.408443851455032,-1.28101282492373
+"502",513,"fdbe6848-7144-11e5-ba71-058fbc01cf0b","2015-09-21 19:46:55",19,2,9,"female",1,"charmer",11,10,"Lhasa Apso-Poodle Mix","Cross Breed","",20,0.73892909357,-0.436006538167323,-1.59434695603812
+"503",514,"fdbe923c-7144-11e5-ba71-058fbc01cf0b","2015-09-21 23:34:56",23,2,9,"female",1,"charmer",9,30,"Beagle","Pure Breed","Hound",20,0.6321539961,0.247113369759425,-1.48680492379825
+"504",515,"fdbeedc2-7144-11e5-ba71-058fbc01cf0b","2015-09-22 17:04:11",17,3,9,"female",1,"charmer",8,50,"Eurasier","Pure Breed","",20,0.24956444932,-0.162715746575646,2.08097061292187
+"505",516,"fdbef330-7144-11e5-ba71-058fbc01cf0b","2015-09-22 17:15:15",17,3,9,"female",1,"maverick",4,20,"Havanese","Pure Breed","Toy",20,0.31685307018,-1.77451527646069,0.445995937769006

@@ -1,215 +1,3 @@
--3*5.7*10^(-8)*288^3*5*3600/1.6/10^7
-1-exp(-3*5.7*10^(-8)*288^3*5*3600/1.6/10^7)
-1-exp(-3*5.7*5^(-8)*288^3*5*3600/1.6/10^7)
-1-exp(-4*5.7*5^(-8)*288^3*5*3600/1.6/10^7)
-a=1-exp(-4*5.7*5^(-8)*288^3*5*3600/1.6/10^7)
-a
-b=4*5.7*10^(-8)*288^3
-b
-1-exp(-b*5*3600/1.6/10^7)
-a
-a=1-exp(-4*5.7*10^(-8)*288^3*5*3600/1.6/10^7)
-a
-10*a
-10*a+288
-(10*a+288)*b
-a=1-exp(-4*5.7*10^(-8)*288^3*10*3600/1.6/10^7)
-a
-(10*a+288)*b
-a=1-exp(-4*5.7*10^(-8)*288^3*10*3600/1.6/10^7)
-(5*a+288)*b
-b
-(1*a)*b
-a
-a=1-exp(-b*3600*5/(1.6*10^7))
-a
-b
-a=1-exp(-b*3600*5/(1.6*10^7))
-a=1-exp(-b*3600*12/(1.6*10^7))
-a
-exp(-0.135)
-1-exp(-0.135)
-a=1-exp(-b*3600*10/(1.6*10^7))
-a
-a=1-exp(-b*3600*12/(1.6*10^7))
-a
-5*43200/(1.6*10^7)
-1-exp(-0.0135)
-a=1-exp(-b*3600*5/(1.6*10^7))
-a
-a *5*b
-1/a*b
-a
-0.6^2/(1-0.05*0.16)^2
-0.51^2/(1-0.26*0.16)^2
-0.51^2
-0.26/(1-0.26*0.16)^2
-0.52^2/(1-0.25*0.16)^2
-0.52^2/(1-0.35*0.16)^2
-0.52^2/(1-0.1*0.16)^2
-0.52^2/(1-0.05*0.16)^2
-0.49^2/(1-0.15*0.16)^2
-0.49/(1-0.15*0.16)^2
-23/180*3.14
-a=23/180*3.14
-cos(a)
-1/cos(a)
-900*0.2*10^06
-900*0.2*10^-6
-exp(-0.005)
-280 * (100000)^2 * 50000m / 10 *3.6
-280 * (100000)^2 * 50000 / 10 *3.6
-(100000)^2 * 300 * 1.29
-5*10^16/ (3.9 * 10^15)/1
-4*5.7 * 10^(-8) * 290^3*12
-4*5.7 * 10^(-8) * 290^3*10
-?sample
-N = 900#
-nsample1 = 50#
-nsample2 = 50#
-code = rep(1,N)#
-#
-x = rep(1:(N^0.5),(N^0.5))#
-y = rep(1:(N^0.5),each=(N^0.5))
-plot_recap <- function(x,y,code){#
-	plot(y~x,col=code,pch=16)#
-}#
-#
-sample1 <- function(code,nsample1){#
-	code[sample(1:length(code),nsample1)] = 3#
-	code#
-}
-plot_recap(x,y,code)
-code = sample1(code,nsample1)
-plot_recap(x,y,code)
-plot_recap <- function(x,y,code){#
-	plot(y~x,col=code,pch=16,axis.col=0)#
-}
-plot_recap(x,y,code)
-plot_recap <- function(x,y,code){#
-	plot(y~x,col=code,pch=16,axis=NA)#
-}
-plot_recap(x,y,code)
-?plot
-plot_recap <- function(x,y,code){#
-	plot(y~x,col=code,pch=16,col.axis=NA)#
-}
-?plot
-plot_recap(x,y,code)
-plot_recap <- function(x,y,code){#
-	plot(y~x,col=code,pch=16,col.axis=NA,xaxt='n')#
-}
-plot_recap(x,y,code)
-plot_recap <- function(x,y,code){#
-	plot(y~x,col=code,pch=16,col.axis=NA,xaxt='n',yaxt='n')#
-}
-plot_recap(x,y,code)
-sample2 <- function(code,nsample2){#
-	indice = sample(1:length(code),nsample2)#
-	code[indice] = code[indice]+1#
-	code#
-}
-code = sample2(code,nsample2)
-plot_recap(x,y,code)
-plot_recap <- function(x,y,code){#
-	plot(y~x,col=code,pch=16,col.axis=NA,xaxt='n',yaxt='n')#
-}#
-#
-capture1 <- function(code,nsample1){#
-	code[sample(1:length(code),nsample1)] = 3#
-	code#
-}#
-#
-capture2 <- function(code,nsample2){#
-	indice = sample(1:length(code),nsample2)#
-	code[indice] = code[indice]+1#
-	code#
-}#
-#
-estimate <- function(code,nsample1,nsample2){#
-	nsample1*nsample2/sum(code==4)#
-}
-Ne = estimate(code,nsample1,nsample2)
-Ne
-?replicate
-one_time <- function(N,nsample1,nsample2){#
-	code = rep(1,N)#
-	code = capture1(code,nsample1)#
-	code = capture2(code,nsample2)#
-	estimate(code,nsample1,nsample2)#
-}#
-#
-experiment <- function(N,nsample1,nsample2,nrep){#
-	replicate(nrep,one_time(N,nsample1,nsample2))#
-}
-experiment(N,nsample1,nsample2,nrep=10)
-Nes = experiment(N,nsample1,nsample2,nrep=100)
-hist(Nes)
-Nes = experiment(N,nsample1,nsample2,nrep=1000)
-hist(Nes)
-Nes = experiment(N,nsample1,nsample2,nrep=5000)
-hist(Nes)
-hist(Nes,breaks=20)
-Nes = experiment(N,nsample1,nsample2,nrep=10000)
-hist(Nes)
-length(unique(Nes))
-unique(Nes)
-nsample1 = 100
-nsample2 = 100
-Nes = experiment(N,nsample1,nsample2,nrep=10000)
-hist(Nes)
-unique(Nes)
-Nes = experiment(N,nsample1,nsample2,nrep=1000)
-hist(Nes)
-hist(Nes,xlab="estimated total population",density=T)
-?hist
-hist(Nes,xlab="estimated total population",probability=T)
-Nes = experiment(N,nsample1,nsample2,nrep=10000)
-hist(Nes,xlab="estimated total population",probability=T)
-hist(Nes,breaks=20,xlab="estimated total population",probability=T)
-Nes = experiment(N,nsample1,nsample2,nrep=1000)
-hist(Nes,breaks=20,xlab="estimated total population",probability=T)
-Nes = experiment(N,nsample1,nsample2,nrep=10000)
-hist(Nes,breaks=20,xlab="estimated total population",probability=T)
-Nes = experiment(N,nsample1,nsample2,nrep=10000)
-hist(Nes,breaks=20,xlab="estimated total population",probability=T)
-abline(v=mean(Nes),col=2)
-Nes = experiment(N,nsample1,nsample2,nrep=10000)
-hist(Nes,breaks=20,xlab="estimated total population",probability=T,)
-abline(v=mean(Nes),col=2)
-mean(Nes)
-Nes = experiment(N,nsample1,nsample2,nrep=100000)
-mean(Nes)
-Nes = experiment(N,nsample1,nsample2,nrep=10000)
-mean(Nes)
-Nes = experiment(N,nsample1,nsample2,nrep=10000)
-mean(Nes)
-Nes = experiment(N,nsample1,nsample2,nrep=10000)
-mean(Nes)
-N
-nsample1
-nsample2
-nsample2 = 500
-nsample1 = 500
-Nes = experiment(N,nsample1,nsample2,nrep=10000)
-mean(Nes)
-Nes = experiment(N,nsample1,nsample2,nrep=10000)
-mean(Nes)
-0.53^0.25
-0.75^0.25
-0.25* 0.0012/0.994^2=
-0.25* 0.0012/0.994^2
-15.2*1.1^2
-15.2*0.9^2
-15.2*0.9
-10.78/2*3
-22.5/4*3
-26.25/5*3
-35.75*4-3*6.5
-2/3+8/5
-39000*0.09*7+48000*0.08*12
-39000*0.09*7+48000*0.08*12-363570
-39000*0.22*14
 39000*0.22*14-292920
 172800/48000/0.2
 25000*0.94
@@ -310,3 +98,400 @@ getwd()
 setwd("/Users/jadezhang/Documents/2016spring/2016summer/dognition")
 deployApp(woofriends)
 deployApp("woofriends")
+getwd()
+tests <- read.csv("test_complete.csv",header=T)
+tests <- tests[!is.na(tests$neutered),]
+names(dogs)
+dogs <- read.csv("dog_list.csv",header=T)#
+dogs <- dogs[!is.na(dogs$neutered),]
+names(dogs)
+names(tests)
+tests$time <- as.factor(time_slot(tests$hour,0,0,day_sect=4))
+source("woofriends2.0/dognition_functions")
+getwd()
+source("woofriends2.0/dognition_functions.R")
+tests$time <- as.factor(time_slot(tests$hour,0,0,day_sect=4))
+unique(tests$time)
+unique(tests$month)
+length(unique(tests$month))
+?count
+dog_distr <- function(time,division="month"){#
+	if(division=="month"){#
+		slots <- 1:12#
+	}else{#
+		slots <- c(0,0.25,0.5,0.75)#
+	}#
+	distr <- unlist(lapply(slots,function(s){sum(time==s)}))#
+	distr/sum(distr)#
+}
+month_distr <- matrix(nrow=length(IDs),ncol=11)#
+day_distr <- matrix(nrow=length(IDs),ncol=3)#
+for(i in 1:length(IDs)){#
+	data <- tests[tests$dog_guid==IDs[i],]#
+	month_distr[i,] <- dog_distr(data$month,"month")[-1]#
+	day_distr[i,] <- dog_distr(data$time,"day")[-1]#
+}
+IDs <- dogs$dog_guid
+month_distr <- matrix(nrow=length(IDs),ncol=11)#
+day_distr <- matrix(nrow=length(IDs),ncol=3)#
+for(i in 1:length(IDs)){#
+	data <- tests[tests$dog_guid==IDs[i],]#
+	month_distr[i,] <- dog_distr(data$month,"month")[-1]#
+	day_distr[i,] <- dog_distr(data$time,"day")[-1]#
+}
+head(month_distr)
+dim(month_distr)
+head(day_distr)
+sum(day_distr[,1])
+sum(day_distr[,2])
+sum(day_distr[,3])
+behaviors <- data.frame(month_distr,day_distr,dogs$mid)
+head(behaviors)
+pca <- prcomp(behaviors,scale=T,center=T)
+colSums(behaviors)
+sum(is.na(dogs$mid))
+dogs <- dogs[!is.na(dogs$neutered)&&!is.na(dogs$mid),]
+IDs <- dogs$dog_guid#
+#
+month_distr <- matrix(nrow=length(IDs),ncol=11)#
+day_distr <- matrix(nrow=length(IDs),ncol=3)#
+for(i in 1:length(IDs)){#
+	data <- tests[tests$dog_guid==IDs[i],]#
+	month_distr[i,] <- dog_distr(data$month,"month")[-1]#
+	day_distr[i,] <- dog_distr(data$time,"day")[-1]#
+}
+behaviors <- data.frame(month_distr,day_distr,dogs$mid)
+pca <- prcomp(behaviors,scale=T,center=T)
+sum(is.na(dogs$mid))
+dogs <- dogs[!is.na(dogs$neutered)&&!is.na(dogs$mid),]
+sum(is.na(dogs$mid))
+dim(dogs)
+dogs <- dogs[!is.na(dogs$neutered)&!is.na(dogs$mid),]
+sum(is.na(dogs$mid))
+IDs <- dogs$dog_guid#
+#
+month_distr <- matrix(nrow=length(IDs),ncol=11)#
+day_distr <- matrix(nrow=length(IDs),ncol=3)#
+for(i in 1:length(IDs)){#
+	data <- tests[tests$dog_guid==IDs[i],]#
+	month_distr[i,] <- dog_distr(data$month,"month")[-1]#
+	day_distr[i,] <- dog_distr(data$time,"day")[-1]#
+}#
+#
+behaviors <- data.frame(month_distr,day_distr,dogs$mid)#
+#
+pca <- prcomp(behaviors,scale=T,center=T)
+print(pca)
+plot(pca,type="l")
+unique(dogs$ntest)
+behaviors <- data.frame(month_distr,day_distr,dogs$ntest)
+pca <- prcomp(behaviors,scale=T,center=T)
+plot(pca,type="l")
+pca <- prcomp(behaviors)
+plot(pca,type="l")
+behaviors <- data.frame(month_distr,day_distr,dogs$mid)
+pca <- prcomp(behaviors,center=T)
+plot(pca,type="l")
+pca <- prcomp(behaviors,scale=T)
+plot(pca,type="l")
+dog_distr <- function(time,division="month"){#
+	if(division=="month"){#
+		slots <- 1:12#
+	}else{#
+		slots <- c(0,0.25,0.5,0.75)#
+	}#
+	unlist(lapply(slots,function(s){sum(time==s)}))#
+}
+tests <- read.csv("test_complete.csv",header=T)#
+tests$time <- as.factor(time_slot(tests$hour,0,0,day_sect=4))#
+dogs <- read.csv("dog_list.csv",header=T)#
+dogs <- dogs[!is.na(dogs$neutered)&!is.na(dogs$mid),]#
+IDs <- dogs$dog_guid#
+#
+month_distr <- matrix(nrow=length(IDs),ncol=12)#
+day_distr <- matrix(nrow=length(IDs),ncol=4)#
+for(i in 1:length(IDs)){#
+	data <- tests[tests$dog_guid==IDs[i],]#
+	month_distr[i,] <- dog_distr(data$month,"month")#
+	day_distr[i,] <- dog_distr(data$time,"day")#
+}#
+#
+behaviors <- data.frame(month_distr,day_distr,dogs$mid)
+pca <- prcomp(behaviors,scale=T,center=T)
+plot(pca,type="l")
+summary(pca)
+behaviors <- data.frame(month_distr,dogs$mid)
+pca <- prcomp(behaviors,scale=T,center=T)
+plot(pca,type="l")
+time_slot <- function(time,division=="day",sect){#
+	if(division=="day"){#
+		whole <- 24#
+	}else if(division=="year"){#
+		whole <- 12#
+	}else{#
+		print("no such division")#
+		return()#
+	}#
+	for(i in 1:(sect-1)){#
+		time <- (time > whole/sect*i)#
+	}#
+	time#
+}
+time_slot <- function(time,division="day",sect){#
+	if(division=="day"){#
+		whole <- 24#
+	}else if(division=="year"){#
+		whole <- 12#
+	}else{#
+		print("no such division")#
+		return()#
+	}#
+	for(i in 1:(sect-1)){#
+		time <- (time > whole/sect*i)#
+	}#
+	time#
+}
+tests$time <- as.factor(time_slot(tests$hour,"day",sect=4))
+tests$season <- as.factor(time_slot(tests$month,"year",sect=4))
+unique(tests$time)
+unique(tests$season)
+time_slot <- function(time,division="day",sect){#
+	if(division=="day"){#
+		whole <- 24#
+	}else if(division=="year"){#
+		whole <- 12#
+	}else{#
+		print("no such division")#
+		return()#
+	}#
+	slot <- numeric(length(time))#
+	for(i in 1:(sect-1)){#
+		slot <- slot + (time > whole/sect*i)#
+	}#
+	slot#
+}
+tests$time <- as.factor(time_slot(tests$hour,"day",sect=4))
+unique(tests$time)
+tests$season <- as.factor(time_slot(tests$month,"year",sect=4))
+unique(tests$season)
+?numeric
+numeric(1,3)
+time_slot <- function(time,division="day",sect){#
+	if(division=="day"){#
+		whole <- 24#
+	}else if(division=="year"){#
+		whole <- 12#
+	}else{#
+		print("no such division")#
+		return()#
+	}#
+	slot <- rep(1,length(time))#
+	for(i in 1:(sect-1)){#
+		slot <- slot + (time > whole/sect*i)#
+	}#
+	slot#
+}
+tests$time <- as.factor(time_slot(tests$hour,"day",sect=4))#
+tests$season <- as.factor(time_slot(tests$month,"year",sect=4))
+unique(tests$season)
+unique(tests$time)
+dogs <- read.csv("dog_list.csv",header=T)#
+dogs <- dogs[!is.na(dogs$neutered)&!is.na(dogs$mid),]#
+IDs <- dogs$dog_guid
+season_distr <- matrix(nrow=length(IDs),ncol=4)#
+day_distr <- matrix(nrow=length(IDs),ncol=4)#
+for(i in 1:length(IDs)){#
+	data <- tests[tests$dog_guid==IDs[i],]#
+	month_distr[i,] <- dog_distr(data$month,1:4)#
+	day_distr[i,] <- dog_distr(data$time,1:4)#
+}
+dog_distr
+dog_distr <- function(time,slots){#
+	unlist(lapply(slots,function(s){sum(time==s)}))#
+}
+season_distr <- matrix(nrow=length(IDs),ncol=4)#
+day_distr <- matrix(nrow=length(IDs),ncol=4)#
+for(i in 1:length(IDs)){#
+	data <- tests[tests$dog_guid==IDs[i],]#
+	month_distr[i,] <- dog_distr(data$month,1:4)#
+	day_distr[i,] <- dog_distr(data$time,1:4)#
+}
+season_distr <- matrix(nrow=length(IDs),ncol=4)#
+day_distr <- matrix(nrow=length(IDs),ncol=4)#
+for(i in 1:length(IDs)){#
+	data <- tests[tests$dog_guid==IDs[i],]#
+	season_distr[i,] <- dog_distr(data$season,1:4)#
+	day_distr[i,] <- dog_distr(data$time,1:4)#
+}
+behaviors <- data.frame(season_distr,dogs$mid)
+pca <- prcomp(behaviors,scale=T,center=T)
+plot(pca,type="l")
+behaviors <- data.frame(season_distr,day_distr,dogs$mid)
+pca <- prcomp(behaviors,scale=T,center=T)
+plot(pca,type="l")
+behaviors <- data.frame(day_distr,dogs$mid)
+dim(behaviors)
+pca <- prcomp(behaviors,scale=T,center=T)
+plot(pca,type="l")
+tests$time <- as.factor(time_slot(tests$hour,"day",sect=8))
+day_distr <- matrix(nrow=length(IDs),ncol=8)#
+for(i in 1:length(IDs)){#
+	data <- tests[tests$dog_guid==IDs[i],]#
+	#season_distr[i,] <- dog_distr(data$season,1:4)#
+	day_distr[i,] <- dog_distr(data$time,1:8)#
+}#
+#
+behaviors <- data.frame(day_distr,dogs$mid)
+head(behaviors)
+pca <- prcomp(behaviors,scale=T,center=T)
+plot(pca,type="l")
+behaviors <- data.frame(day_distr)
+pca <- prcomp(behaviors,scale=T,center=T)
+plot(pca,type="l")
+?prcomp
+tests <- read.csv("test_complete.csv",header=T)#
+tests$time <- as.factor(time_slot(tests$hour,"day",sect=3))#
+tests$season <- as.factor(time_slot(tests$month,"year",sect=4))#
+dogs <- read.csv("dog_list.csv",header=T)#
+dogs <- dogs[!is.na(dogs$neutered)&!is.na(dogs$mid),]#
+IDs <- dogs$dog_guid#
+#
+season_distr <- matrix(nrow=length(IDs),ncol=4)#
+day_distr <- matrix(nrow=length(IDs),ncol=8)#
+for(i in 1:length(IDs)){#
+	data <- tests[tests$dog_guid==IDs[i],]#
+	season_distr[i,] <- dog_distr(data$season,1:4)#
+	day_distr[i,] <- dog_distr(data$time,1:8)#
+}#
+#
+behaviors <- data.frame(season_distr,day_distr)
+pca <- prcomp(behaviors,scale=T,center=T)
+tests$time <- as.factor(time_slot(tests$hour,"day",sect=8))
+season_distr <- matrix(nrow=length(IDs),ncol=4)#
+day_distr <- matrix(nrow=length(IDs),ncol=8)#
+for(i in 1:length(IDs)){#
+	data <- tests[tests$dog_guid==IDs[i],]#
+	season_distr[i,] <- dog_distr(data$season,1:4)#
+	day_distr[i,] <- dog_distr(data$time,1:8)#
+}#
+#
+behaviors <- data.frame(season_distr,day_distr)
+pca <- prcomp(behaviors,scale=T,center=T)
+plot(pca,type="l")
+pca <- prcomp(behaviors)
+plot(pca,type="l")
+pca <- prcomp(behaviors,center=T)
+plot(pca,type="l")
+tests$time <- as.factor(time_slot(tests$hour,"day",sect=4))
+behaviors <- data.frame(day_distr)
+pca <- prcomp(behaviors,scale=T,center=T)
+plot(pca,type="l")
+pca <- prcomp(behaviors,center=T)
+plot(pca,type="l")
+summary(pca)
+pca <- prcomp(behaviors,scale=T,center=T)
+summary(pca)
+behaviors <- data.frame(season_distr,day_distr)
+pca <- prcomp(behaviors,scale=T,center=T)
+summary(pca)
+tests$time <- as.factor(time_slot(tests$hour,"day",sect=4))
+tests <- read.csv("test_complete.csv",header=T)#
+dogs <- read.csv("dog_list.csv",header=T)#
+dogs <- dogs[!is.na(dogs$neutered)&!is.na(dogs$mid),]#
+IDs <- dogs$dog_guid#
+#
+day_sect <- 4#
+tests$time <- as.factor(time_slot(tests$hour,"day",day_sect))#
+year_sect <- 4#
+tests$season <- as.factor(time_slot(tests$month,"year",year_sect))#
+season_distr <- matrix(nrow=length(IDs),ncol=year_sect)#
+day_distr <- matrix(nrow=length(IDs),ncol=day_sect)#
+for(i in 1:length(IDs)){#
+	data <- tests[tests$dog_guid==IDs[i],]#
+	season_distr[i,] <- dog_distr(data$season,1:year_sect)#
+	day_distr[i,] <- dog_distr(data$time,1:day_sect)#
+}
+behaviors <- data.frame(day_distr)
+pca <- prcomp(behaviors,scale=T,center=T)
+plot(pca,type="l")
+summary(pca)
+pca <- prcomp(behaviors,center=T)#
+#
+plot(pca,type="l")#
+summary(pca)
+behaviors <- data.frame(day_distr,season_distr)
+pca <- prcomp(behaviors,center=T)
+plot(pca,type="l")#
+summary(pca)
+pca <- prcomp(behaviors,scale=T,center=T)#
+#
+plot(pca,type="l")#
+summary(pca)
+day_sect <- 6#
+tests$time <- as.factor(time_slot(tests$hour,"day",day_sect))#
+year_sect <- 4#
+#tests$season <- as.factor(time_slot(tests$month,"year",year_sect))#
+#season_distr <- matrix(nrow=length(IDs),ncol=year_sect)#
+day_distr <- matrix(nrow=length(IDs),ncol=day_sect)#
+for(i in 1:length(IDs)){#
+	data <- tests[tests$dog_guid==IDs[i],]#
+	#season_distr[i,] <- dog_distr(data$season,1:year_sect)#
+	day_distr[i,] <- dog_distr(data$time,1:day_sect)#
+}#
+#
+#behaviors <- data.frame(season_distr,day_distr)#
+behaviors <- data.frame(day_distr)
+pca <- prcomp(behaviors)#
+#
+plot(pca,type="l")#
+summary(pca)
+pca
+day_sect <- 4#
+tests$time <- as.factor(time_slot(tests$hour,"day",day_sect))#
+year_sect <- 4#
+#tests$season <- as.factor(time_slot(tests$month,"year",year_sect))#
+#season_distr <- matrix(nrow=length(IDs),ncol=year_sect)#
+day_distr <- matrix(nrow=length(IDs),ncol=day_sect)#
+for(i in 1:length(IDs)){#
+	data <- tests[tests$dog_guid==IDs[i],]#
+	#season_distr[i,] <- dog_distr(data$season,1:year_sect)#
+	day_distr[i,] <- dog_distr(data$time,1:day_sect)#
+}#
+#
+#behaviors <- data.frame(season_distr,day_distr)#
+behaviors <- data.frame(day_distr)#
+#
+pca <- prcomp(behaviors)#
+#
+plot(pca,type="l")#
+summary(pca)
+pca
+predict(pca)
+pca <- prcomp(behaviors,scale=T,center=T)
+plot(pca,type="l")#
+summary(pca)
+pca <- prcomp(behaviors)#
+#
+plot(pca,type="l")#
+summary(pca)
+predictions <- predict(pca)
+dogs$PC1 <- predictions[,1]#
+dogs$PC2 <- predictions[,2]
+head(dogs)
+write.csv(dogs,"dog_list.csv")
+dogs <- read.csv("dog_list.csv",header=T)
+head(dogs)
+plot(dogs$PC1~dogs$PC2,cex=16,col="yellow")
+plot(dogs$PC1~dogs$PC2,pch=16,col="yellow")
+pca <- prcomp(behaviors,scale=T,center=T)#
+plot(pca,type="l")#
+summary(pca)#
+predictions <- predict(pca)#
+dogs$PC1 <- predictions[,1]#
+dogs$PC2 <- predictions[,2]#
+#
+#Write down results#
+write.csv(dogs,"dog_list.csv")
+dogs <- read.csv("dog_list.csv",header=T)
+plot(dogs$PC1~dogs$PC2,pch=16,col="yellow")
+plot(dogs$PC1~dogs$PC2,,xlab="PC2",ylab="PC1",pch=16,col="yellow")

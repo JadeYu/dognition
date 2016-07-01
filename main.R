@@ -1,5 +1,5 @@
 library(randomForest)
-source("woofriends/dognition_functions.R")
+source("woofriends2.0/dognition_functions.R")
 
 ##I. Which dog feature(s) best determine dog activity pattern?
 
