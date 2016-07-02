@@ -46,10 +46,11 @@ get_trend <- function(vs,ftables,wts,average){
 plot_trend <- function(trend,average,ulim,graph,index){
 	time <- 1:12
 	if(graph){
-		plot(trend^2~time,xlab="month",ylab="activity",ylim=c(0,ulim),yaxt='n',col=0,cex.lab=1.5,cex.axis=1.5)
-		lines(time,average^2,lty=2,col=1,lwd=2)
+		par(bg="floralwhite")
+		plot(trend^2~time,xlab="Month",ylab="Activeness",ylim=c(0,ulim),yaxt='n',col=0,cex.lab=1.5,cex.axis=1.5)
+		lines(time,average^2,lty=2,col=2,lwd=2)
 	}
-	lines(time,trend^2,lty=1,col=index,lwd=2)
+	lines(time,trend^2,lty=1,col=index+2,lwd=2)
 }
 
 #calculate similarity between two time distributions
@@ -57,5 +58,7 @@ trend_similarity <- function(trend1,trend2,average){
 	simi <- cor(trend1,trend2)
 	#compare to average; similarity should be 0.5 when compared to average
 	contra <- min(cor(trend2,average),cor(trend1,average))
-	0.5*(simi-contra)/(1-contra)+0.5
+	score <- 0.5*(simi-contra)/(1-contra)+0.5
+	comment <- c("The two dogs are not compatible;b","Their compatibility is average - Meh","Their activeness pattern match pretty well~","They match perfectly!")[(score>-100)+(score>0.3)+(score>0.7)+(score>0.9)]
+	list(score=score,comment=comment)
 }
