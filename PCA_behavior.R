@@ -7,9 +7,9 @@ IDs <- dogs$dog_guid
 #at first season information is also included but since it does not vary much across dog features, in the app I only use time of the day
 
 #year_sect <- 4
-#tests$season <- as.factor(time_slot(tests$month,"year",year_sect))
+#tests$season <- as.factor(time_div(tests$month,"year",year_sect))
 day_sect <- 6
-tests$time <- as.factor(time_slot(tests$hour,"day",day_sect))
+tests$time <- as.factor(time_div(tests$hour,"day",day_sect))
 #season_distr <- matrix(nrow=length(IDs),ncol=year_sect)
 day_distr <- matrix(nrow=length(IDs),ncol=day_sect)
 for(i in 1:length(IDs)){
@@ -35,6 +35,6 @@ plot(behaviors)
 
 dist <- dist_distr(dogs$PC1,dogs$PC2)
 #Write down results
-write.csv(dogs,"dog_list.csv")
-write.csv(dist,"distance_matrix.csv")
+write.csv(dogs,"woofriends2.0/dog_list.csv")
+write.csv(dist,"woofriends2.0/distance_matrix.csv")
 
