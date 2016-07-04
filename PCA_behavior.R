@@ -1,7 +1,8 @@
 source("woofriends2.0/dognition_functions.R")
 tests <- read.csv("test_complete.csv",header=T)
-dogs <- read.csv("dog_list.csv",header=T)
+dogs <- read.csv("woofriends2.0/dog_list.csv",header=T)
 dogs <- dogs[!is.na(dogs$neutered)&!is.na(dogs$mid),]
+
 IDs <- dogs$dog_guid
 
 #at first season information is also included but since it does not vary much across dog features, in the app I only use time of the day
@@ -34,6 +35,11 @@ behaviors <- data.frame(behaviors,dogs$PC1,dogs$PC2,dogs$ntest)
 plot(behaviors)
 
 dist <- dist_distr(dogs$PC1,dogs$PC2)
+
+#Group age and weight 
+dogs$age <- as.factor(c("0-1","2-4","5-7","7-10",">10"))[(dogs$age>=0)+(dogs$age>1)+(dogs$age>4)+(dogs$age>7)+(dogs$age>10)]
+dogs$weight <- as.factor(c("0-19","20-49","50-89","90-139",">139"))[(dogs$weight>=0)+(dogs$weight>19)+(dogs$weight>49)+(dogs$weight>89)+(dogs$weight>129)]
+
 #Write down results
 write.csv(dogs,"woofriends2.0/dog_list.csv")
 write.csv(dist,"woofriends2.0/distance_matrix.csv")

@@ -71,7 +71,7 @@ shinyServer(function(input, output) {
   	 		ulim <- max(trend1^2,trend2^2)
      		plot_trend(trend1,average,ulim,graph=T,index=1)
 			plot_trend(trend2,average,ulim,graph=F,index=2)
-			legend("topleft",c(paste("Dog",1:2),"average"),lty=c(rep(1,2),2),lwd=2,col=c(3:4,2),cex=1.5)
+			legend("topleft",c(paste("Dog",1:2),"average"),lty=c(rep(1,2),2),lwd=2,col=c(3:4,2),cex=0.5)
      })  
      })
      })
